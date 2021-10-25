@@ -1,5 +1,5 @@
-<div>
-	<h3>{{title}}</h3>
+<div class="story-block">
+	<h2>{{title}}</h2>
 	{{#ifEquals this.which 'resume'}}
 		{{> story/resume }}
 	{{/ifEquals}}
@@ -12,5 +12,4 @@
 	{{#ifEquals this.which 'video-call'}}
 		{{> story/video-call }}
 	{{/ifEquals}}
-	<button class="all-caps">More about {{title}}</button>
 </div>
