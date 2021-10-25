@@ -1,15 +1,20 @@
 <div class="story-block">
-	<h2>{{title}}</h2>
-	{{#ifEquals this.which 'resume'}}
-		{{> story/resume }}
-	{{/ifEquals}}
-	{{#ifEquals this.which 'photo-studio'}}
-		{{> story/photo-studio }}
-	{{/ifEquals}}
-	{{#ifEquals this.which 'thought-leadership'}}
-		{{> story/thought-leadership }}
-	{{/ifEquals}}
-	{{#ifEquals this.which 'video-call'}}
-		{{> story/video-call }}
-	{{/ifEquals}}
+	<div class="story-text">
+		<h2>{{title}}</h2>
+		{{#ifEquals this.which 'resume'}}
+			{{> story/resume }}
+		{{/ifEquals}}
+		{{#ifEquals this.which 'photo-studio'}}
+			{{> story/photo-studio }}
+		{{/ifEquals}}
+		{{#ifEquals this.which 'thought-leadership'}}
+			{{> story/thought-leadership }}
+		{{/ifEquals}}
+		{{#ifEquals this.which 'video-call'}}
+			{{> story/video-call }}
+		{{/ifEquals}}
+	</div>
+	<div class="story-pic">
+		Boop
+	</div>
 </div>
