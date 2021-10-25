@@ -1,15 +1,15 @@
 <div>
 	<h3>{{title}}</h3>
-	{{#ifEquals this 'resume'}}
+	{{#ifEquals this.which 'resume'}}
 		{{> story/resume }}
 	{{/ifEquals}}
-	{{#ifEquals this 'photo-studio'}}
+	{{#ifEquals this.which 'photo-studio'}}
 		{{> story/photo-studio }}
 	{{/ifEquals}}
-	{{#ifEquals this 'thought-leadership'}}
+	{{#ifEquals this.which 'thought-leadership'}}
 		{{> story/thought-leadership }}
 	{{/ifEquals}}
-	{{#ifEquals this 'video-call'}}
+	{{#ifEquals this.which 'video-call'}}
 		{{> story/video-call }}
 	{{/ifEquals}}
 	<button class="all-caps">More about {{title}}</button>

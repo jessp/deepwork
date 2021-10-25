@@ -16,11 +16,11 @@
 	{{> base/header 'sticky'}}
 
 	<main id='content'>
-
 		{{> story/intro }}
-		{{> story/feature-block 'resume' title="Test" }}
-		{{> story/feature-block 'photo-studio' title="Test" }}
-		{{> story/feature-block 'thought-leadership' title="Test" }}
+		{{> story/feature-block which='resume' title=content.resume.title }}
+		{{> story/feature-block which='photo-studio' title=content.photo.title }}
+		{{> story/feature-block which='thought-leadership' title=content.thought-leadership.title }}
+		{{> story/feature-block which='video-call' title=content.video-call.title }}
 
 	</main>
 
