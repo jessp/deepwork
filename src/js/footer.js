@@ -56,12 +56,14 @@ function loadStories(cb) {
 }
 
 function createLink(d) {
-	return `
-	<a class='footer-recirc__article' href='https://pudding.cool/${d.url}' target='_blank' rel='noopener'>
-		<img class='article__img' src='https://pudding.cool/common/assets/thumbnails/640/${d.image}.jpg' alt='${d.hed}'>
-		<p class='article__headline'>${d.hed}</p>
-	</a>
-	`;
+	if (d !== undefined) {
+		return `
+		<a class='footer-recirc__article' href='https://pudding.cool/${d.url}' target='_blank' rel='noopener'>
+			<img class='article__img' src='https://pudding.cool/common/assets/thumbnails/640/${d.image}.jpg' alt='${d.hed}'>
+			<p class='article__headline'>${d.hed}</p>
+		</a>
+		`;
+	}
 }
 
 function recircHTML() {
