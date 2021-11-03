@@ -12,7 +12,12 @@ body
 h2
 	set-type-size(xx-large, true)
 p
-	font-family: sans-serif
+	font-family: 'DM Sans', sans-serif
+	font-weight: 400
+
+span
+	font-family: 'DM Sans', sans-serif
+	font-weight: 400
 
 .all-caps
 	text-transform: uppercase
@@ -37,9 +42,6 @@ p
 
 .story-block
 	margin-top: 5rem
-	p:first-of-type
-		text-transform: uppercase
-		set-type-size(small, false)
 	display: block
 	+mq('bp-3')
 		.feature-content
@@ -66,3 +68,58 @@ p
 		.feature-content
 			width: 350px
 			height: 700px
+
+.story-text
+	p:first-of-type
+		text-transform: uppercase
+		set-type-size(small, false)
+		font-weight: 500
+
+.demo-header
+	p
+		text-align: center
+		margin: 1rem
+		font-weight: 500
+
+.demo-body
+	background-color: $story-gray-light
+	border: 1px solid $story-gray-mid
+	border-radius: 6px
+	padding: 1 rem
+	flex: 1 0
+	overflow-y: auto
+	height: 0px
+
+
+//------THOUGHT LEADERSHIP
+#thought-leadership
+	display: flex
+	flex-flow: column
+	row-gap: 1rem
+
+.deepwork-social
+	display: grid
+	grid-template-columns: 50px auto
+	p:first-of-type
+		font-weight: bold
+		margin: 0px
+	p:nth-of-type(2)
+		font-weight: 500
+		set-type-size(small, true)
+		margin: 0.5rem 0
+
+.social-icon
+	text-align: center
+
+.impact-icons
+	float: left
+	margin-bottom: 1.5rem
+	vertical-align: middle
+	svg
+		width: 14px
+		height: 14px
+		vertical-align: middle
+	span
+		margin-right: 1rem
+		vertical-align: middle
+		set-type-size(small, true)

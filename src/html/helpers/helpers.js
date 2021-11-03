@@ -1,5 +1,6 @@
 module.exports = {
   greaterThan: function(a, b, opts) {
+    console.log(a, b, opts);
     if (a > b) return opts.fn(this);
     else return opts.inverse(this);
   },
@@ -15,5 +16,8 @@ module.exports = {
     return String(text)
       .replace(/\s+/g, '-')
       .toLowerCase();
+  },
+  randomNumber: function(upper) {
+    return parseInt(Math.random() * upper);
   }
 };

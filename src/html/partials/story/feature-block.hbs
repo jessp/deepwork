@@ -15,8 +15,10 @@
 		{{/ifEquals}}
 	</div>
 	<div class="story-pic">
-		<div class="feature-content">
-			{{> story/thought-leadership-demo }}
+		<div class="feature-content" id={{this.which}}>
+			{{#ifEquals this.which 'thought-leadership'}}
+				{{> story/thought-leadership-demo }}
+			{{/ifEquals}}
 		</div>
 	</div>
 </div>

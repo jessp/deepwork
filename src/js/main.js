@@ -6,6 +6,9 @@ import modalSetup from './utils/modal-a11y';
 import graphic from './graphic';
 import footer from './footer';
 
+import {influencers} from './thought-leadership-demo';
+console.log(influencers);
+
 const $body = d3.select('body');
 let previousWidth = 0;
 

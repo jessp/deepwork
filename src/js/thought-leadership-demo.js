@@ -1,0 +1,1 @@
+export const influencers = ["hi", "bye"];

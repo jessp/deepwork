@@ -1,0 +1,36 @@
+.combo
+  display: block
+  width: 100%
+  position: relative
+
+.combo::after
+    content: ''
+    display: inline-block;
+    background-image: url(assets/images/svgs/chevron-down.svg), none
+    position: absolute
+    width:24px
+    height:24px
+    top: calc(50% - 12px)
+    right: 24px
+    background-repeat: no-repeat
+    pointer-events: none
+
+.combo-input
+  background-color: $story-gray-light
+  border: 1px solid $story-gray-mid
+  border-radius: 6px
+  display: block
+  font-size: 1em
+  min-height: calc(1.4em + 26px)
+  padding: 12px 16px 14px
+  text-align: left
+  width: 100%
+  :focus
+    border-color: #e6adef
+    box-shadow: 0 0 4px 2px #e6adef
+    outline: 5px solid transparent
+
+select.combo-input 
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
