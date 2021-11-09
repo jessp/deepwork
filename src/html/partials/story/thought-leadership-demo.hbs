@@ -1,10 +1,8 @@
 <div class="demo-header">	
-	{{> story/combo-box id="influencerA" opts=influencers }}
+	{{> story/combo-box id="influencerA" opts=influencers accessor="username"  value="id"}}
 	<p class="all-caps">plus</p>
-	{{> story/combo-box id="influencerA" opts=influencers }}
+	{{> story/combo-box id="influencerB" opts=influencers accessor="username" value="id"}}
 </div>
 <div class="demo-body">
-	{{#each content.thought-leadership.content}}
-		{{> story/social content=this}}
-	{{/each}}
+
 </div>

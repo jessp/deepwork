@@ -16,6 +16,12 @@
 	</div>
 	<div class="story-pic">
 		<div class="feature-content" id={{this.which}}>
+			{{#ifEquals this.which 'resume'}}
+				{{> story/resume-demo }}
+			{{/ifEquals}}
+			{{#ifEquals this.which 'photo-studio'}}
+				{{> story/photo-studio-demo true }}
+			{{/ifEquals}}
 			{{#ifEquals this.which 'thought-leadership'}}
 				{{> story/thought-leadership-demo }}
 			{{/ifEquals}}

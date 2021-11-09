@@ -5,9 +5,7 @@ import linkFix from './utils/link-fix';
 import modalSetup from './utils/modal-a11y';
 import graphic from './graphic';
 import footer from './footer';
-
-import {influencers} from './thought-leadership-demo';
-console.log(influencers);
+import {ThoughtLeadership} from './thought-leadership-demo';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -45,6 +43,10 @@ function init() {
   graphic.init();
   // load footer stories
   footer.init();
+
+  new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
+
+
 }
 
 init();

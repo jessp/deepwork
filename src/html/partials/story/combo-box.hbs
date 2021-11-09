@@ -1,7 +1,12 @@
 <div class="combo all-caps">
   <select id={{id}} class="combo-input">
     {{#each opts}}
-       <option>{{this}}</option>
+      {{#if ../accessor}}
+        <option value={{this.id}}>{{this.accessor}}</option>
+      {{/if}}
+      {{#unless ../accessor}}
+        <option value={{this}}>{{this}}</option>
+      {{/unless}}
     {{/each}}
   </select>
 </div>

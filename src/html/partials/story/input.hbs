@@ -1,0 +1,9 @@
+<div>
+    <input type="range" id={{id}} name={{id}} list={{id}}list min="0" max={{steps}}>
+        {{#if maxVal}}
+            <datalist id={{id}}list>
+                <option value="0" label="{{zero}}">
+                <option value="{{steps}}" label="{{maxVal}}">
+            </datalist>
+        {{/if}}
+</div>
