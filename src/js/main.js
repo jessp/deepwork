@@ -6,6 +6,7 @@ import modalSetup from './utils/modal-a11y';
 import graphic from './graphic';
 import footer from './footer';
 import {ThoughtLeadership} from './thought-leadership-demo';
+import {PhotoSlider} from './photo-slider';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -45,7 +46,7 @@ function init() {
   footer.init();
 
   new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
-
+  new PhotoSlider("#studioA", 5, () => console.log("hi"));
 
 }
 

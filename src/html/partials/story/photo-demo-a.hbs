@@ -1,22 +1,11 @@
 <div class="photo-studio-main" style="background-image:url(https://www.fillmurray.com/500/360)"></div>
-<div class="demo-body photo-studio-controls">
+<div class="demo-body photo-studio-controls" id="studioA">
 	<div class="photo-selecter">
 		<h3>Choose a Photo</h3>
-		{{> story/input steps="11" id="photo-select-a" }}
-		<div class="photo-grid-a">
+		<input type="range" class="photo-select"/>
+		<div class="photo-grid">
 			{{! Placeholders }}
-			<div style="background-image:url(https://www.fillmurray.com/200/100)" class="selected-pic"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/125)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/150)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/200)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/125/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/100/100)"></div>
-			<div style="background-image:url(https://www.fillmurray.com/150/100)"></div>
+			
 		</div>
 	</div>
 	{{> story/input steps="11" id="age" zero="More Masculine" maxVal="More Feminine"}}
