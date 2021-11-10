@@ -7,6 +7,7 @@ import graphic from './graphic';
 import footer from './footer';
 import {ThoughtLeadership} from './thought-leadership-demo';
 import {PhotoSlider} from './photo-slider';
+import {StudioB} from './studio-b';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -46,8 +47,20 @@ function init() {
   footer.init();
 
   new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
-  new PhotoSlider("#studioA", 5, () => console.log("hi"));
+  new PhotoSlider("#studioA", 5, 9, () => console.log("hi"));
 
+  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 0, 8);
+  new PhotoSlider("#studioB1", 0, 9, (e) => studB.updateVar(true, e));
+  new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
+
+  //TODO PLACEHOLDER
+  d3.select("#B")
+    .on("click", d => d3.selectAll(".photo-studio-holder .photo-studio-container")
+        .style("top", "-100%"))
+
+  d3.select("#A")
+    .on("click", d => d3.selectAll(".photo-studio-holder .photo-studio-container")
+        .style("top", "0px"))
 }
 
 init();

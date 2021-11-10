@@ -1,26 +1,25 @@
 export class PhotoSlider {
-  	constructor(_id, _position, _effect) {
+  	constructor(_id, _position, _steps, _effect) {
     	this.id = d3.select(_id);
     	this.position = _position;
     	this.effect = _effect;
+    	this.steps = _steps;
     	this.input = this.id.select("input");
     	this.grid = this.id.select(".photo-grid");
     	this.init();
 	}
 
 	init(){
-		const size = 10;
-
 		this.input.attr("min", 0);
-		this.input.attr("max", size-1);
+		this.input.attr("max", this.steps-1);
 		this.input.attr("value", this.position);
 
 		this.grid.selectAll("div")
-			.data(Array.apply(null, Array(size)))
+			.data(Array.apply(null, Array(this.steps)))
 			.join(
 				enter => enter.append("div")
-					.style("background-image", "url(https://www.fillmurray.com/200/100)")
-					.style("width", `calc(100%/${size})`)
+					.style("background-image", (d, i) => `url(assets/images/starting_photos/${(i+1)}.png)`)
+					.style("width", `calc(100%/${this.steps})`)
 					.attr("class", (d, i) => i === this.position ? "selected-pic" : null)
 			)
 
@@ -29,6 +28,7 @@ export class PhotoSlider {
 			this.grid.selectAll("div").classed("selected-pic", false);
 			this.grid.select(`div:nth-of-type(${(this.position + 1)})`)
 				.classed("selected-pic", true);
+			this.effect(this.position);
 		})
 
 

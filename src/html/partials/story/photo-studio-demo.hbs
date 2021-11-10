@@ -1,8 +1,12 @@
-<div class="photo-studio-container">
-	{{#if this}}
+<div class="photo-studio-holder">	
+	<div class="photo-studio-container" id="studio-a-container">
 		{{> story/photo-demo-a }}
-	{{/if}}
-	{{#unless this}}
+	</div>
+	<div class="photo-studio-container" id="studio-b-container">
 		{{> story/photo-demo-b }}
-	{{/unless}}
+	</div>
+	<div class="button-holder">
+		<button id="A">A</button>
+		<button id="B">B</button>
+	</div>
 </div>

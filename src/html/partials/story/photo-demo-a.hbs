@@ -1,14 +1,12 @@
-<div class="photo-studio-main" style="background-image:url(https://www.fillmurray.com/500/360)"></div>
+<div class="photo-studio-main"></div>
 <div class="demo-body photo-studio-controls" id="studioA">
 	<div class="photo-selecter">
 		<h3>Choose a Photo</h3>
 		<input type="range" class="photo-select"/>
 		<div class="photo-grid">
-			{{! Placeholders }}
-			
 		</div>
 	</div>
-	{{> story/input steps="11" id="age" zero="More Masculine" maxVal="More Feminine"}}
-	{{> story/input steps="11" id="genderPres" zero="Younger" maxVal="Older"}}
-	{{> story/input steps="11" id="attractiveness" zero="Homelier" maxVal="More Attractive"}}
+	{{> story/input steps="11" id="age" zero="More Masculine" maxVal="More Feminine" value="6"}}
+	{{> story/input steps="11" id="genderPres" zero="Younger" maxVal="Older" value="6"}}
+	{{> story/input steps="11" id="attractiveness" zero="Homelier" maxVal="More Attractive" value="6"}}
 </div>
