@@ -48,7 +48,7 @@ function init() {
   footer.init();
 
   new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
-  const photoA = new PhotoSlider("#studioA", 5, 9, () => console.log("hi"));
+  const photoA = new PhotoSlider("#studioA", 5, 9, null);
   const studA = new StudioA("#studio-a-container", photoA);
 
   const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 0, 8);

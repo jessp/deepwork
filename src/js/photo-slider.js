@@ -9,6 +9,10 @@ export class PhotoSlider {
     	this.init();
 	}
 
+	setCallback(_effect){
+		this.effect = _effect;
+	}
+
 	init(){
 		this.input.attr("min", 0);
 		this.input.attr("max", this.steps-1);
@@ -28,7 +32,9 @@ export class PhotoSlider {
 			this.grid.selectAll("div").classed("selected-pic", false);
 			this.grid.select(`div:nth-of-type(${(this.position + 1)})`)
 				.classed("selected-pic", true);
-			this.effect(this.position);
+			if (this.effect !== null){
+				this.effect(this.position);
+			}
 		})
 
 
