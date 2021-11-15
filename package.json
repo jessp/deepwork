@@ -65,6 +65,7 @@
 		"watch:js": "onchange -k \"src/js/**/*\" -- run-s build:js",
 		"serve": "light-server -q -o -s dev -p 4000 -w \"dev/*.css # # reloadcss\" -w \"dev/*.js # #\" -w \"dev/*.html # #\" -w \"dev/assets/**/* # #\"",
 		"dev": "run-p serve watch:*",
+		"noassets": "light-server -q -o -s dev -p 4000 -w \"dev/*.css # # reloadcss\" -w \"dev/*.js # #\" -w \"dev/*.html # #\"",
 		"start": "cross-env NODE_ENV=dev run-s build dev"
 	},
 	"repository": {
