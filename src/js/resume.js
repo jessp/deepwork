@@ -1,4 +1,4 @@
-const handlebars = require('handlebars');
+// const handlebars = require('handlebars');
 
 export class Resume {
 
@@ -43,19 +43,19 @@ export class Resume {
 					{{/if}}
 				</div>`;
 
-		this.compiled = handlebars.compile(this.template);
+		// this.compiled = handlebars.compile(this.template);
 	}
 
 	populateFile(data) {
-		const content = this.compiled(data);
-  		this.body.html(content);
+		// const content = this.compiled(data);
+  // 		this.body.html(content);
   	}
 
 	init(){
-		d3.json(`/assets/data/resumes/${this.resumeList["senior"]["resumes"][0]}`).then((data) => {
-		  this.resumeList = data;
-		  this.populateFile(data);
-		});
+		// d3.json(`/assets/data/resumes/${this.resumeList["senior"]["resumes"][0]}`).then((data) => {
+		//   this.resumeList = data;
+		//   this.populateFile(data);
+		// });
 	}
 
 }

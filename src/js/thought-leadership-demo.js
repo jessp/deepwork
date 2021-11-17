@@ -71,7 +71,7 @@ export class ThoughtLeadership {
 		this.id1.on("change", (e) => {
 			this.inf1 = e.target.value;
 
-			this.setOptions(this.id1, this.inf2);
+			this.setOptions(this.id2, this.inf1);
 
 			this.reqData(this.inf1, this.inf2, true);
 		})
@@ -79,7 +79,7 @@ export class ThoughtLeadership {
 		this.id2.on("change", (e) => {
 			this.inf2 = e.target.value;
 
-			this.setOptions(this.id2, this.inf1);
+			this.setOptions(this.id1, this.inf2);
 
 			this.reqData(this.inf1, this.inf2, true);
 		})
