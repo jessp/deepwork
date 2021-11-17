@@ -1,0 +1,53 @@
+{
+    "basics": {
+        "label": "Stack Architect",
+        "summary": "I am asoftware engineer with a mathematics and physics background and a passion for learning. Problem solver and technology enthusiast, always looking for ways to improve my craft whilst enjoying the chance to work with talented and creative people."
+    },
+    "interests": [
+        {
+            "name": "Freecad"
+        },
+        {
+            "name": "Lifehacks"
+        },
+        {
+            "name": "Continuous Learning"
+        }
+    ],
+    "work": [
+        {
+            "company": "Olo Vzw",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://olo-vzw.com",
+            "position": "Network Administrator"
+        },
+        {
+            "company": "Geofeelings (project, Made During College)",
+            "summary": "I worked on the information security and risk management team doing all things security. Eventually I took over the development of an effort to deployments and between the data. It was crucial to make it possible for new products that produced and back end to end users on a new set-up.",
+            "website": "http://geofeelings-project-made-during-college.com",
+            "position": "Technical Support Respresentative"
+        },
+        {
+            "company": "Upwork",
+            "summary": "I was responsible for the development and management of automated online data whose data is used to work on google, and.",
+            "website": "http://upwork.com",
+            "position": "Senior Software Engineer, Data Clarity",
+            "highlights": [
+                "create big data apps / external web studio to replace 10 bulk payment system",
+                "Developed booking webapp for use in hotels.",
+                "learning system"
+            ]
+        },
+        {
+            "company": "Elead Crm | Data Software Solutions, Llc",
+            "summary": "Worked on many ruby projects while mostly written by. In charge of Linux server instances across a virtual world of open source code.",
+            "website": "http://elead-crm-data-software-solutions-llc.com",
+            "position": "Senior Software Engineer, Technical Project Lead & Onsite Coordinator",
+            "highlights": [
+                "test and troubleshoot prototypes of application systems",
+                "built new postgresql tables front-end and CSS",
+                "introduced perfected skills at modx, Drupal, and, scheduling logic"
+            ]
+        }
+    ]
+}

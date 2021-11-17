@@ -1,0 +1,58 @@
+{
+    "basics": {
+        "label": "Stack Architect",
+        "summary": "I am a software engineer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
+    },
+    "interests": [
+        {
+            "name": "Sports / Exercise"
+        },
+        {
+            "name": "Effective Altruism"
+        },
+        {
+            "name": "Autosports"
+        },
+        {
+            "name": "Mountainbiking"
+        }
+    ],
+    "work": [
+        {
+            "company": "Stylect",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://stylect.com",
+            "position": "Web Developer / Designer / Master"
+        },
+        {
+            "company": "Ubelly Microsoft",
+            "summary": "I was responsible for the development and management of automated online data whose data is used to work on all new 1.",
+            "website": "http://ubelly-microsoft.com",
+            "position": "Web Developer / Project Leader",
+            "highlights": [
+                "implemented a workstation setup sheet to help configure the system to transfer orders from the sketch",
+                "SQL server / batch data processing for all storage."
+            ]
+        },
+        {
+            "company": "Morango",
+            "summary": "I was given the chance to do an internship program in which it became an expert at developing the internal system for an internal hosting environment.",
+            "website": "http://morango.com",
+            "position": "Software Developer (contract)",
+            "highlights": [
+                "managed logistics operations",
+                "Introduced tied to test automation and development practices."
+            ]
+        },
+        {
+            "company": "Jsc",
+            "summary": "is a company that provides it training from professionals for professionals",
+            "website": "http://jsc.com",
+            "position": "Software Engineer / Team Lead",
+            "highlights": [
+                "worked with and debugged large stack code and fixes",
+                "continuous integration"
+            ]
+        }
+    ]
+}

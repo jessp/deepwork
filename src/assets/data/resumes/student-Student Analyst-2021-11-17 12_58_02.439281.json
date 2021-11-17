@@ -1,0 +1,27 @@
+{
+    "basics": {
+        "label": "Student Analyst",
+        "summary": "I am a software engineer who is looking to join a team that solves interesting and challenging problems with innovative technology."
+    },
+    "interests": [
+        {
+            "name": "Board Games"
+        },
+        {
+            "name": "Electronic Music Production"
+        }
+    ],
+    "work": [
+        {
+            "company": "Primesoft",
+            "summary": "Worked on small to medium sized businesses in order to deliver strategic and technology stack to deliver dynamic web platforms and product.",
+            "website": "http://primesoft.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "Adhere to and company to increase the code from several different computing environments.",
+                "led big data technology team to provide support to the 50 members of our employees to improve performance and our environment",
+                "worked with vendors in support over million sales operations involving initiatives and vendors"
+            ]
+        }
+    ]
+}

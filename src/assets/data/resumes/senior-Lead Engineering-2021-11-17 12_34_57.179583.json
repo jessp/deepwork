@@ -1,0 +1,75 @@
+{
+    "basics": {
+        "label": "Lead Engineering",
+        "summary": "I have been building applications using various languages and technologies for almost 6 years. I am currently working as a senior software developer at test systems. In my spare time, I have been working with graph databases, machine learning algorithms on big data sources and reading about new technologies. I am looking for a position in an agile environment within a small team of developers."
+    },
+    "interests": [
+        {
+            "name": "Computer Vision"
+        },
+        {
+            "name": "Reading"
+        }
+    ],
+    "work": [
+        {
+            "company": "Viking Education",
+            "summary": "",
+            "website": "http://viking-education.com",
+            "position": "Senior Software Engineer / Software Architect"
+        },
+        {
+            "company": "Hakobio",
+            "summary": "I was hired to help refactor an existing application level 1. developed a new app from concept to use in a python API. The was that managed both cases, and the browser.",
+            "website": "http://hakobio.com",
+            "position": "Senior Software Engineering Consultant",
+            "highlights": [
+                "Create backups for ads and users in the mobile application."
+            ]
+        },
+        {
+            "company": "Edcor Data Services",
+            "summary": "I developed web applications for our clients and became highly skilled at optimizing SQL for very light websocket server and apps.",
+            "website": "http://edcor-data-services.com",
+            "position": "Senior Software Engineer / Scrum Master (contract)",
+            "highlights": [
+                "developed query optimization software engine that reduced the software launches based on",
+                "Created new text form builder for with business services.",
+                "Lead platform in a phase 1,. Included in html, and javascript API."
+            ]
+        },
+        {
+            "company": "Equal Experts",
+            "summary": "The biggest challenge was the creation of the information and systems built and extended functionality to the business.",
+            "website": "http://equal-experts.com",
+            "position": "Lead Developer",
+            "highlights": [
+                "played a key role in introducing automation of the security processes for the design of mobile application",
+                "designed and built a system to automatically create and email messages",
+                "Analysis of platform within the office."
+            ]
+        },
+        {
+            "company": "Digitalocean Go Api & Cli Fish",
+            "summary": "Worked on a variety of projects, mostly by web design and implementing new features.",
+            "website": "http://digitalocean-go-api-cli-fish.com",
+            "position": "Web Developer / Designer",
+            "highlights": [
+                "engineered the in-house Atlassian solution with",
+                "oracle rdbms",
+                "implemented first bgp environment within the Linux system (Ubuntu, Fedora)"
+            ]
+        },
+        {
+            "company": "Robert Half Technology",
+            "summary": "Is a company that provides a SaaS location intelligence platform (free and paid version), the way and its primary responsibility to oversee and coordinate all the industrial infrastructure / tasks.",
+            "website": "http://robert-half-technology.com",
+            "position": "Senior Software Engineer",
+            "highlights": [
+                "experience of working on my real performance testing",
+                "successfully coached on-board other programmers on the project (I, became big that has over 10 people, including management, papers, and cash",
+                "Collaborated with local and offshore development teams."
+            ]
+        }
+    ]
+}

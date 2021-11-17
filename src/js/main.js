@@ -9,6 +9,7 @@ import {ThoughtLeadership} from './thought-leadership-demo';
 import {PhotoSlider} from './photo-slider';
 import {StudioB} from './studio-b';
 import {StudioA} from './studio-a';
+import {Resume} from './resume';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -54,6 +55,8 @@ function init() {
   const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 0, 8);
   new PhotoSlider("#studioB1", 0, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
+
+  new Resume("#resume");
 
   //TODO PLACEHOLDER
   d3.select("#B")

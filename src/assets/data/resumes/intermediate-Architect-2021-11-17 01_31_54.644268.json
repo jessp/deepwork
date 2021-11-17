@@ -1,0 +1,75 @@
+{
+    "basics": {
+        "label": "Architect",
+        "summary": "I am a full stack web developer who loves working with open source technology. I work best in planning the architecture of web applications and their development life."
+    },
+    "interests": [
+        {
+            "name": "Emerging Technology"
+        },
+        {
+            "name": "Low Level Programming"
+        },
+        {
+            "name": "Mesh Networking"
+        }
+    ],
+    "work": [
+        {
+            "company": "Albright Patents",
+            "summary": "Worked on a project for what albright patents parks & resorts, one of the oldest and the biggest accounts of the company, migrating from a legacy PHP platform to angular. J's with node. albright patents' and jquery.",
+            "website": "http://albright-patents.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "improved design, the workflow code base and by writing for integrating 100 external appears with other team members that can easily maintainable less"
+            ]
+        },
+        {
+            "company": "Netbel",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://netbel.com",
+            "position": "Web Developer / Designer",
+            "highlights": [
+                ". Com",
+                "designed and developed websites for clients for being and systems to automate away systems and workflow standards",
+                "created a fully featured conference and resources on company business knowledge, working, and applying knowledge"
+            ]
+        },
+        {
+            "company": "Atk",
+            "summary": "is a company that provides a SaaS location intelligence platform (free, paid version, search and the company's cloud offering people",
+            "website": "http://atk.com",
+            "position": "Senior Software Engineer, Corporate Applications"
+        },
+        {
+            "company": "Connect",
+            "summary": "Is a mobile based, crowdsourcing, market information tool for agriculture in Melbourne,. Developed and implemented solutions for national security organizations.",
+            "website": "http://connect.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Design, evaluation, selection, and implementation of user interface.",
+                "Worked extensively on new technologies as part of the cross platform and end architecture."
+            ]
+        },
+        {
+            "company": "Apple Inc",
+            "summary": "the website is built around the amazon infrastructure and business platforms you will be installed using",
+            "website": "http://apple-inc.com",
+            "position": "Software Engineer, Consultant",
+            "highlights": [
+                "developed database stored procedures in SQL server",
+                "deep understanding of  algorithms java",
+                "worked with real life cycle on projects"
+            ]
+        },
+        {
+            "company": "Tidinio",
+            "summary": "We are a team of developers / designers to deliver custom tailored solutions for a range of clients from the business and it consulting work.",
+            "website": "http://tidinio.com",
+            "position": "Web Developer / Designer",
+            "highlights": [
+                "advocate customer relationships with business units"
+            ]
+        }
+    ]
+}

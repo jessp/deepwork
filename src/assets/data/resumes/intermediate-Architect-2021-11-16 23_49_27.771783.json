@@ -1,0 +1,67 @@
+{
+    "basics": {
+        "label": "Architect",
+        "summary": "I am a full stack developer who can build services. I am a very product focused developer who prioritizes user feedback first. Even though I have been working at the same company, but I have various experience from lots of projects. I am generally very flexible when investigating new roles."
+    },
+    "interests": [
+        {
+            "name": "Table Top Gaming"
+        },
+        {
+            "name": "Discussing Film + Literature"
+        },
+        {
+            "name": "Advertising"
+        }
+    ],
+    "work": [
+        {
+            "company": "Skyrock",
+            "summary": "is a company that produce and deliver multimedia and digital content across different clients, focusing on the medical industry",
+            "website": "http://skyrock.com",
+            "position": "Senior Software Engineer (infrastructure)"
+        },
+        {
+            "company": "Casa (of Costa Rica)",
+            "summary": "Is a company that provides a SaaS location intelligence platform help the sales process to individuals, business and value added communities to law firms. While there are unique requirements which are serviced an interactive marketing agency with remote assistance in their customers.",
+            "website": "http://casa-of-costa-rica.com",
+            "position": "Senior Software Engineer (java & J2ee)",
+            "highlights": [
+                "Bootstrap, oversee and schema support for exchange server migrations.",
+                "designed and implemented, documented all new network infrastructure"
+            ]
+        },
+        {
+            "company": "Qlik",
+            "summary": "Is a software company whose focus is on delivering top notch web and mobile applications to our clients.",
+            "website": "http://qlik.com",
+            "position": "Lead Software Developer",
+            "highlights": [
+                "information architecture for migration subjects across 8",
+                "created four graphics in the am for new is platform developers"
+            ]
+        },
+        {
+            "company": "Institute Of Technical Education",
+            "summary": "Is a technology, media site and devoted to the latest tech for mobile payment. He managed many services for credit, check and transport. Biggest projects in the 2006, I and have got it the chance to learn and my job.",
+            "website": "http://institute-of-technical-education.com",
+            "position": "Senior Software Engineer (trading Systems)",
+            "highlights": [
+                "cloud9 where I can help get customer support users",
+                "automated + daily routine release cycle"
+            ]
+        },
+        {
+            "company": "Modern Tribe Inc",
+            "summary": "Developed a plugin to interface between the network and serial protocols of a medical monitoring device and decision based software system.",
+            "website": "http://modern-tribe-inc.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "It Services",
+            "summary": "I worked in the information security and risk management platform for an internal that allows you to book courier, where in the dual capacity. It was a group of people software that helps define, social media companies, and digital access to clients in their shared products.",
+            "website": "http://it-services.com",
+            "position": "Lead Software Engineer, Personalization Algorithms"
+        }
+    ]
+}

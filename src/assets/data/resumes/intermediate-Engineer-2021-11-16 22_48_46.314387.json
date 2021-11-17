@@ -1,0 +1,74 @@
+{
+    "basics": {
+        "label": "Engineer",
+        "summary": "I am a young professional with an interest for emerging new web technologies and with experience in the digital industry. I am looking for a role that will challenge and broaden my coding knowledge, whilst learning new technologies and languages. I am particularly keen to thrive in a creative environment."
+    },
+    "work": [
+        {
+            "company": "British Council Via Diverse",
+            "summary": "I have worked with several companies like, one, most successful projects have been in several different projects and take on the support of these internet technologies. I have built the logistics information system.",
+            "website": "http://british-council-via-diverse.com",
+            "position": "Software Engineer (remote)",
+            "highlights": [
+                "internal satisfaction analysis and improvement",
+                "modifying users with complex point of service"
+            ]
+        },
+        {
+            "company": "Hyfn",
+            "summary": "Is a company that offers comprehensive and advanced services in the payment card industry.",
+            "website": "http://hyfn.com",
+            "position": "Consultant@ Ernst And Young",
+            "highlights": [
+                "Worked developing , a social media forum board using."
+            ]
+        },
+        {
+            "company": "Georgia Intelligence Systems",
+            "summary": "Is a platform that allows citizens to hold government agencies and directly with the people who have your products.",
+            "website": "http://georgia-intelligence-systems.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "Cyberspace Solutions",
+            "summary": "",
+            "website": "http://cyberspace-solutions.com",
+            "position": "Java Ee Engineering Consultant",
+            "highlights": [
+                "Configured and maintained DNS infrastructure from aws, with iscsi San, and managed logistics operations. This needed best various clients was technical moved to to wifi events. From the environment to the provide data from exchange and other store integrations.",
+                "After being closed and evaluated all the appropriate web technologies to production."
+            ]
+        },
+        {
+            "company": "Ubisoft",
+            "summary": "",
+            "website": "http://ubisoft.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "",
+            "summary": "Is a company that provides a SaaS location intelligence platform help sales process to individuals business and businesses.",
+            "website": "http://.com",
+            "position": "Senior Software Engineer, Data Clarity",
+            "highlights": [
+                "supervision of department of content and systems staff",
+                "Tested larval and prototype,,.",
+                "managed social media and marketing executives"
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "name": "Motorsports"
+        },
+        {
+            "name": "Mountain Biking"
+        },
+        {
+            "name": "Analyse"
+        },
+        {
+            "name": "Writing / Music"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "basics": {
+        "label": "Student",
+        "summary": "I am a young professional with an interest for emerging new web technologies and with experience in the digital industry. I am looking for a role that will challenge and broaden my coding knowledge, whilst learning new technologies and languages. I am particularly keen to thrive in a creative environment."
+    },
+    "interests": [
+        {
+            "name": "Technology"
+        },
+        {
+            "name": "Interesting Place In Wales"
+        },
+        {
+            "name": "Classical Music"
+        },
+        {
+            "name": "Hearthstone"
+        },
+        {
+            "name": "Electrical Engineering"
+        }
+    ],
+    "work": [
+        {
+            "company": "Viet Nam",
+            "summary": "Is a company that produce and deliver multimedia and digital content marketing solutions to enterprises.",
+            "website": "http://viet-nam.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Development Yii framework 1, and. 0 applications for a client, website and desktop of the games department",
+                "worked in a team of 10 + developers in the scrum"
+            ]
+        },
+        {
+            "company": "General Assembly",
+            "summary": "I was responsible for the development and management of automated online data whose data have provided the user experience and technical team not have to ensure that we deliver product at audit and I was done, through to which I had to learn, or consulting work to from another project from the simple net and now during these two years.",
+            "website": "http://general-assembly.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Developed graph database using the form.",
+                "developed an agile approach project using scrum as a project on react",
+                "support and coordination of the business, product, while structuring and maintaining the processes"
+            ]
+        }
+    ]
+}

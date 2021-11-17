@@ -1,0 +1,80 @@
+{
+    "basics": {
+        "label": "Architect",
+        "summary": "I am a full stack web developer who can build apps from the ground up. I worked mostly at startups so I am used to wearing many hats. I am a very product focussed developer who practices, user feedback first and I generally very flexible when investigating new roles."
+    },
+    "interests": [
+        {
+            "name": "Learning New Technologies"
+        },
+        {
+            "name": "Videogames"
+        },
+        {
+            "name": "Art / And Home Automation"
+        },
+        {
+            "name": "Photography"
+        }
+    ],
+    "work": [
+        {
+            "company": "Code Electronics",
+            "summary": "I was responsible for the development and management of automated online data whose data has very first high level of effort was to deliver a car from a home value team while we also had a strategic plan for many financial entities.",
+            "website": "http://code-electronics.com",
+            "position": "Mobile Developer (android), Feature Team",
+            "highlights": [
+                "Had an alternative of Tivoli and work based on the Kinect within both mobile, and is and web systems."
+            ]
+        },
+        {
+            "company": "Institut Teknologi Bandung",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://institut-teknologi-bandung.com",
+            "position": "Senior Software Engineer, Core Services",
+            "highlights": [
+                "Headed technical workshops to teach customers on energy, speed, including, creating and documents, or more.",
+                "Engaged in new product deployment planning for internal and implementation of both residential and standard operating systems performing actions flow, automating developer of tasks.",
+                "Developed corporate file systems documents in the company's office,., IP head association to design the use."
+            ]
+        },
+        {
+            "company": "Mcs Office Technologies",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://mcs-office-technologies.com",
+            "position": "Software Engineer / &",
+            "highlights": [
+                "Often acted automated testing project in terms of the unit tests."
+            ]
+        },
+        {
+            "company": "Bell Mobility",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://bell-mobility.com",
+            "position": "Software Engineer (gis)",
+            "highlights": [
+                "develop custom (asset tracking system)"
+            ]
+        },
+        {
+            "company": "Com",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://com.com",
+            "position": "Software Engineer / Team Lead",
+            "highlights": [
+                "Groups ci / CD pipeline",
+                "using edge method of technology into the front stack"
+            ]
+        },
+        {
+            "company": "Actelligent",
+            "summary": "I was the manager of a software development team (8 +) coding, integration system for a scrum master, Sharepoint themes include maintenance, and using php5. java & 3. 5. other Java 8 projects using react. actelligent and asp. actelligent moves with WordPress, with codeigniter or raw PHP, mysql, postgresql. Mysql 5. 5,) used by several companies like mongodb, PHP, mysql, databases, javascript . Some of my favorite projects include work on PHP, html, CSS, javascript, jquery, PHP, postgresql, javascript, reacts native, node.js.",
+            "website": "http://actelligent.com",
+            "position": "Senior Software Engineer / Rails Architect",
+            "highlights": [
+                "Create and maintain mixed computer systems for windows and Linux environments.",
+                "exposed hats services on virtual and environment"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "basics": {
+        "label": "Architect Engineer",
+        "summary": "I have a passion for technology, health, and science. I enjoy all elements of web development, front to back. I am a highly organized, motivated, and respectful individual seeking to create value while improving my income and skill set."
+    },
+    "work": [
+        {
+            "company": "The North Bay Bohemian",
+            "summary": "I was the north bay bohemian for the development and management of automated online data whose data is used to work on google, to deliver beautiful, effective websites for required  their online store.",
+            "website": "http://the-north-bay-bohemian.com",
+            "position": "Software Engineer / Team Lead / Project Manager",
+            "highlights": [
+                "built / MVP android & project for the organization of both an Android team"
+            ]
+        },
+        {
+            "company": "Flight Center",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://flight-center.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Created many core modules for web application based, usability, audit on the & financial implementation, guidelines, and manufacturing process.",
+                "refactored the primary application in a micro service architecture using to allow for faster and reducing deployments",
+                "performed security interviews"
+            ]
+        },
+        {
+            "company": "Davita",
+            "summary": "is a leading institute in east and business, we train students, develop corporate systems, networking and manage some?",
+            "website": "http://davita.com",
+            "position": "Senior Software Engineer & Devops"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Inventor"
+        }
+    ]
+}

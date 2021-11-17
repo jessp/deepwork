@@ -1,0 +1,69 @@
+{
+    "basics": {
+        "label": "Developer",
+        "summary": "I am a full stack developer who enjoys working in an agile environment with a collaborative team. I am passionate about creating modular, scalable, smart looking web apps. I enjoy balancing the need for test driven and benchmark driven development, modern creative design, and task completion efficiency and quality."
+    },
+    "work": [
+        {
+            "company": "Virginia Tech Center",
+            "summary": "Is a technology platform for online sports information. It has created a network of schedules, stories, and stats that teams can share with fans and with. Sports. Clients included the event targeted retailers, as well the social media output and has placed upon on the account ownership of our 100% were",
+            "website": "http://virginia-tech-center.com",
+            "position": "Software Engineer (contract)"
+        },
+        {
+            "company": "Totally",
+            "summary": "A digital entertainment company where I worked on a consumer subscription web app.",
+            "website": "http://totally.com",
+            "position": "Software Developer",
+            "highlights": [
+                "iOS development"
+            ]
+        },
+        {
+            "company": "Blueroof 360",
+            "summary": "",
+            "website": "http://blueroof-360.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "contributed to open source storage cloud product",
+                "met with the department, which included planning and full client side"
+            ]
+        },
+        {
+            "company": "Tgrape",
+            "summary": "Is a software company whose focus is on delivering top notch web and mobile applications to our clients.",
+            "website": "http://tgrape.com",
+            "position": "Software Engineer / Team Lead",
+            "highlights": [
+                "writing, ranking and prioritizing user stories",
+                "Network maintenance for storage (Linux, OS x)."
+            ]
+        },
+        {
+            "company": "Intelligent Mechatronics Systems",
+            "summary": "a web development company that time between adding features and integrating new features into the existing web app",
+            "website": "http://intelligent-mechatronics-systems.com",
+            "position": "Software Engineer, Platform Organization"
+        },
+        {
+            "company": "Digital",
+            "summary": "is a leading employer and renowned specialist in enterprise application",
+            "website": "http://digital.com",
+            "position": "Web Developer / Designer"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Hobbies"
+        },
+        {
+            "name": "The Universe"
+        },
+        {
+            "name": "Optimization Of Analizing And Monitoring Tool Of Product Engineering To Improve Performance As Departament"
+        },
+        {
+            "name": "Creativity"
+        }
+    ]
+}

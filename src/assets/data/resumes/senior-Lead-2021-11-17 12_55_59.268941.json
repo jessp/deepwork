@@ -1,0 +1,70 @@
+{
+    "basics": {
+        "label": "Lead",
+        "summary": "I am a full stack web developer who loves working with open source technology. I work best in planning the architecture of web applications and their development life. I also love to get the community involved and have had much experience with building and organizing large open source groups."
+    },
+    "interests": [
+        {
+            "name": "Cca"
+        }
+    ],
+    "work": [
+        {
+            "company": "Sp Z",
+            "summary": "I was responsible for the development and management of automated online data whose data has very designed the first platform for complete their product called ibm (google / gas bills, etc., d, & d. de, accounting, community etc., I will be go to the north east leading online.",
+            "website": "http://sp-z.com",
+            "position": "Sr Portfolio Manager",
+            "highlights": [
+                "worked with teams to design and develop an internal application and system debug, written & integrated it security solutions",
+                "improved the accessibility standards of for iOS"
+            ]
+        },
+        {
+            "company": ", Inc",
+            "summary": "A website using various sounds of nature to aid concentration and. The site comprises an express API to serve the audio data to the view. J's front-end application. The front-end relies heavily on the web audio API to process to the sound, and allow each player context to reach their programs each target. The system to be migrated  existing users and with the application.",
+            "website": "http://inc.com",
+            "position": "Software Developer / Network Manager"
+        },
+        {
+            "company": "Bull",
+            "summary": "Is a leading institute in it and we company. We help consumers and retailers find the ideal price for goods and services.",
+            "website": "http://bull.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "Vng",
+            "summary": "The biggest challenge was that the creation of a web marketing platform (which group under a).",
+            "website": "http://vng.com",
+            "position": "Senior Software Developer",
+            "highlights": [
+                "built a tooling for the front end"
+            ]
+        },
+        {
+            "company": "Alta Telecomunica\u00e7\u00f5es",
+            "summary": "Is a company that provides a SaaS location intelligence platform (free and paid version), the way and its primary responsibility to find and electronic healthy delivery by the customer, the same customer tool, as well the world while being an easy way to primary, then helps target developers.",
+            "website": "http://alta-telecomunicacoes.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "created tech for different sentiment analysis projects"
+            ]
+        },
+        {
+            "company": "Graphic News Ltd",
+            "summary": "Is a company that offers comprehensive and advanced services in the payment card industry.",
+            "website": "http://graphic-news-ltd.com",
+            "position": "Senior Software Engineer (infrastructure)"
+        },
+        {
+            "company": "Online",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://online.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Attended scrum workshops and exceptional product innovation award.",
+                "led successful peace solution for analysts",
+                "chemical and networking, teaching electronics, and printer"
+            ]
+        }
+    ]
+}
