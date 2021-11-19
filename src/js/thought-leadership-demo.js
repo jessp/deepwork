@@ -10,6 +10,9 @@ export class ThoughtLeadership {
 	}
 
 	reqData(val1, val2, firstTry){
+		const t = this.content.transition()
+        	.duration(750);
+
 		fetch(`assets/data/tweets/${val1}_${val2}_tweets.csv`).then(response => {
 		  if (!response.ok) {
 		    return null;
@@ -28,7 +31,7 @@ export class ThoughtLeadership {
 					.data(data, d => d.tweets)
 					.join(
 				        enter => enter.append("div")
-				            .attr("class", "deepwork-social")
+				            .attr("class", "deepwork-social fade-in")
 				            .html(function(d){
 				            	return `<div class="social-icon">
 									<img inline src='assets/images/svgs/circle.svg'>
@@ -44,6 +47,10 @@ export class ThoughtLeadership {
 									</div>
 								</div>`
 				            })
+				            .style("margin-left", "-500px")
+				            .call(enter => enter.transition(t)
+				            	.delay((d, i) => i * 100)
+				            	.style("margin-left", "0px"))
 				    )
 			}
 		})

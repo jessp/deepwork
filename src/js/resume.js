@@ -33,7 +33,7 @@ export class Resume {
 			.sort((a, b) => b - a);
 
 		const intro = 
-			`<div>
+			`<div class="fade-in">
 				<div>
 					<h3>${data.basics.label}</h3>
 					<p>${data.basics.summary}</p>
