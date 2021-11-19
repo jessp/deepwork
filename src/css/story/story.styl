@@ -5,7 +5,8 @@ $story-gray-light = #F0F0F0
 $story-gray-mid = #E8E8E9
 $border-rad = 6px
 $main-width = 60rem
-$menu-width = 70rem
+$menu-width-des = 70rem
+$menu-width-tab = 45rem
 
 body
 	background: rgb(245,241,249)
@@ -157,19 +158,21 @@ span
 	display: grid
 	column-gap: 3rem
 	row-gap: 3rem
+	width: 100%
 	max-width: 30rem
 	grid-template-columns: 1fr
 	grid-template-rows: 1fr 1fr 1fr 1fr
 	margin: 0 auto
 	+mq('bp-5')
-		width: 100%
-		max-width: 100%
+		width: $menu-width-tab
+		max-width: $menu-width-tab
+		margin: 0 auto
 		grid-template-columns: 1fr 1fr
 		grid-template-rows: 1fr 1fr
 	+mq('bp-7')
 		width: $menu-width
-		max-width: $menu-width
-		margin-left: "calc((%s - %s)/2 * -1)" % ($menu-width $main-width)
+		max-width: $menu-width-des
+		margin-left: "calc((%s - %s)/2 * -1)" % ($menu-width-des $main-width)
 		grid-template-columns: 1fr 1fr 1fr 1fr
 		grid-template-rows: 1fr
 
@@ -181,9 +184,12 @@ span
 	+mq('bp-7')
 		grid-template-areas: "price price pic pic" "description description description description" "button button button button"
 	.price-holder
+		padding-right: 1rem
 		grid-area: price
 		p, h3
 			margin: 0px
+		h3
+			white-space: nowrap
 		p.price
 			set-type-size(xxxx-large, false)
 			font-weight: 500
@@ -192,11 +198,13 @@ span
 			set-type-size(small, false)
 	.menu-pic
 		grid-area: pic
-		background-size: cover
-		aspect-ratio: 16/9
-		width:250px
 		+mq('bp-7')
-			width:150px
+				width:150px
+		img
+			width: auto
+			height:200px
+			+mq('bp-7')
+				height:100px
 	.menu-descrip
 		grid-area: description
 		p
