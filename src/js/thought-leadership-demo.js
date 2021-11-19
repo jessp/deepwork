@@ -55,7 +55,6 @@ export class ThoughtLeadership {
 
 		theThing.select(`option[value="${theInf}"]`)
 				.property("disabled", true);
-
 	}
 
 	init(){

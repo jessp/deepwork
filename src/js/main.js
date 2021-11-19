@@ -56,7 +56,7 @@ function init() {
   new PhotoSlider("#studioB1", 0, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 
-  new Resume("#resume");
+  new Resume("#resume", "intermediate");
 
   //TODO PLACEHOLDER
   d3.select("#B")
