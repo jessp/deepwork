@@ -1,30 +1,41 @@
-<div class="story-block">
-	<div class="story-text">
-		<h2>{{title}}</h2>
-		{{#ifEquals this.which 'resume'}}
-			{{> story/resume }}
-		{{/ifEquals}}
-		{{#ifEquals this.which 'photo-studio'}}
-			{{> story/photo-studio }}
-		{{/ifEquals}}
-		{{#ifEquals this.which 'thought-leadership'}}
-			{{> story/thought-leadership }}
-		{{/ifEquals}}
-		{{#ifEquals this.which 'video-call'}}
-			{{> story/video-call }}
-		{{/ifEquals}}
+<section>
+	<div class="single-col">
+		{{#if content.title}}
+			<h2>{{content.title}}</h2>
+		{{/if}}
+		{{#if content.subtitle}}
+			<h3>{{content.subtitle}}</h3>
+		{{/if}}
+		{{#each content.lead}}
+			<p>{{this.text}}</p>
+		{{/each}}
 	</div>
-	<div class="story-pic">
-		<div class="feature-content" id={{this.which}}>
-			{{#ifEquals this.which 'resume'}}
-				{{> story/resume-demo }}
-			{{/ifEquals}}
-			{{#ifEquals this.which 'photo-studio'}}
-				{{> story/photo-studio-demo }}
-			{{/ifEquals}}
-			{{#ifEquals this.which 'thought-leadership'}}
-				{{> story/thought-leadership-demo }}
-			{{/ifEquals}}
+	<div class="story-block">
+		<div class="instructions">
+			{{#each content.instructions}}
+				<p>{{this.text}}</p>
+			{{/each}}
+		</div>
+		<div class="story-text">
+			{{#each content.content}}
+				<p>{{this.text}}</p>
+			{{/each}}
+		</div>
+		<div class="story-pic">
+			<div class="feature-content" id={{this.which}}>
+				{{#ifEquals this.which 'resume'}}
+					{{> story/resume-demo }}
+				{{/ifEquals}}
+				{{#ifEquals this.which 'photo-studio'}}
+					{{> story/photo-demo-a }}
+				{{/ifEquals}}
+				{{#ifEquals this.which 'photo-studio-b'}}
+					{{> story/photo-demo-b }}
+				{{/ifEquals}}
+				{{#ifEquals this.which 'thought-leadership'}}
+					{{> story/thought-leadership-demo }}
+				{{/ifEquals}}
+			</div>
 		</div>
 	</div>
-</div>
+</section>

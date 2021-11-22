@@ -1,7 +1,7 @@
 <div class="menu-item">
 	<div class="menu-item-wrapper">
 		<div class="price-holder">
-			<h3 class="package all-caps">Entry Level</h3>
+			<h3 class="package all-caps">{{content.title}}</h3>
 			<p class="price">$29</p>
 			<p class="duration">/month</p>
 		</div>
@@ -9,12 +9,10 @@
 			<img src="assets/images/{{illustration}}"/>
 		</div>
 		<div class="menu-descrip">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			</p>
+			<p>{{content.lead.0.text}}</p>
 		</div>
 		<div class="menu-button">
-			<button class="all-caps">More About Entry Level</button>
+			<button class="all-caps">More About {{content.title}}</button>
 		</div>
 	</div>
 </div>

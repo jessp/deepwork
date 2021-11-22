@@ -9,9 +9,12 @@ export class ThoughtLeadership {
     	this.init();
 	}
 
-	reqData(val1, val2, firstTry){
-		const t = this.content.transition()
+	getTransition(){
+    	return this.content.transition()
         	.duration(750);
+    }
+
+	reqData(val1, val2, firstTry){
 
 		fetch(`assets/data/tweets/${val1}_${val2}_tweets.csv`).then(response => {
 		  if (!response.ok) {
@@ -48,7 +51,7 @@ export class ThoughtLeadership {
 								</div>`
 				            })
 				            .style("margin-left", "-500px")
-				            .call(enter => enter.transition(t)
+				            .call(enter => enter.transition(this.getTransition())
 				            	.delay((d, i) => i * 100)
 				            	.style("margin-left", "0px"))
 				    )

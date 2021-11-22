@@ -1,18 +1,22 @@
-<div class="photo-studio-main" style="background-image:url(https://www.fillmurray.com/500/360)"></div>
-<div class="demo-body photo-studio-controls">
-	<div class="photo-selecter">
-		<h3>Mix Your Pics</h3>
-		{{> story/input steps="9" id="pic-mix" zero="Photo A" maxVal="Photo B" value="0"}}
-		<h3>Photo A</h3>
-		<div id="studioB1">
-			<input type="range" class="photo-select"/>
-			<div class="photo-grid">
-			</div>
-		</div>
-		<h3>Photo B</h3>
-		<div id="studioB2">
-			<input type="range" class="photo-select"/>
-			<div class="photo-grid">
+<div class="photo-studio-holder">	
+	<div class="photo-studio-container" id="studio-b-container">
+		<div class="photo-studio-main" style="background-image:url(https://www.fillmurray.com/500/360)"></div>
+		<div class="demo-body photo-studio-controls">
+			<div class="photo-selecter">
+				<h3>Mix Your Pics</h3>
+				{{> story/input steps="9" id="pic-mix" zero="Photo A" maxVal="Photo B" value="0"}}
+				<h3>Photo A</h3>
+				<div id="studioB1">
+					<input type="range" class="photo-select"/>
+					<div class="photo-grid">
+					</div>
+				</div>
+				<h3>Photo B</h3>
+				<div id="studioB2">
+					<input type="range" class="photo-select"/>
+					<div class="photo-grid">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

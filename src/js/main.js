@@ -58,14 +58,6 @@ function init() {
 
   new Resume("#resume", "intermediate");
 
-  //TODO PLACEHOLDER
-  d3.select("#B")
-    .on("click", d => d3.selectAll(".photo-studio-holder .photo-studio-container")
-        .style("top", "-100%"))
-
-  d3.select("#A")
-    .on("click", d => d3.selectAll(".photo-studio-holder .photo-studio-container")
-        .style("top", "0px"))
 }
 
 init();

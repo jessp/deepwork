@@ -8,7 +8,9 @@
 		"node": "14.17.3"
 	},
 	"dependencies": {
+		"gulp-imagemin": "^7.1.0",
 		"lodash.debounce": "^4.0.8",
+		"n": "^8.0.0",
 		"nouislider": "15.4.0"
 	},
 	"devDependencies": {
@@ -24,8 +26,8 @@
 		"eslint-plugin-import": "2.24.1",
 		"eslint-plugin-prettier": "3.4.0",
 		"handlebars": "4.7.7",
-		"imagemin": "8.0.1",
-		"imagemin-mozjpeg": "9.0.0",
+		"imagemin": "^7.0.1",
+		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-pngquant": "9.0.2",
 		"inline-source": "7.2.0",
 		"light-server": "2.9.1",

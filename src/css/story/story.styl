@@ -4,9 +4,11 @@
 $story-gray-light = #F0F0F0
 $story-gray-mid = #E8E8E9
 $border-rad = 6px
-$main-width = 60rem
-$menu-width-des = 70rem
-$menu-width-tab = 45rem
+$main-width = 50em
+$title-width = 40em
+$single-col = 30em
+$menu-width-des = 65em
+$menu-width-tab = 45em
 
 body
 	background: rgb(245,241,249)
@@ -17,13 +19,17 @@ body
 *
 	box-sizing: border-box
 
+h1
+	font-family: $lyon
+	set-type-size(xxxx-large, true)
+
 h2
 	set-type-size(xx-large, true)
 
 h3
 	font-family: 'DM Sans', sans-serif
 	font-weight: 500
-	set-type-size(small, true)
+	set-type-size(root, true)
 
 p
 	font-family: 'DM Sans', sans-serif
@@ -39,13 +45,27 @@ span
 .all-caps
 	text-transform: uppercase
 
+.single-col
+	max-width: $single-col
+	> h3
+		text-transform:uppercase
+
 #content
 	max-width: $main-width
 	margin:0 auto
 	padding: 0 25px
+	> *:not(.menu-holder)
+		margin-left: auto
+		margin-right: auto
+
+.title-block
+	max-width: $title-width
+	text-align: center
+	h1
+		margin: 3.125rem 0px
 
 .story-pic
-	margin: 0 auto
+	margin: 2rem auto
 	.feature-content
 		background-color: #FFFFFF
 		border: #F9F9F9 5px solid
@@ -57,40 +77,49 @@ span
 		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3)
 		padding: 3rem 1rem
 
+section
+	width: auto
+	> div h2
+		margin-top: 5rem
+	> *
+		margin-left: auto
+		margin-right: auto
+
 .story-block
-	margin-top: 5rem
-	display: block
-	+mq('bp-3')
-		.feature-content
-			width: 350px
-			height: 700px
-			position: -webkit-sticky
-			position: sticky
-			top: 0px
+	display: grid
+	grid-template-columns: auto
+	grid-template-rows: min-content min-content min-content
+	grid-template-areas: "instructions" "pic" "text"
+	.story-text
+		grid-area: text
+	.story-pic
+		grid-area: pic
+	.instructions
+		margin: 2rem auto
+		grid-area: instructions
+		p
+			font-family: $lyon
+			font-size: 22px
+			line-height: 1.4
+			margin: 0px
+	.feature-content
+		width: 350px
+		height: 700px
 	+mq('bp-4')
-		display: grid
 		grid-template-columns: auto auto
-		grid-template-areas: "pic text"
-		.story-text
-			grid-area: text
-			margin-left: 2 rem
-		.story-pic
-			grid-area: pic
+		grid-template-rows: min-content 100%
+		grid-template-areas: "pic instructions" "pic text"
+		grid-column-gap: 2 rem
 		.feature-content
 			width: 300px
 			height: 600px
+		.instructions
+			margin: 2rem 0px
 	+mq('bp-5')
-		.story-text
-			margin-left: 3 rem
+		grid-column-gap: 3 rem
 		.feature-content
 			width: 350px
 			height: 700px
-
-.story-text
-	p:first-of-type
-		text-transform: uppercase
-		set-type-size(small, false)
-		font-weight: 500
 
 .demo-header
 	p
@@ -166,11 +195,11 @@ span
 	+mq('bp-5')
 		width: $menu-width-tab
 		max-width: $menu-width-tab
-		margin: 0 auto
+		margin: 3rem auto 5rem auto
 		grid-template-columns: 1fr 1fr
 		grid-template-rows: 1fr 1fr
 	+mq('bp-7')
-		width: $menu-width
+		width: $menu-width-des
 		max-width: $menu-width-des
 		margin-left: "calc((%s - %s)/2 * -1)" % ($menu-width-des $main-width)
 		grid-template-columns: 1fr 1fr 1fr 1fr
@@ -181,6 +210,14 @@ span
 	grid-template-columns: auto auto min-content min-content
 	grid-template-rows: min-content 2fr min-content
 	grid-template-areas: "price price pic pic" "description description description description" "button button button ."
+	.menu-descrip
+		height: 150px
+		overflow: hidden
+		-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+  	mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+		p
+			set-type-size(root, false)
+			line-height: 1.4
 	+mq('bp-7')
 		grid-template-areas: "price price pic pic" "description description description description" "button button button button"
 	.price-holder
@@ -188,8 +225,6 @@ span
 		grid-area: price
 		p, h3
 			margin: 0px
-		h3
-			white-space: nowrap
 		p.price
 			set-type-size(xxxx-large, false)
 			font-weight: 500
@@ -207,8 +242,6 @@ span
 				height:100px
 	.menu-descrip
 		grid-area: description
-		p
-			set-type-size(root, true)
 	.menu-button
 		grid-area: button
 		button

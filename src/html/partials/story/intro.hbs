@@ -1,14 +1,18 @@
-<div class='intro'>
-	<h1 class='intro__hed'>{{meta.title}}</h1>
-	<p class='intro__dek'>{{meta.description}}</p>
-	<p class='intro__byline'>By
-		<a href='{{meta.author.url}}' target='_blank'>
-			<strong>{{meta.author.name}}</strong>
-		</a>
-	</p>
-	<time class='intro__time'>Month 2019</time>
+<div class="title-block">
+	<h1>{{content.title}}</h1>
 </div>
-
-{{#each content.intro.content}}
-	<p>{{this}}</p>
-{{/each}}
+<div class="single-col">
+	<p>{{content.intro.content.0.text}}</p>
+</div>
+<div class="single-col">
+	<h2>Our Products</h2>
+</div>
+{{> story/menu-holder }}
+<div class="single-col">
+	{{#each content.intro.content}}
+		{{#if @first}}
+		{{else}}
+			<p>{{this.text}}</p>
+		{{/if}}
+	{{/each}}
+</div>
