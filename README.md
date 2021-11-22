@@ -1,3 +1,9 @@
+**Note**: There are too many assets in here to use the regular `npm run start`. :scream: To develop, please transfer your assets to the dev repo using your preferred method, and then use `npm run startalt` to watch everything but the assets folder on the dev server.
+
+
+
+
+
 # The Pudding Starter Template
 
 A starter template for projects.
