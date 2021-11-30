@@ -1,0 +1,16 @@
+<section>
+	<div class="single-col">
+		{{#if content.title}}
+			<h2>{{content.title}}</h2>
+		{{/if}}
+		{{#if content.subtitle}}
+			<h3>{{content.subtitle}}</h3>
+		{{/if}}
+		{{#each content.lead}}
+			<p>{{this.text}}</p>
+		{{/each}}
+		{{#each content.content}}
+			<p>{{this.text}}</p>
+		{{/each}}
+	</div>
+</section>

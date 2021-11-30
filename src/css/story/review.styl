@@ -1,0 +1,34 @@
+//------REVIEW
+#reviews
+	margin-top: 3rem
+	width: 100%
+	display: flex
+	flex-flow: row
+	column-gap: 1.5rem
+	flex-wrap: wrap
+.review
+	width: 100%
+	h3
+		margin-top: 1rem
+	+mq('bp-4')
+		flex: 1 0 250px
+	+mq('bp-5')
+		flex: 1 0
+	margin-bottom: 4rem
+	p
+		margin-top: 1rem
+	.location
+		set-type-size(small, false)
+		margin: 0px
+	.author
+		margin-bottom: 0.25rem
+	.author:before
+		content: "– "
+	.stars
+		width: 100%
+		margin: 0 auto
+		text-align: left
+		svg
+			fill: currentColor
+			width: 20px
+			height: 20px

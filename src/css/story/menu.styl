@@ -1,0 +1,82 @@
+//------MENU
+
+.menu-holder
+	display: grid
+	column-gap: 1.5rem
+	row-gap: 3rem
+	width: 100%
+	max-width: 30rem
+	grid-template-columns: 1fr
+	grid-template-rows: 1fr 1fr 1fr 1fr
+	margin: 0 auto
+	+mq('bp-5')
+		width: $menu-width-tab
+		max-width: $menu-width-tab
+		margin: 3rem auto 5rem auto
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 1fr 1fr
+	+mq('bp-7')
+		width: $menu-width-des
+		max-width: $menu-width-des
+		margin-left: "calc((%s - %s)/2 * -1)" % ($menu-width-des $main-width)
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		grid-template-rows: 1fr
+
+.menu-item
+	h3
+		white-space: break-spaces
+		word-wrap: break-word
+
+.menu-item-wrapper
+	padding: 0.75rem
+	border-radius: 20px
+	&:hover
+		background-color: rgba(0, 0, 0, 0.1)
+	display: grid
+	grid-template-columns: auto auto min-content min-content
+	grid-template-rows: min-content 2fr min-content
+	grid-template-areas: "price price pic pic" "description description description description" "button button button ."
+	.menu-descrip
+		height: 150px
+		overflow: hidden
+		-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+		mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+		p
+			set-type-size(root, false)
+			line-height: 1.4
+	+mq('bp-7')
+		grid-template-areas: "price price pic pic" "description description description description" "button button button button"
+	.price-holder
+		padding-right: 1rem
+		grid-area: price
+		p, h3
+			margin: 0px
+		p.price
+			set-type-size(xxxx-large, false)
+			font-weight: 500
+			line-height: 52px
+		p.duration
+			set-type-size(small, false)
+	.menu-pic
+		grid-area: pic
+		+mq('bp-7')
+				width:150px
+		img
+			width: auto
+			height:200px
+			+mq('bp-7')
+				height:100px
+	.menu-descrip
+		grid-area: description
+	.menu-button
+		grid-area: button
+		font-family: 'DM Sans', sans-serif
+		set-type-size(x-small, false)
+		> div
+			width: fit-content
+			background-color: unset
+			border: 2px solid $gray
+			border-radius: 20px
+			padding: 10px 20px
+			a
+				border-bottom: none

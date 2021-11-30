@@ -1,0 +1,86 @@
+//------VIDEO CALL
+
+.fake-button
+	background-color: #cc3b33
+	border-radius: 0.5rem
+	padding: 0px 0.5rem
+	width: fit-content
+	p
+		margin: 0px
+		set-type-size(small, true)
+
+.icon-button
+	display: flex
+	flex-direction: column
+	text-align: center
+	width: min-content
+	p
+		margin: 0.25rem 0px 0px 0px
+		set-type-size(xx-small, false)
+		line-height: 1
+		white-space: nowrap
+	svg
+		height: 24px
+		margin: 0 auto
+
+.vid
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+
+.video-header
+	height: 45px
+	background-color: $bg-video
+	color: $gray-light
+	position: relative
+	width: 100%
+	padding: 0.5em
+	border-radius: $border-rad $border-rad 0 0
+	> div:nth-of-type(1)
+		float: left
+	> div:nth-of-type(2)
+		position: absolute
+		left: 50%
+		transform: translate(-50%, 0%)
+	> div:nth-of-type(3)
+		float: right
+	> div
+		display: flex
+		flex-direction: column
+		justify-content: center
+		p
+			color: $off-white
+			margin: 0px
+
+.video-holder
+	width:100%
+	aspect-ratio: 1/1
+
+.reactions
+	flex: 1 0
+	background-color: $off-black
+	padding: 0.5rem
+	> div
+		background-color: #3d3d3d
+		margin: 1rem
+		padding: 0.5rem
+		width: calc(100% - 2rem)
+		height: calc(100% - 2rem)
+		border-radius: $border-rad
+	button
+		border-radius: 10px
+		padding: 0.5rem 1rem
+		background-color: $gray-dark
+		margin: 0.25rem
+		color: $white
+		set-type-size(small, false)
+
+.video-buttons
+	height: 55px
+	background-color: $bg-video
+	color: $gray-light
+	display: flex
+	justify-content: space-evenly
+	padding: 0.5em
+	border-radius: 0 0 $border-rad $border-rad

@@ -1,0 +1,39 @@
+//------RESUME
+#resume
+	.pos-grid
+		display: grid
+		grid-auto-flow: column
+		grid-template-columns: min-content auto
+		margin-bottom: 0.5rem
+	.resume-controls
+		display: grid
+		grid-auto-flow: column
+		grid-template-columns: auto min-content
+		column-gap: 1rem
+	p
+		set-type-size(small, true)
+	h4, h5, p
+		margin: 0
+	.work
+		margin-bottom: 2rem
+	h3
+		font-weight: bold
+		font-family: 'DM Sans', sans-serif
+		set-type-size(medium, false)
+	h4
+		font-weight: 500
+		font-family: 'DM Sans', sans-serif
+		set-type-size(root, true)
+		line-height: "calc(%s * 0.875)" % ($type-size.root.line-height)
+	h5, li
+		font-weight: 400
+		font-family: 'DM Sans', sans-serif
+		set-type-size(small, true)
+	.years
+		h5
+			white-space: nowrap
+			padding-right: 0.5rem
+	ul
+		padding-left: 1.5rem
+	li
+		list-style-type: disc
