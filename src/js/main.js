@@ -49,11 +49,11 @@ function init() {
   footer.init();
 
   new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
-  const photoA = new PhotoSlider("#studioA", 5, 9, null);
+  const photoA = new PhotoSlider("#studioA", 6, 9, null);
   const studA = new StudioA("#studio-a-container", photoA);
 
-  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 0, 8);
-  new PhotoSlider("#studioB1", 0, 9, (e) => studB.updateVar(true, e));
+  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8);
+  new PhotoSlider("#studioB1", 2, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 
   new Resume("#resume", "intermediate");
