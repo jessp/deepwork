@@ -10,6 +10,7 @@ import {PhotoSlider} from './photo-slider';
 import {StudioB} from './studio-b';
 import {StudioA} from './studio-a';
 import {Resume} from './resume';
+import {VideoPlayer} from './video';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -57,6 +58,8 @@ function init() {
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 
   new Resume("#resume", "intermediate");
+
+  const vid = new VideoPlayer("#video-call");
 
 }
 
