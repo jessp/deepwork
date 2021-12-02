@@ -53,13 +53,13 @@ function init() {
   const photoA = new PhotoSlider("#studioA", 6, 9, null);
   const studA = new StudioA("#studio-a-container", photoA);
 
-  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8);
+  const vid = new VideoPlayer("#video-call");
+  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8, (a, b, c) => vid.changeVid(a, b, c));
   new PhotoSlider("#studioB1", 2, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 
   new Resume("#resume", "intermediate");
 
-  const vid = new VideoPlayer("#video-call");
 
 }
 
