@@ -6,12 +6,22 @@ export class ThoughtLeadership {
     	this.inf2 = _inf2;
     	this.content = d3.select(_content);
     	this.data = null;
+    	this.picIndex = [5, 9, 1];
     	this.init();
 	}
 
 	getTransition(){
     	return this.content.transition()
         	.duration(750);
+    }
+
+    changePic(a, b, c){
+    	this.picIndex = [a, b, c];
+    	this.content.selectAll(".social-icon")
+    		.select("img")
+    		.attr("src", `assets/images/morphs/morphing_0${this.picIndex[0]}_0${this.picIndex[1]}.jpg`)
+    		.style("margin-left", this.picIndex[2] + "%")
+
     }
 
 	reqData(val1, val2, firstTry){
@@ -35,9 +45,9 @@ export class ThoughtLeadership {
 					.join(
 				        enter => enter.append("div")
 				            .attr("class", "deepwork-social fade-in")
-				            .html(function(d){
+				            .html((d) => {
 				            	return `<div class="social-icon">
-									<img inline src='assets/images/svgs/circle.svg'>
+									<img inline src='assets/images/morphs/morphing_0${this.picIndex[0]}_0${this.picIndex[1]}.jpg' style='margin-left: ${this.picIndex[2]}%'>
 							 	</div>
 							 	<div class="social-content">
 							 		<p>Your Hot Takes</p>
@@ -68,6 +78,7 @@ export class ThoughtLeadership {
 	}
 
 	init(){
+
 		this.id1.property('value', this.inf1);
 		this.id2.property('value', this.inf2);
 

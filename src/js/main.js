@@ -49,12 +49,12 @@ function init() {
   // load footer stories
   footer.init();
 
-  new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
+  const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
   const photoA = new PhotoSlider("#studioA", 6, 9, null);
   const studA = new StudioA("#studio-a-container", photoA);
 
   const vid = new VideoPlayer("#video-call");
-  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8, (a, b, c) => vid.changeVid(a, b, c));
+  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8, (a, b, c) => vid.changeVid(a, b, c), (a, b, c) => thoughtLeader.changePic(a, b, c));
   new PhotoSlider("#studioB1", 2, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 

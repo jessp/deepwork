@@ -1,5 +1,5 @@
 export class StudioB {
-  	constructor(_id, _slider, _position, _max, _picA, _picB, _vidCallback) {
+  	constructor(_id, _slider, _position, _max, _picA, _picB, _vidCallback, _picCallback) {
     	this.id = d3.select(_id);
     	this.slider = d3.select(_slider);
     	this.position = _position;
@@ -7,6 +7,7 @@ export class StudioB {
     	this.picA = _picA;
     	this.picB = _picB;
     	this.vidCallback = _vidCallback;
+    	this.picCallback = _picCallback;
     	this.pic = this.id.select(".photo-studio-main");
     	this.init();
 	}
@@ -35,11 +36,14 @@ export class StudioB {
 
 		if (this.picB > this.picA){
 			this.vidCallback(this.picA + 1, this.picB + 1, this.position);
+			this.picCallback(this.picA + 1, this.picB + 1, this.position * -100);
 		} else if (this.picB === this.picA) {
 			const otherVid = this.picA === 0 ? 2 : 1;
 			this.vidCallback(this.picA + 1, otherVid, 0);
+			this.picCallback(this.picA + 1, otherVid, 0);
 		} else {
-			this.vidCallback(this.picB + 1, this.picA + 1, this.max + 1 - this.position);
+			this.vidCallback(this.picB + 1, this.picA + 1, (this.max + 1 - this.position));
+			this.picCallback(this.picB + 1, this.picA + 1, (this.max + 1 - this.position) * -100);
 		}
 
 
