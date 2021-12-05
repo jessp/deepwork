@@ -13,7 +13,7 @@
 	{{#each content.intro.content}}
 		{{#if @first}}
 		{{else}}
-			<p>{{this.text}}</p>
+			{{> story/escape-link this }}
 		{{/if}}
 	{{/each}}
 </div>

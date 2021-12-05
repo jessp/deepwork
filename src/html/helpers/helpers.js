@@ -19,5 +19,34 @@ module.exports = {
   },
   randomNumber: function(upper) {
     return parseInt(Math.random() * upper);
+  },
+
+  parseLink: function(text, del) {
+    let splitText = text.split(del);
+    if (splitText.length < 2){
+      return text;
+    }
+    
+    for (var i = 1; i < splitText.length; i++){
+      if (splitText[i].substring(0,4) === "http"){
+        splitText[i-1] = `<a target="_blank" href="${splitText[i]}">${splitText[i-1]}</a>`;
+        splitText[i] = "";
+      }
+    }
+    return splitText.join("");
+  },
+
+  removeLink: function(text, del) {
+    let splitText = text.split(del);
+    if (splitText.length < 2){
+      return text;
+    }
+    
+    for (var i = 1; i < splitText.length; i++){
+      if (splitText[i].substring(0,4) === "http"){
+        splitText[i] = "";
+      }
+    }
+    return splitText.join("");
   }
 };

@@ -14,7 +14,7 @@
 	{{/if}}
 	<div class="single-col"
 		{{#each content.lead}}
-			<p>{{this.text}}</p>
+			{{> story/escape-link this }}
 		{{/each}}
 	</div>
 	<div class="story-block">
@@ -25,7 +25,7 @@
 		</div>
 		<div class="story-text">
 			{{#each content.content}}
-				<p>{{this.text}}</p>
+				{{> story/escape-link this }}
 			{{/each}}
 		</div>
 		<div class="story-pic">

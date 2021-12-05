@@ -9,7 +9,11 @@
 			<img src="assets/images/{{illustration}}"/>
 		</div>
 		<div class="menu-descrip">
-			<p>{{content.lead.0.text}}</p>
+			{{#if content.lead.0.link}}
+				<p>{{{removeLink content.lead.0.text content.lead.0.link}}}</p>
+			{{else}}
+				<p>{{content.lead.0.text}}</p>
+			{{/if}}
 		</div>
 		<div class="menu-button">
 			<div>
