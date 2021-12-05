@@ -6,6 +6,13 @@
 		{{#if content.subtitle}}
 			<h3>{{content.subtitle}}</h3>
 		{{/if}}
+	</div>
+	{{#if illustration}}
+		<div class="wide-block">
+			<img src="assets/images/{{illustration}}"/>
+		</div>
+	{{/if}}
+	<div class="single-col"
 		{{#each content.lead}}
 			<p>{{this.text}}</p>
 		{{/each}}

@@ -33,19 +33,24 @@
 	&:hover
 		background-color: rgba(0, 0, 0, 0.1)
 	display: grid
-	grid-template-columns: auto auto min-content min-content
-	grid-template-rows: min-content 2fr min-content
-	grid-template-areas: "price price pic pic" "description description description description" "button button button ."
+	grid-template-columns: 1fr 2fr
+	grid-template-areas: "price pic" "description description" "button button"
+	grid-template-rows: 200px min-content min-content
 	.menu-descrip
-		height: 150px
+		margin-bottom: 1rem
+		height: auto
+		max-height: 140px
 		overflow: hidden
 		-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
 		mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
 		p
 			set-type-size(root, false)
 			line-height: 1.4
+	+mq('bp-5')
+		grid-template-rows: 200px 2fr min-content
 	+mq('bp-7')
-		grid-template-areas: "price price pic pic" "description description description description" "button button button button"
+		grid-template-rows: 150px 2fr min-content
+		grid-template-areas: "price pic" "description description" "button button"
 	.price-holder
 		padding-right: 1rem
 		grid-area: price
@@ -59,13 +64,13 @@
 			set-type-size(small, false)
 	.menu-pic
 		grid-area: pic
-		+mq('bp-7')
-				width:150px
+		height: 100%;
+		width: 100%;
 		img
+			max-width: 100%
 			width: auto
-			height:200px
-			+mq('bp-7')
-				height:100px
+			max-height: 100%
+			margin: 0 auto
 	.menu-descrip
 		grid-area: description
 	.menu-button

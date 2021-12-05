@@ -20,11 +20,11 @@
 
 	<main id='content'>
 		{{> story/intro }}
-		{{> story/feature-block which='resume' content=content.resume}}
-		{{> story/feature-block which='photo-studio' content=content.photo}}
+		{{> story/feature-block which='resume' content=content.resume illustration="illustrations/Illustration-1.svg"}}
+		{{> story/feature-block which='photo-studio' content=content.photo illustration="illustrations/Illustration-2.svg"}}
 		{{> story/feature-block which='photo-studio-b' content=content.photo-b}}
-		{{> story/feature-block which='thought-leadership' content=content.thought-leadership}}
-		{{> story/feature-block which='video-call' content=content.video-call}}
+		{{> story/feature-block which='thought-leadership' content=content.thought-leadership illustration="illustrations/Illustration-3.svg"}}
+		{{> story/feature-block which='video-call' content=content.video-call illustration="illustrations/Illustration-4.svg"}}
 		{{> story/outro content=content.outro}}
 		{{> story/reviews reviews=content.reviews}}
 	</main>
