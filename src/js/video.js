@@ -26,7 +26,7 @@ export class VideoPlayer {
     	this.staticVidSrc =
     		this.staticVidHolder
     		.append("source")
-    		.attr("src", `/assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
+    		.attr("src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
     		.attr("type", "video/mp4");
 
     	this.reactionVidHolder = 
@@ -53,7 +53,7 @@ export class VideoPlayer {
 
 	showReaction(){
 		this.reactionVidSrc
-			.attr("src", `/assets/videos/${this.upcoming}_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
+			.attr("src", `assets/videos/${this.upcoming}_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
 
 		this.reactionVidHolder.node().load();
 
@@ -63,7 +63,7 @@ export class VideoPlayer {
 		this.picIndex = [a, b, c];
 
 		this.staticVidSrc
-    		.attr("src", `/assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`);
+    		.attr("src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`);
 	
     	this.staticVidHolder.node().load();
 	}

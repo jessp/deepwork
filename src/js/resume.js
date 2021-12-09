@@ -8,7 +8,7 @@ export class Resume {
     	this.selectedItem = _selected;
     	this.tFormat = d3.timeFormat("%b '%y");
     	this.resumeList = {"senior": [], "intermediate": [], "student": []};
-    	d3.json("/assets/data/resume_files.json").then((data) => {
+    	d3.json("assets/data/resume_files.json").then((data) => {
 		  this.resumeList = data;
 		  this.init();
 		});
@@ -82,7 +82,7 @@ export class Resume {
 	changeValue(){
 		const resIndex = parseInt(Math.random() * this.resumeList[this.selectedItem]["resumes"].length);
 
-		d3.json(`/assets/data/resumes/${this.resumeList[this.selectedItem]["resumes"][resIndex]}`).then((data) => {
+		d3.json(`assets/data/resumes/${this.resumeList[this.selectedItem]["resumes"][resIndex]}`).then((data) => {
 		  const resume = this.fillInData(data);
 		  this.refreshButton.property("disabled", false);
 		  this.body.html(resume);
