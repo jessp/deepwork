@@ -1,0 +1,84 @@
+{
+    "basics": {
+        "label": "Lead Developer",
+        "summary": "I am a highly motivated, quick learner and hard working person and excellent team player. I believe in doing my best in whatever responsibility that is assigned to me and I make sure that my work is completed in very professional manner., I am a focused individual and pride myself as quite knowledgeable about the activities that need to be taken into account while promoting products and services."
+    },
+    "interests": [
+        {
+            "name": "Organic Farming"
+        },
+        {
+            "name": "Minimal Style"
+        }
+    ],
+    "work": [
+        {
+            "company": "Rpa",
+            "summary": "I worked in the information security and risk management platform for an iOS application that was not having a scrum methodology of micro",
+            "website": "http://rpa.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Automated global asset tracking system, scaling, security, system, administration, data recovery, operations, and equipment.",
+                "Advanced the adoption of open-air."
+            ]
+        },
+        {
+            "company": "Bukalapak",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://bukalapak.com",
+            "position": "Technical Support Specialist Iii",
+            "highlights": [
+                "developed small Sharepoint API with ruby on rails &"
+            ]
+        },
+        {
+            "company": "University Of Alberta",
+            "summary": "I was responsible for the customer relationship management system behind the scenes.",
+            "website": "http://university-of-alberta.com",
+            "position": "Senior Software Engineer / Enterprise Continuous Integration Engineer (contract)",
+            "highlights": [
+                "created a feature that allowed the ability to create and update the information for their all data related to the data flow"
+            ]
+        },
+        {
+            "company": "Independent Contractor",
+            "summary": "I was responsible for the development and management of automated online data whose data is used to work for google,,",
+            "website": "http://independent-contractor.com",
+            "position": "Web Developer / Designer / Master",
+            "highlights": [
+                "Maintained system monitoring and analytics web application that was  being functionality as part of a technical development process.",
+                "write user to communicate with c/c + + for applications"
+            ]
+        },
+        {
+            "company": "Sedbergh School",
+            "summary": "I was responsible for the development and management of automated online data whose data is used to work on all contracts as a.",
+            "website": "http://sedbergh-school.com",
+            "position": "Software Engineer / Team Lead / Project Manager",
+            "highlights": [
+                "managed mediawiki installation",
+                "worked up to tesla electronic parts not schedule payments"
+            ]
+        },
+        {
+            "company": "University Of Southern California, School Of Architecture",
+            "summary": "Is a company that produce and deliver multimedia and digital content across different clients, focusing on providing b2b marketing services.",
+            "website": "http://university-of-southern-california-school-of-architecture.com",
+            "position": "Senior Software Engineer / Enterprise Continuous Integration Engineer (contract)",
+            "highlights": [
+                "TDD",
+                "Integrated automation with Jenkins",
+                "Data analysis."
+            ]
+        },
+        {
+            "company": "La Compagnie",
+            "summary": "Is a company that produce and deliver multimedia and digital content across different clients, focusing in providing b2b marketing consultancy and services to other people who are deploying open source solutions. I have been fortunate to be involved in the creation and unified management business.",
+            "website": "http://la-compagnie.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Designed to communicate with the apes. I wrote many oriented javascript and design the ox / ui."
+            ]
+        }
+    ]
+}

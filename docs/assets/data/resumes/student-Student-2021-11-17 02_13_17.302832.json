@@ -1,0 +1,31 @@
+{
+    "basics": {
+        "label": "Student",
+        "summary": "I am a full stack web developer who can build apps from the ground up. I worked mostly at startups so I am used to wearing many hats. I am a very product focussed developer who practices, user feedback first and. I generally very flexible when investigating new roles."
+    },
+    "interests": [
+        {
+            "name": "Hiking & Travel"
+        },
+        {
+            "name": "Conventions"
+        },
+        {
+            "name": "Ux"
+        }
+    ],
+    "work": [
+        {
+            "company": "The Hangar",
+            "summary": "\u2022 successfully rolled out two major product releases",
+            "website": "http://the-hangar.com",
+            "position": "Senior Software Engineer, Technical Project Lead & Onsite Coordinator"
+        },
+        {
+            "company": "Consultores",
+            "summary": "Is a software company whose focus is on delivering top notch web and mobile applications to our clients.",
+            "website": "http://consultores.com",
+            "position": "Technical Support Engineer I"
+        }
+    ]
+}

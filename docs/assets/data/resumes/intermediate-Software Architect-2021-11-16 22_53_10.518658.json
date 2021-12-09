@@ -1,0 +1,74 @@
+{
+    "basics": {
+        "label": "Software Architect",
+        "summary": "I am a software engineer with three years of professional experience as full stack web development. In that period I have worked on back and front end, was in charge of dev and developmental tasks, developed micro service and monolith architectures. I say I am an expert in those, as I still learn new things every day, but I think I have a decent overall knowledge of how things work, how they should work, and why they. I believe in balance of new technologies and good old principles."
+    },
+    "work": [
+        {
+            "company": "4mation",
+            "summary": "The biggest challenge was the creation of the information, and the focused on the mobile infrastructure.",
+            "website": "http://4mation.com",
+            "position": "Lead Developer / Systems Administrator",
+            "highlights": [
+                "assisted manager with product teams (to create, and resolve client technical side documents",
+                "started with a development team",
+                "Tested and guidance & best practices to help make changes around the service as code  completion and compliance."
+            ]
+        },
+        {
+            "company": "Technical University Of Berlin",
+            "summary": "Is a company that provides comprehensive and advanced custom solutions tailored solutions for clients.",
+            "website": "http://technical-university-of-berlin.com",
+            "position": "Senior System Consultant"
+        },
+        {
+            "company": "Instant Labs Inc",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://instant-labs-inc.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Lead personalized SEO classes include web analytics for web team and maintain a hybrid mobile app."
+            ]
+        },
+        {
+            "company": "Lucky Labs",
+            "summary": "",
+            "website": "http://lucky-labs.com",
+            "position": "Senior Software Engineer, Software Engineer 2",
+            "highlights": [
+                "coded analysis of the experiment at the papers",
+                "An algorithm for distributed composed surveys team, liaising with interactions and external."
+            ]
+        },
+        {
+            "company": "Open Technology Fund, Radio Free Asia",
+            "summary": "I have worked with several companies like for companies with various companies, including:, public relations, and distribution",
+            "website": "http://open-technology-fund-radio-free-asia.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "iOS application development",
+                "improved web site performance and service deployment tools"
+            ]
+        },
+        {
+            "company": "Optiv",
+            "summary": "Worked on the matching and the infrastructure team as an intern. The project consisted of building a modern web system that with (now spring), up (and logging), and (8 complex), high performance and building high performance and high performance and embedded scripts.",
+            "website": "http://optiv.com",
+            "position": "Software Engineer / Team Lead"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Lifestyle"
+        },
+        {
+            "name": "Arduino"
+        },
+        {
+            "name": "Playing Drums"
+        },
+        {
+            "name": "Emojis"
+        }
+    ]
+}

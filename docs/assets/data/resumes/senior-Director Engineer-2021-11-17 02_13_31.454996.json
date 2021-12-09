@@ -1,0 +1,46 @@
+{
+    "basics": {
+        "label": "Director Engineer",
+        "summary": "I am a software engineer who is looking to join a team that solves interesting and challenging problems with innovative technology."
+    },
+    "interests": [
+        {
+            "name": "Folk Music"
+        },
+        {
+            "name": "Spirituality"
+        },
+        {
+            "name": "History And Mythology"
+        }
+    ],
+    "work": [
+        {
+            "company": "American Illinois",
+            "summary": "provide technical leadership to junior developers",
+            "website": "http://american-illinois.com",
+            "position": "Senior Software Engineer / Product Manager (backend Services)",
+            "highlights": [
+                "basic and advanced a single page live application",
+                "delivered sports development teams to set up new business cycle"
+            ]
+        },
+        {
+            "company": "Lagoon Software",
+            "summary": "I was the first mobile application developer hired for two weeks. Most areas of their are some banking cloud services as well as in this project.",
+            "website": "http://lagoon-software.com",
+            "position": "Senior Software Engineer, Corporate Applications"
+        },
+        {
+            "company": "Sibers",
+            "summary": "Is a company that provides a SaaS location intelligence platform help sales process to individuals business and businesses.",
+            "website": "http://sibers.com",
+            "position": "Senior Software Engineer / Scrum Master (contract)",
+            "highlights": [
+                "Built tools to integrate with scripts to resolve complex queries down and department scheduling.",
+                "Developed integrations with Facebook, twitter, google, and advertising, and clients websites.",
+                "integrated sales force rest API for software users to scaled mission critical app to added demo app and allow reducing load times by over 50, 000 times from the five we major shows"
+            ]
+        }
+    ]
+}

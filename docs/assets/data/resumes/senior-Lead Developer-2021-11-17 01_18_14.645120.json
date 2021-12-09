@@ -1,0 +1,74 @@
+{
+    "basics": {
+        "label": "Lead Developer",
+        "summary": "I am a web developer that specializes in eCommerce development. Thanks to the hard work and dedication of the open source community, I have had the opportunity to hack on dozens of e-commerce platforms. I love helping entrepreneurs and pairing with other developers."
+    },
+    "interests": [
+        {
+            "name": "Meditation"
+        },
+        {
+            "name": "Data Systems"
+        },
+        {
+            "name": "Digital Arts"
+        },
+        {
+            "name": "Iot"
+        }
+    ],
+    "work": [
+        {
+            "company": "Worthington Industries",
+            "summary": "Is a company that provides a SaaS location intelligence platform help sales process to individuals business and businesses.",
+            "website": "http://worthington-industries.com",
+            "position": "Senior Software Engineer / Enterprise Continuous Integration Engineer (contract)"
+        },
+        {
+            "company": "Bluechilli Group",
+            "summary": "is a company that provides a SaaS location intelligence platform",
+            "website": "http://bluechilli-group.com",
+            "position": "Software Engineer, Configuration Manager",
+            "highlights": [
+                "refactored and rewrote legacy applications to handle ruby on rails and jquery mobile applications"
+            ]
+        },
+        {
+            "company": "Undp Guatemala, Unv Guatemala",
+            "summary": "Is a leading private school in,.",
+            "website": "http://undp-guatemala-unv-guatemala.com",
+            "position": "Senior Software Engineer / Scrum Master (contract)"
+        },
+        {
+            "company": "Spare Change Inc",
+            "summary": "I was given the chance to do an internship program in which applied an internship and setting up a resource as (internal).",
+            "website": "http://spare-change-inc.com",
+            "position": "Lead Developer / Devops"
+        },
+        {
+            "company": "Truss Education",
+            "summary": "worked on a small integrations to a large, business intelligence ci / CD platform",
+            "website": "http://truss-education.com",
+            "position": "Web Developer / Designer"
+        },
+        {
+            "company": "Standard Chartered Bank",
+            "summary": "I was part of the enterprise architecture team, which consisted of java 8 & 0. I had a several very small business of the entire process had for business users and define / designers customers while on their local market. Starting in this role, I had to write an external API with server stack with nodes",
+            "website": "http://standard-chartered-bank.com",
+            "position": "Web Developer / System Administrator",
+            "highlights": [
+                "was placed an to on on 2007 and after my writing as an agile board member of the team from 2 to field employee management"
+            ]
+        },
+        {
+            "company": "People Interactive Private Limited (com)",
+            "summary": "I was the first mobile application developer hired for two different applications for it to support, maintaining and other engineering in the enterprise. Java ee: internet management, eCommerce, control, etc.",
+            "website": "http://people-interactive-private-limited-com.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "1 day administration.",
+                "Stages. And, with of java"
+            ]
+        }
+    ]
+}

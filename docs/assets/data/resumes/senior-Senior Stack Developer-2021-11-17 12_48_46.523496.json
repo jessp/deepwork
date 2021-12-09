@@ -1,0 +1,42 @@
+{
+    "basics": {
+        "label": "Senior Stack Developer",
+        "summary": "I am a software engineer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn."
+    },
+    "interests": [
+        {
+            "name": "Projects / Building Things"
+        }
+    ],
+    "work": [
+        {
+            "company": "Goodrich Engine Digitel",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://goodrich-engine-digitel.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "Biochemmack (medical Equipment Dealer)",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://biochemmack-medical-equipment-dealer.com",
+            "position": "Senior Software Engineer / Software Architect",
+            "highlights": [
+                "Lead developer advocate of battlehack additionally, supporting another 12 battlehack event, no.",
+                "innovation award",
+                "influenced micro services architecture to be run on hosted millions of / xml points"
+            ]
+        },
+        {
+            "company": "School Of English",
+            "summary": "I was the first mobile application developer hired for two customers such as, and. We had to find the right product plan to build their website.",
+            "website": "http://school-of-english.com",
+            "position": "Senior Software Engineer / Enterprise Continuous Integration Engineer (contract)"
+        },
+        {
+            "company": "Tune",
+            "summary": "Developed an internal cms (PHP against an oracle), content management systems.",
+            "website": "http://tune.com",
+            "position": "Web Developer / Designer"
+        }
+    ]
+}

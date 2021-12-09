@@ -1,0 +1,84 @@
+{
+    "basics": {
+        "label": "Chief Engineer",
+        "summary": "I am a full stack web developer who can build apps from the ground up. I worked mostly at startups so I am used to wearing many hats. I am a very product focussed developer who practices, user feedback first and. I generally very flexible when investigating new roles."
+    },
+    "interests": [
+        {
+            "name": "Data Analysis"
+        },
+        {
+            "name": "Deep Learning"
+        },
+        {
+            "name": "Tv Shows"
+        },
+        {
+            "name": "Video Games"
+        }
+    ],
+    "work": [
+        {
+            "company": "Raytheon Tech",
+            "summary": "I worked on the information security and risk management team doing all things security. Eventually I took over the application security program and was able to successfully deploy and maintain a web application firewall infrastructure.",
+            "website": "http://raytheon-tech.com",
+            "position": "Software Developer / Network Manager",
+            "highlights": [
+                "use Perl for python and software test",
+                "Provided general game service for."
+            ]
+        },
+        {
+            "company": "Locon Solutions Private Limited (housing Com)",
+            "summary": "\u2022 / Developed, deployed ruby on rails basics of angularjs,,.",
+            "website": "http://locon-solutions-private-limited-housing-com.com",
+            "position": "Senior Software Engineer / Scrum Master (contract)",
+            "highlights": [
+                "helped troubleshoot when arise",
+                "Some  tools that worked mainly through the front end and browser tests."
+            ]
+        },
+        {
+            "company": "3s Mobile, Z\u00fcrich Area, Switzerland",
+            "summary": "I developed back-end solutions for many companies. Managing squad of developers and work.",
+            "website": "http://3s-mobile-zurich-area-switzerland.com",
+            "position": "Senior Software Developer & Engineer",
+            "highlights": [
+                "Architected apple mobile app.",
+                "An introduced reservation system for installing and updating Microsoft and software instances."
+            ]
+        },
+        {
+            "company": "International A Of",
+            "summary": "Is a software company whose focus is on delivering top notch web and mobile applications to our clients.",
+            "website": "http://international-a-of.com",
+            "position": "Sr Software Engineer"
+        },
+        {
+            "company": "Max Planck Institute For Biophysical Chemistry",
+            "summary": "Is a platform for secure SMS messaging  bitcoin transactions.",
+            "website": "http://max-planck-institute-for-biophysical-chemistry.com",
+            "position": "Senior Full Stack Developer And Team Leader"
+        },
+        {
+            "company": "Toading B Ltd",
+            "summary": "\u2022 Provide technical assistance to toading b toading b ltd sales staff and partners in the toading b ltd on key sales opportunities by developing account strategy, management and market managed e-commerce infrastructure website development, brand requirements and analysis.",
+            "website": "http://toading-b-ltd.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "built servers and prototypes using modular apache and (/ session management)",
+                "demonstrated web version of the prototype and console"
+            ]
+        },
+        {
+            "company": "Kah Graphic Design",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://kah-graphic-design.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "to the requirements",
+                "design asynchronous processing software with c + +"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang='en' data-version='1639078303009'>
+<!-- TODO - Limit characters imported from bold just to those needed -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<head>
+
+	<title>Title Case Hed Goes Here</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name='description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta name='news_keywords' content='tk' />
+	
+	<meta property='og:title' content='Title Case Hed Goes Here' />
+	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:url' content='https://pudding.cool/year/month/name/' />
+	<meta property='og:description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta property='og:type' content='article' />
+	<meta property='og:locale' content='en_US' />
+	
+	<meta property='og:image' content='https://pudding.cool/year/month/name/assets/social/social-facebook.jpg' />
+	<meta property='og:image:type' content='image/jpeg' />
+	<meta property='og:image:width' content='1200' />
+	<meta property='og:image:height' content='600' />
+	
+	<meta name='twitter:card' content='summary_large_image' />
+	<meta name='twitter:site' content='https://pudding.cool' />
+	<meta name='twitter:creator' content='@puddingviz' />
+	<meta name='twitter:title' content='Title Case Hed Goes Here' />
+	<meta name='twitter:description' content='Sentence case dek goes down here. Modify these in data/meta.json.' />
+	<meta name='twitter:image:src' content='https://pudding.cool/year/month/name/assets/social/social-twitter.jpg' />
+	
+	<meta name="robots" content="max-image-preview:large">
+	
+	<link rel='canonical' href='https://pudding.cool/year/month/name/' />
+	
+	<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='https://pudding.cool/favicon-32x32.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='https://pudding.cool/favicon-16x16.png'>
+	<link rel='manifest' href='https://pudding.cool/site.webmanifest'>
+	<link rel='mask-icon' href='https://pudding.cool/safari-pinned-tab.svg' color='#5bbad5'>
+	<meta name='msapplication-TileColor' content='#ffc40d'>
+	<meta name='theme-color' content='#ffffff'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
+
+	<style>*{-webkit-box-sizing:border-box;box-sizing:border-box}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}a img{border:none}blockquote{quotes:none}blockquote:before,blockquote:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}.xxx-small{font-size:10px;line-height:1.65}.xx-small{font-size:11px;line-height:1.65}.x-small{font-size:12px;line-height:1.65}.small{font-size:14px;line-height:1.65}.root{font-size:16px;line-height:1.65}.medium{font-size:18px;line-height:1.65}.large{font-size:20px;line-height:1.5}.x-large{font-size:24px;line-height:1.4}.xx-large{font-size:32px;line-height:1.4}.xxx-large{font-size:40px;line-height:1.4}.xxxx-large{font-size:48px;line-height:1.2}.xxxxx-large{font-size:64px;line-height:1.2}.hide-accessible{width:1px;height:1px;overflow:hidden;position:absolute}.hide-invisible{visibility:hidden}.hide-display{display:none}.skip-to-main{border:none;width:1px;height:1px;overflow:hidden;position:absolute}.skip-to-main:focus{width:auto;height:auto;background-color:#f4f4f4;padding:.5rem;z-index:1000}.prose{max-width:40rem;margin:0 auto;padding:0 1rem}.media-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMDBGQ0Y5NEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMDBGQ0ZBNEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REMwMEZDRjc0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REMwMEZDRjg0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6C0EmkAAAAGElEQVR42mJiYGD4DwQMTECCEchhAAgwAEcGBv9dngKPAAAAAElFTkSuQmCC")}#starter-guide{max-width:40rem;margin:0 auto}body{background-color:#fff;color:#282828;font-weight:500;font-family:'Tiempos Text Web',Georgia,Times,serif;-webkit-font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0);font-size:16px}@media only screen and (min-width:30em){body{font-size:18px}}body.modal-open{overflow-y:hidden;padding-right:1rem;height:100vh}h1{font-size:32px;line-height:1.4;margin-top:1.5rem}h2{font-size:24px;line-height:1.4;margin-top:1.5rem}h3{font-size:20px;line-height:1.5;margin-top:1.5rem}h4{font-size:18px;line-height:1.65;margin-top:1.5rem}h5{font-size:16px;line-height:1.65;margin-top:1.5rem}h6{font-size:14px;line-height:1.65;margin-top:1.5rem}p{margin:1.5rem 0;font-size:16px;line-height:1.65}@media only screen and (min-width:30em){p{font-size:18px;line-height:1.65}}a{border-bottom:1px solid #282828;color:#282828;text-decoration:none}a:visited,a:hover{color:#282828}strong,b{font-weight:700}em,i{font-style:italic}ul{list-style-type:none}li{font-size:16px}@media only screen and (min-width:30em){li{font-size:18px}}img,video{display:block;width:100%}button{margin:0;padding:0;border:none;cursor:pointer;font-size:16px}@media only screen and (min-width:30em){button{font-size:18px}}sub,sup{position:relative;vertical-align:baseline;font-size:.75rem;line-height:0}sup{top:-.5em}sub{bottom:-.25em}.combo{display:block;width:100%;position:relative}.combo::after{content:'';display:inline-block;background-image:url("assets/images/svgs/chevron-down.svg"),none;position:absolute;width:24px;height:24px;top:calc(50% - 12px);right:24px;background-repeat:no-repeat;pointer-events:none}.combo-input{background-color:#fff;border:1px solid #949494;border-radius:6px;display:block;font-size:1em;min-height:calc(1.4em + 26px);padding:12px 16px 14px;text-align:left;width:100%;text-transform:uppercase}.combo-input :focus{border-color:#e6adef;-webkit-box-shadow:0 0 4px 2px #e6adef;box-shadow:0 0 4px 2px #e6adef;outline:5px solid transparent}select.combo-input{-webkit-appearance:none;-moz-appearance:none;appearance:none}footer.pudding-footer{padding:3rem 1rem;border-top:4px solid #000;font-family:'National 2 Web',Helvetica,Arial,sans-serif;margin-top:3rem}footer.pudding-footer .footer-recirc{max-width:65rem;margin:0 auto}footer.pudding-footer .footer-recirc__articles{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}footer.pudding-footer .footer-recirc__article{display:block;width:100%;border:none;margin-bottom:2rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-recirc__article{width:calc(25% - 1.5rem);margin-right:1.5rem}footer.pudding-footer .footer-recirc__article:last-of-type{margin-right:0}}footer.pudding-footer .footer-recirc .article__headline{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-size:20px;line-height:1;font-weight:700;padding-left:.5rem}footer.pudding-footer .footer-company{margin:0 auto;margin-top:3rem;max-width:65rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif}@media only screen and (min-width:50em){footer.pudding-footer .footer-company{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}footer.pudding-footer .footer-company__cta{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;margin:2rem 0 0 0;width:100%}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta{width:22rem;margin:0 0 0 2rem}}footer.pudding-footer .footer-company__cta-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:12rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}footer.pudding-footer .footer-company__cta-list li{display:-webkit-box;display:-ms-flexbox;display:flex;width:50%;margin-bottom:1rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list li{padding-left:1rem}}footer.pudding-footer .footer-company__cta-list li a{display:-webkit-box;display:-ms-flexbox;display:flex;border:none}footer.pudding-footer .footer-company__cta-list li p{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;margin:0;padding-left:.5rem;padding-top:.1rem;line-height:1;color:#949494}@media only screen and (min-width:40em){footer.pudding-footer .footer-company__cta-list li p{font-size:20px}}footer.pudding-footer .footer-company__cta-list li svg{fill:#949494;stroke:none;vertical-align:middle}footer.pudding-footer .footer-company__cta-list li svg circle,footer.pudding-footer .footer-company__cta-list li svg polyline,footer.pudding-footer .footer-company__cta-list li svg line{fill:none;stroke:#949494}footer.pudding-footer .footer-company__cta-list li .feather-mail path,footer.pudding-footer .footer-company__cta-list li .feather-lock path,footer.pudding-footer .footer-company__cta-list li .feather-rss path{stroke:#949494;fill:none}footer.pudding-footer .footer-company__about{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;width:100%;color:#949494;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__about{width:calc(100% - 24rem)}}footer.pudding-footer .footer-company__about p{margin:0;font-size:16px;line-height:1.4}footer.pudding-footer .footer-company__about svg{width:12rem;margin-bottom:.5rem}header{z-index:1000;position:absolute;top:0;left:0;width:100%;background-color:#fff;font-family:'National 2 Web',Helvetica,Arial,sans-serif}header a.logo{display:block;border:none;max-width:9rem;margin:1rem auto}header a.logo svg{fill:#282828;display:block;width:100%}header.is-sticky{position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background-color:#fff;-webkit-box-shadow:0 0 7px 1px #c9c9c9;box-shadow:0 0 7px 1px #c9c9c9;height:3rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header.is-sticky a.logo{margin:0 auto}header.is-sticky .header__container{width:100%;padding:0 2rem;margin:auto;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%}header.is-sticky .header__toggle{display:block;pointer-events:all;visibility:visible;position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;right:0;padding:.75rem;cursor:pointer;line-height:1;z-index:1000;border:none;background-color:transparent}header.is-sticky .header__toggle svg{stroke:#282828}header.is-sticky .header__toggle:focus{outline:2px solid}header.is-sticky .header__toggle span:first-of-type{display:block}header.is-sticky .header__toggle span:last-of-type{display:none}header.is-sticky .header__toggle.is-visible span:first-of-type{display:none}header.is-sticky .header__toggle.is-visible span:last-of-type{display:block}header.is-sticky .header__toggle.is-visible span svg{stroke:#f4f4f4}header.is-sticky #slide__menu{position:absolute;top:3rem;right:0;-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);height:100vh;width:100%;max-width:30rem;padding:1rem 1.5rem;background-color:#282828;color:#f4f4f4;z-index:1000;-webkit-transition:-webkit-transform 200ms ease-in-out;transition:-webkit-transform 200ms ease-in-out;-o-transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;visibility:hidden}@media only screen and (min-width:30em){header.is-sticky #slide__menu{border-left:1px solid #5b5b5b}}header.is-sticky #slide__menu.is-visible{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);-webkit-transition:-webkit-transform 200ms ease-in-out;transition:-webkit-transform 200ms ease-in-out;-o-transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;visibility:visible}header.is-sticky #slide__menu a{color:#f4f4f4;border-bottom:1px solid #f4f4f4}header.is-sticky #slide__menu a:hover{color:#c9c9c9}header.is-sticky #slide__menu .menu__links{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}@media only screen and (min-width:40em){header.is-sticky #slide__menu .menu__links{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}header.is-sticky #slide__menu .menu__links li{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:.5em;margin-right:.5em;font-size:20px}@media only screen and (min-width:30em){header.is-sticky #slide__menu .menu__links li{font-size:24px}}header.is-sticky #slide__menu a.patreon-link{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;border:none;background-color:#f4f4f4;color:#282828;padding:.5em .75em}header.is-sticky #slide__menu a.patreon-link:hover{opacity:.75}header.is-sticky .menu__patrons ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}header.is-sticky .menu__patrons li:after{display:inline;content:',';margin-right:.25em}header.is-sticky .menu__patrons li:last-of-type:after{content:'.'}header.is-sticky.is-dark{background-color:#282828;-webkit-box-shadow:0 0 7px 1px #5b5b5b;box-shadow:0 0 7px 1px #5b5b5b}header.is-sticky.is-dark svg path{fill:#f4f4f4}header.is-sticky.is-dark .header__menu{background-color:#fff;color:#282828}@media only screen and (min-width:30em){header.is-sticky.is-dark .header__menu{border-left:1px solid #c9c9c9}}header.is-sticky.is-dark a{color:#282828;border-bottom:1px solid #282828}header.is-sticky.is-dark a:hover{color:#5b5b5b}header.is-sticky.is-dark .header__toggle svg{stroke:#f4f4f4}header.is-sticky.is-dark .header__toggle.is-visible span svg{stroke:#282828}.intro{margin:0 auto;padding:6rem 1rem 3rem 1rem}.intro__hed{max-width:60rem;margin:0 auto;text-align:center}.intro__dek{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__byline{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__time{display:block;max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.menu-holder{display:grid;-webkit-column-gap:1.5rem;-moz-column-gap:1.5rem;column-gap:1.5rem;row-gap:3rem;width:100%;max-width:30rem;grid-template-columns:1fr;grid-template-rows:1fr 1fr 1fr 1fr;margin:0 auto}@media only screen and (min-width:50em){.menu-holder{width:42.5em;max-width:42.5em;margin:3rem auto 5rem auto;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}}@media only screen and (min-width:85em){.menu-holder{width:70em;max-width:70em;margin-left:calc((70em - 50em)/2 * -1);grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr}}.menu-item h3{white-space:break-spaces;word-wrap:break-word}.menu-item-wrapper{padding:.75rem;border-radius:20px;display:grid;grid-template-columns:1fr 2fr;grid-template-areas:"price pic" "description description" "button button";grid-template-rows:200px -webkit-min-content -webkit-min-content;grid-template-rows:200px min-content min-content}.menu-item-wrapper:hover{background-color:rgba(0,0,0,0.1)}.menu-item-wrapper .menu-descrip{margin-bottom:1rem;height:auto;max-height:140px;overflow:hidden;-webkit-mask-image:-webkit-gradient(linear,left top, left bottom,color-stop(50%, #000),to(transparent));-webkit-mask-image:linear-gradient(to bottom,#000 50%,transparent 100%);mask-image:-webkit-gradient(linear,left top, left bottom,color-stop(50%, #000),to(transparent));mask-image:linear-gradient(to bottom,#000 50%,transparent 100%)}.menu-item-wrapper .menu-descrip p{font-size:16px;line-height:1.4}@media only screen and (min-width:50em){.menu-item-wrapper{grid-template-rows:200px 2fr -webkit-min-content;grid-template-rows:200px 2fr min-content}}@media only screen and (min-width:85em){.menu-item-wrapper{grid-template-rows:150px 2fr -webkit-min-content;grid-template-rows:150px 2fr min-content;grid-template-areas:"price pic" "description description" "button button"}}.menu-item-wrapper .price-holder{padding-right:1rem;grid-area:price}.menu-item-wrapper .price-holder p,.menu-item-wrapper .price-holder h3{margin:0}.menu-item-wrapper .price-holder p.price{font-size:48px;font-weight:500;line-height:52px}.menu-item-wrapper .price-holder p.duration{font-size:14px}.menu-item-wrapper .menu-pic{grid-area:pic;height:100%;width:100%}.menu-item-wrapper .menu-pic img{max-width:100%;width:auto;max-height:100%;margin:0 auto}.menu-item-wrapper .menu-descrip{grid-area:description}.menu-item-wrapper .menu-button{grid-area:button;font-family:'DM Sans',sans-serif;font-size:12px}.menu-item-wrapper .menu-button > div{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;background-color:unset;border:2px solid #949494;border-radius:20px;padding:10px 20px}.menu-item-wrapper .menu-button > div a{border-bottom:none}.photo-studio-holder{width:100%;height:100%;overflow:hidden}.photo-studio-holder .button-holder{position:absolute;bottom:3rem;width:100%;text-align:center;color:#f00}.photo-studio-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;height:100%;position:relative;top:0;-webkit-transition:top 1s;-o-transition:top 1s;transition:top 1s}.photo-studio-container h3{text-align:center;margin-top:0}.photo-studio-main{background:url("none") no-repeat center center;background-size:cover;width:100%;aspect-ratio:1/1;border-radius:6px 6px 0 0}.photo-studio-controls{border-radius:0 0 6px 6px}.photo-studio-controls datalist{display:-webkit-box;display:-ms-flexbox;display:flex;font-family:'DM Sans',sans-serif;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-size:14px;line-height:1.65;font-weight:500}.photo-studio-controls datalist option{font-weight:500}.photo-studio-controls input[type=range]{width:100%;margin:0;padding:0}.photo-grid{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:.5rem}.photo-grid > div{background:url("none") no-repeat center center;background-size:cover;aspect-ratio:1/1;display:block}.photo-grid > div.selected-pic{position:relative}.photo-grid > div.selected-pic:before{content:'';border:2px solid #000;width:100%;height:100%;display:block;position:absolute;left:-2px;top:-2px}#resume .pos-grid{display:grid;grid-auto-flow:column;grid-template-columns:-webkit-min-content auto;grid-template-columns:min-content auto;margin-bottom:.5rem}#resume .resume-controls{display:grid;grid-auto-flow:column;grid-template-columns:auto -webkit-min-content;grid-template-columns:auto min-content;-webkit-column-gap:1rem;-moz-column-gap:1rem;column-gap:1rem}#resume p{font-size:14px;line-height:1.65}#resume h4,#resume h5,#resume p{margin:0}#resume .work{margin-bottom:2rem}#resume h3{font-weight:bold;font-family:'DM Sans',sans-serif;font-size:18px}#resume h4{font-weight:500;font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.65;line-height:calc(1.65 * 0.875)}#resume h5,#resume li{font-weight:400;font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.65}#resume .years h5{white-space:nowrap;padding-right:.5rem}#resume ul{padding-left:1.5rem}#resume li{list-style-type:disc}#reviews{margin-top:3rem;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row;flex-flow:row;-webkit-column-gap:1.5rem;-moz-column-gap:1.5rem;column-gap:1.5rem;-ms-flex-wrap:wrap;flex-wrap:wrap}.review{width:100%;margin-bottom:4rem}.review h3{margin-top:1rem}@media only screen and (min-width:40em){.review{-webkit-box-flex:1;-ms-flex:1 0 250px;flex:1 0 250px}}@media only screen and (min-width:50em){.review{-webkit-box-flex:1;-ms-flex:1 0;flex:1 0}}.review p{margin-top:1rem}.review .location{font-size:14px;margin:0}.review .author{margin-bottom:.25rem}.review .author:before{content:"– "}.review .stars{width:100%;margin:0 auto;text-align:left}.review .stars svg{fill:currentColor;width:20px;height:20px}body{background:#f5f1f9;background:-o-radial-gradient(circle,#f5f1f9 0%,#f5f9fa 90%,#faf9f7 100%);background:radial-gradient(circle,#f5f1f9 0%,#f5f9fa 90%,#faf9f7 100%)}*{-webkit-box-sizing:border-box;box-sizing:border-box}h1{font-family:'Lyon Display Web';font-size:48px;line-height:1.2}h2{font-size:32px;line-height:1.4}h3{font-family:'DM Sans',sans-serif;font-weight:500;font-size:16px;line-height:1.65}p{font-family:'DM Sans',sans-serif;font-weight:400}span{font-family:'DM Sans',sans-serif;font-weight:400}.heavier{font-weight:500}.all-caps{text-transform:uppercase}.single-col{max-width:25em}.single-col h3{text-transform:uppercase}#content{max-width:50em;margin:0 auto;padding:0 25px}#content > *:not(.menu-holder){margin-left:auto;margin-right:auto}.wide-block{max-width:40em;text-align:center}.wide-block h1{margin:3.125rem 0 0 0}.story-pic{margin:2rem auto}.story-pic .feature-content{background-color:#fff;border:#f9f9f9 5px solid;margin-top:1.5rem;width:350px;height:700px;margin:0 auto;border-radius:30px;-webkit-box-shadow:0 0 6px rgba(0,0,0,0.3);box-shadow:0 0 6px rgba(0,0,0,0.3);padding:3rem 1rem}section{width:auto}section > div h2{margin-top:5rem}section > *{margin-left:auto;margin-right:auto}.story-block{display:grid;grid-template-columns:auto;grid-template-rows:-webkit-min-content -webkit-min-content -webkit-min-content;grid-template-rows:min-content min-content min-content;grid-template-areas:"instructions" "pic" "text"}.story-block .story-text{grid-area:text}.story-block .story-pic{grid-area:pic}.story-block .instructions{margin:2rem auto;grid-area:instructions}.story-block .instructions p{font-family:'Lyon Display Web';font-size:22px;line-height:1.4;margin:0}.story-block .feature-content{width:350px;height:700px}@media only screen and (min-width:40em){.story-block{grid-template-columns:auto auto;grid-template-rows:-webkit-min-content 100%;grid-template-rows:min-content 100%;grid-template-areas:"pic instructions" "pic text";grid-column-gap:2rem}.story-block .feature-content{width:300px;height:600px}.story-block .instructions{margin:2rem 0}}@media only screen and (min-width:50em){.story-block{grid-column-gap:3rem}.story-block .feature-content{width:350px;height:700px}}.demo-header p{text-align:center;margin:1rem;font-weight:500}.demo-body{background-color:#f0f0f0;border:1px solid #e8e8e9;border-radius:6px;padding:1rem;-webkit-box-flex:1;-ms-flex:1 0;flex:1 0;overflow-y:auto;height:0}.circle-icon-btn{height:50px;aspect-ratio:1/1;border-radius:50%;background-color:unset;border:1px solid #949494}.circle-icon-btn svg{width:20px;height:100%}.fade-in{animation:fadeIn linear 1.5s;-webkit-animation:fadeIn linear 1.5s;-moz-animation:fadeIn linear 1.5s;-o-animation:fadeIn linear 1.5s;-ms-animation:fadeIn linear 1.5s}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}#thought-leadership,#resume{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;row-gap:1rem}.deepwork-social{width:100%;display:grid;grid-template-columns:50px auto}.deepwork-social p:first-of-type{font-weight:bold;margin:0}.deepwork-social p:nth-of-type(2){font-weight:500;font-size:14px;line-height:1.65;margin:.5rem 0}.social-icon{text-align:center;width:40px;height:40px;overflow:hidden;border-radius:50%;margin-top:.5rem}.social-icon img{height:100%;width:auto}.impact-icons{float:left;margin-bottom:1.5rem;vertical-align:middle}.impact-icons img{width:14px;height:14px;vertical-align:middle;display:inline}.impact-icons span{margin-right:1rem;vertical-align:middle;font-size:14px;line-height:1.65}.fake-button{background-color:#cc3b33;border-radius:.5rem;padding:0 .5rem;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.fake-button p{margin:0;font-size:14px;line-height:1.65}.icon-button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center;width:-webkit-min-content;width:-moz-min-content;width:min-content}.icon-button p{margin:.25rem 0 0 0;font-size:11px;line-height:1;white-space:nowrap}.icon-button svg{height:24px;margin:0 auto}.vid{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.video-header{height:45px;background-color:#141414;color:#c9c9c9;position:relative;width:100%;padding:.5em;border-radius:6px 6px 0 0}.video-header > div:nth-of-type(1){float:left}.video-header > div:nth-of-type(2){position:absolute;left:50%;-webkit-transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);transform:translate(-50%,0%)}.video-header > div:nth-of-type(3){float:right}.video-header > div{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.video-header > div p{color:#f4f4f4;margin:0}.video-holder{width:100%;aspect-ratio:1/1}.reactions{-webkit-box-flex:1;-ms-flex:1 0;flex:1 0;background-color:#282828;padding:.5rem}.reactions > div{background-color:#3d3d3d;margin:1rem;padding:.5rem;width:calc(100% - 2rem);height:calc(100% - 2rem);border-radius:6px}.reactions button{border-radius:10px;padding:.5rem 1rem;background-color:#5b5b5b;margin:.25rem;color:#fff;font-size:14px}.video-buttons{height:55px;background-color:#141414;color:#c9c9c9;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;padding:.5em;border-radius:0 0 6px 6px}</style>
+
+	<style>
+		/*
+	        This font software is the property of Commercial Type.
+	
+	        You may not modify the font software, use it on another website, or install it on a computer.
+	
+	        License information is available at http://commercialtype.com/eula
+	        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+	
+	        Copyright (C) 2017 Schwartzco Inc.
+	        License: 1704-GNCLGK
+	*/
+	
+		/*
+		********************
+			National
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			National Narrow
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff') format('woff');
+			font-weight: 900;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	
+		/*
+		********************
+			Tiempos Text
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			Tiempos Headline
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Tiempos Headline Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Publico Text
+		********************
+		*/
+		/*
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Atlas Grotesk
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff') format('woff');
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	
+		/*
+		********************
+			LYON DISPLAY
+		********************
+		*/
+	
+		
+		@font-face {
+			font-family: 'Lyon Display Web';
+			src: url('https://pudding.cool/assets/fonts/lyon/LyonDisplay-Regular-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/lyon/LyonDisplay-Regular-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+
+	<main id='content'>
+		<div class="wide-block">
+			<h1>The job market feels more competitive than ever.</h1>
+			<img src="assets/images/illustrations/Cover.svg"/>
+		</div>
+		<div class="single-col">
+			<p>Human missteps that may once have been dismissed by human forgiveness may now automatically dispatch a computer-generated rejection to your inbox. Did you comment in defense of a Jeff Dunham video back in 2009? You might be flagged as having antisocial tendencies. Did you accidentally use the British spelling of “conceptualize” on your CV? You’re illiterate. Your participation in a quirky Brainfuck hack-a-thon might put you on a black list for abusive language.</p>
+		</div>
+		<div class="single-col">
+			<h2>Our Products</h2>
+		</div>
+		<div class="menu-holder">
+			<div class="menu-item">
+				<div class="menu-item-wrapper">
+					<div class="price-holder">
+						<h3 class="package all-caps">Resume Atelier</h3>
+						<p class="price">$29</p>
+						<p class="duration">/month</p>
+					</div>
+					<div class="menu-pic">
+						<img src="assets/images/illustrations/Illustration-1.svg"/>
+					</div>
+					<div class="menu-descrip">
+							<p>Unfortunately, as far back as 2014, journalists and academics have noted the emergence of an industry-standard paradox of requiring two or more years of relevant work experience for an entry-level job. If you don't have the social connections to make the right introductions (you don't) and can't afford to both intern and eat for the next half decade, then it’s time to invest in a better future with our Resume Atelier. Student loan repayments be damned.</p>
+					</div>
+					<div class="menu-button">
+						<div>
+							<a class="all-caps" href="#resume-package">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>	<div class="menu-item">
+				<div class="menu-item-wrapper">
+					<div class="price-holder">
+						<h3 class="package all-caps">Profile Picture Studio</h3>
+						<p class="price">$29</p>
+						<p class="duration">/month</p>
+					</div>
+					<div class="menu-pic">
+						<img src="assets/images/illustrations/Illustration-2.svg"/>
+					</div>
+					<div class="menu-descrip">
+							<p>You’re not the only one job hunting right now, and as long as looks continue to influence hirings and salaries, you’ll need all the help you can get.</p>
+					</div>
+					<div class="menu-button">
+						<div>
+							<a class="all-caps" href="#photo-studio-package">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>	<div class="menu-item">
+				<div class="menu-item-wrapper">
+					<div class="price-holder">
+						<h3 class="package all-caps">Thought Leadership Package</h3>
+						<p class="price">$29</p>
+						<p class="duration">/month</p>
+					</div>
+					<div class="menu-pic">
+						<img src="assets/images/illustrations/Illustration-3.svg"/>
+					</div>
+					<div class="menu-descrip">
+							<p>The best way to showcase your suitability for a higher-ranking position is via an elaborate mating ritual known as Thought Leadership.</p>
+					</div>
+					<div class="menu-button">
+						<div>
+							<a class="all-caps" href="#thought-leadership-package">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>	<div class="menu-item">
+				<div class="menu-item-wrapper">
+					<div class="price-holder">
+						<h3 class="package all-caps">Video Conferencing Plug-in</h3>
+						<p class="price">$29</p>
+						<p class="duration">/month</p>
+					</div>
+					<div class="menu-pic">
+						<img src="assets/images/illustrations/Illustration-4.svg"/>
+					</div>
+					<div class="menu-descrip">
+							<p>Though deepwork can’t help you with technical interviews (take a look at CoPilot for that), we can help you make a more professional first impression in your Zoom interviews. (If the concept of a late-stage interview is foreign to you, consider our Resume Atelier and Profile Picture Studio.)</p>
+					</div>
+					<div class="menu-button">
+						<div>
+							<a class="all-caps" href="#video-call-package">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div></div><div class="single-col">
+						<p>When an estimated <a target="_blank" href="https://jobs.theguardian.com/article/how-to-optimise-your-cv-with-key-words/">70% of job applications are automatically rejected by applicant tracking systems (ATS)</a> and <a target="_blank" href="https://yougov.co.uk/topics/politics/articles-reports/2017/04/10/disgracebook-one-five-employers-have-turned-down-c">companies are screening out applicants based on their social media habits</a>, it can seem like technology is up against you.</p>
+						<p>That&#x27;s because it is. Well, most of it anyway. At deepwork, our software works for you, so you can work. Period.</p>
+						<p>With our cutting-edge technology, you’ll be more than just another statistic. We are able to algorithmically alter your digital DNA, from your overwrought resume down to your Zoom-fatigued face, turning you into something that’s proven to resonate more powerfully with employers, recruiting agencies, and the state-of-the-art ATS they use. And with Klarna, you can pay later. You know, when you can afford it.</p>
+		</div>		<section>
+			<div class="single-col" id="resume-package">
+					<h2>Resume Atelier</h2>
+					<h3>Grammarly can&#x27;t save your garbage resume. Experience can.</h3>
+			</div>
+				<div class="wide-block">
+					<img src="assets/images/illustrations/Illustration-1.svg"/>
+				</div>
+			<div class="single-col"
+						<p>Unfortunately, as far back as 2014, <a target="_blank" href="https://www.wsj.com/articles/want-an-entry-level-job-youll-need-lots-of-experience-1407267498">journalists and academics</a> have noted the emergence of an industry-standard paradox of requiring two or more years of relevant work experience for an entry-level job. If you don't have the social connections to make the right introductions (you don't) and can't afford to both intern and eat for the next half decade, then it’s time to invest in a better future with our Resume Atelier. Student loan repayments be damned.</p>
+			</div>
+			<div class="story-block">
+				<div class="instructions">
+						<p>Explore samples of our STEMsational real fake resumes in our product demo here. Simply use the dropdown menu to select your aspirational level of experience and pivot, pivot, pivot your way to success!</p>
+				</div>
+				<div class="story-text">
+							<p>Using cutting-edge GPT-2 technology trained on [x thousands of resumes], deepwork can generate a brand new resume for you in your field of choice.</p>
+							<p>Some of the entries don’t make sense? Don’t worry: Recruiters don’t know the difference. Sign up to create a plagiarism bot-beating one-of-a-kind resume that represents your value as a worker better than your achingly sincere cover letter ever could.</p>
+				</div>
+				<div class="story-pic">
+					<div class="feature-content" id=resume>
+							<div class="demo-header resume-controls">	
+								<div>
+									<div class="combo all-caps">
+									  <select id=jobSelection class="combo-input">
+									        <option value=student>student</option>
+									        <option value=intermediate>intermediate</option>
+									        <option value=senior>senior</option>
+									  </select>
+									</div>	</div>
+								<button class="circle-icon-btn">
+									<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-repeat" viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+								</button>
+							</div>
+							<div class="demo-body">
+							
+							</div>			</div>
+				</div>
+			</div>
+		</section>		<section>
+			<div class="single-col" id="photo-studio-package">
+					<h2>Profile Picture Studio</h2>
+					<h3>Placeholder</h3>
+			</div>
+				<div class="wide-block">
+					<img src="assets/images/illustrations/Illustration-2.svg"/>
+				</div>
+			<div class="single-col"
+						<p>You’re not the only one job hunting right now, and <a target="_blank" href="https://www.theguardian.com/society/2020/jul/28/eight-people-claiming-employment-support-for-every-vacancy-says-thinktank">as long as looks continue to influence hirings and salaries</a>, you’ll need all the help you can get.</p>
+						<p>Today’s LinkedIn profile photo is what a firm handshake was thirty years ago: A totally arbitrary signifier of your entire worth as a professional. You might be able to Facetune that zit away but making your LinkedIn picture recruiter-ready might be a little more complicated. If you’re <a target="_blank" href="https://www.bbc.com/worklife/article/20210730-the-acute-ageism-problem-hurting-young-workers">too young</a>, <a target="_blank" href="https://www.ft.com/content/e4141576-04eb-11e9-99df-6183d3002ee1">too old</a>, <a target="_blank" href="https://hbr.org/2019/10/attractive-people-get-unfair-advantages-at-work-ai-can-help">too ugly</a>, <a target="_blank" href="https://www.independent.co.uk/news/uk/home-news/sexism-work-female-bosses-young-women-trust-pay-gender-gap-a8965681.html">too female</a>—you might just stay too underemployed.</p>
+			</div>
+			<div class="story-block">
+				<div class="instructions">
+						<p>Play with the sliders on any of our models to get an idea of how you could grow up, glow up, or man up your own photos.</p>
+				</div>
+				<div class="story-text">
+							<p>Luckily, with deepwork’s Profile Picture Studio, you can alter photos of yourself to be younger, hotter, or more masculine. The resulting photo will still be you, just a you that looks a bit more suitable for an “About Us” page.</p>
+				</div>
+				<div class="story-pic">
+					<div class="feature-content" id=photo-studio>
+							<div class="photo-studio-holder">	
+								<div class="photo-studio-container" id="studio-a-container">
+									<div class="photo-studio-main"></div>
+									<div class="demo-body photo-studio-controls" id="studioA">
+										<div class="photo-selecter">
+											<h3>Choose a Photo</h3>
+											<input type="range" class="photo-select"/>
+											<div class="photo-grid">
+											</div>
+										</div>
+										<div>
+										    <input type="range" id=gender name=gender list=genderlist min="0" max=6 value=3>
+										            <datalist id=genderlist>
+										                <option value="0" label="More Masculine">
+										                <option value="6" label="More Feminine">
+										            </datalist>
+										</div>			<div>
+										    <input type="range" id=age name=age list=agelist min="0" max=6 value=3>
+										            <datalist id=agelist>
+										                <option value="0" label="Younger">
+										                <option value="6" label="Older">
+										            </datalist>
+										</div>			<div>
+										    <input type="range" id=beauty name=beauty list=beautylist min="0" max=6 value=3>
+										            <datalist id=beautylist>
+										                <option value="0" label="Homelier">
+										                <option value="6" label="More Attractive">
+										            </datalist>
+										</div>		</div>
+								</div>
+							</div>			</div>
+				</div>
+			</div>
+		</section>		<section>
+			<div class="single-col" id="photo-studio-b-package">
+			</div>
+			<div class="single-col"
+						<p>Not all biases are so easy to place. Like class, for instance. Maybe your look says “Bud Light Platinum” more than it says “Moët &amp; Chandon Réserve Impériale.” We can improve your odds of being a good company “fit” by combining your profile picture with various stock photo models from our library.</p>
+			</div>
+			<div class="story-block">
+				<div class="instructions">
+						<p>Use the controls to blend two photos together.</p>
+				</div>
+				<div class="story-text">
+							<p>If this feels like a gross intrusion on one of the most basic representations of who you are as an individual, remember: Nothing personifies the great melting pot of corporate culture like a stock photo.</p>
+							<p>As an added benefit, using deepwork to alter your appearance will make it less likely for potential employers to conclusively recognize you on your other social media, just in case you forgot to delete that cinnamon challenge video.</p>
+				</div>
+				<div class="story-pic">
+					<div class="feature-content" id=photo-studio-b>
+							<div class="photo-studio-holder">	
+								<div class="photo-studio-container" id="studio-b-container">
+									<div class="photo-studio-main" style="background-image:url(https://www.fillmurray.com/500/360)"></div>
+									<div class="demo-body photo-studio-controls">
+										<div class="photo-selecter">
+											<h3>Mix Your Pics</h3>
+											<div>
+											    <input type="range" id=pic-mix name=pic-mix list=pic-mixlist min="0" max=9 value=0>
+											            <datalist id=pic-mixlist>
+											                <option value="0" label="Photo A">
+											                <option value="9" label="Photo B">
+											            </datalist>
+											</div>				<h3>Photo A</h3>
+											<div id="studioB1">
+												<input type="range" class="photo-select"/>
+												<div class="photo-grid">
+												</div>
+											</div>
+											<h3>Photo B</h3>
+											<div id="studioB2">
+												<input type="range" class="photo-select"/>
+												<div class="photo-grid">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>			</div>
+				</div>
+			</div>
+		</section>		<section>
+			<div class="single-col" id="thought-leadership-package">
+					<h2>Thought Leadership Package</h2>
+					<h3>At a certain point in your career, you’ll want to signal to potential employers that you’re ready to take on more responsibility (and a higher paycheck).</h3>
+			</div>
+				<div class="wide-block">
+					<img src="assets/images/illustrations/Illustration-3.svg"/>
+				</div>
+			<div class="single-col"
+						<p>The best way to showcase your suitability for a higher-ranking position is via an elaborate mating ritual known as Thought Leadership.</p>
+						<p>Thought Leadership refers to the production of materials on social media or personal blogs with the sole purpose of demonstrating how well your personality can conform to a specific corporate aesthetic. For Thought Leadership to be successful, its creator must walk a fine line: Demonstrate a thorough immersion in corporate culture—think soundbite-ready non-opinions like “It’s now more essential than ever that moms understand the environmental impacts of big data All businesses are blockchain ready, it’s the employees who aren’t”—while sharing a few relatable work-appropriate interests (like cycling or kite surfing) to maintain the illusion of personhood.</p>
+			</div>
+			<div class="story-block">
+				<div class="instructions">
+						<p>Try out our technology by combining Tweets from some of our favourite (but not affiliated) idealogues.</p>
+				</div>
+				<div class="story-text">
+							<p>Demonstrating Thought Leadership on your social media can be daunting, especially for first-timers who may be led astray by the misconception that the term inherits any meaning from either of its component words. If that sounds like you, deepwork’s Thought Leadership package lets you stand on the shoulders of some of the most influential Thought Leaders in your field.</p>
+							<p>Head to our product page to explore pricing for our one-time service, as well as our subscription packages that support weekly, daily, hourly, and quarter hourly posting. If you’re feeling bold, signing up for our package will allow you to throw your own social media handle into the mix to hybridize your own thoughts with objectively more successful people.</p>
+				</div>
+				<div class="story-pic">
+					<div class="feature-content" id=thought-leadership>
+							<div class="demo-header">	
+								<div class="combo all-caps">
+								  <select id=influencerA class="combo-input">
+								        <option value=15828408>SusanWojcicki</option>
+								        <option value=159315527>jewelmelanie</option>
+								        <option value=1596639318>girlboss</option>
+								        <option value=20423403>millsustwo</option>
+								        <option value=284278132>morganhousel</option>
+								        <option value=446719282>shivon</option>
+								        <option value=871547965>SKellyCEO</option>
+								        <option value=1636590253>tim_cook</option>
+								        <option value=625733783>theSamParr</option>
+								  </select>
+								</div>	<p class="all-caps">plus</p>
+								<div class="combo all-caps">
+								  <select id=influencerB class="combo-input">
+								        <option value=15828408>SusanWojcicki</option>
+								        <option value=159315527>jewelmelanie</option>
+								        <option value=1596639318>girlboss</option>
+								        <option value=20423403>millsustwo</option>
+								        <option value=284278132>morganhousel</option>
+								        <option value=446719282>shivon</option>
+								        <option value=871547965>SKellyCEO</option>
+								        <option value=1636590253>tim_cook</option>
+								        <option value=625733783>theSamParr</option>
+								  </select>
+								</div></div>
+							<div class="demo-body">
+							
+							</div>			</div>
+				</div>
+			</div>
+		</section>		<section>
+			<div class="single-col" id="video-call-package">
+					<h2>Video Conferencing Plug-in</h2>
+					<h3>Placeholder</h3>
+			</div>
+				<div class="wide-block">
+					<img src="assets/images/illustrations/Illustration-4.svg"/>
+				</div>
+			<div class="single-col"
+						<p>Though deepwork can’t help you with technical interviews (<a target="_blank" href="https://copilot.github.com/">take a look at CoPilot for that</a>), we can help you make a more professional first impression in your Zoom interviews. (If the concept of a late-stage interview is foreign to you, consider our Resume Atelier and Profile Picture Studio.)</p>
+						<p>Our Video Conferencing Plug-in package uses all the same looks optimization technology available in our Profile Picture Studio package, but takes it to the next level by letting you assume your avatar’s much more hirable appearance for video calls.</p>
+			</div>
+			<div class="story-block">
+				<div class="instructions">
+						<p>You can preview our video generation process here, and watch your chosen face act out expressions such as “Thoughtful consideration,” “You know what, that’s a great idea, sir,” and, “Gen Z, what are you gonna do?”</p>
+				</div>
+				<div class="story-text">
+							<p>Our technique utilizes something experts call the <a target="_blank" href="https://arxiv.org/pdf/2104.11280.pdf">First-order Motion Model</a> method, which is widely associated with so-called “deepfake” technology. But don’t let media pundits and their pretty privilege put you off—what’s fake about your commitment to attaining meaningful employment at any cost?</p>
+							<p>With the rising popularity of flexible work arrangements, we’ve responded to intense customer demand by expanding our subscription services for longer term packages! After you score that dream role, there’s no reason to spoil the fantasy. As long as you’re WFH, your coworkers will never have to know you’re a sweaty, poorly lit, recent grad and/or ugly.</p>
+				</div>
+				<div class="story-pic">
+					<div class="feature-content" id=video-call>
+							<div class="vid">
+								<div class="video-header">
+									<div>
+										<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-1" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+									</div>
+									<div>
+										<p>Züüm</p>
+									</div>
+									<div>
+										<div class="fake-button">
+											<p>Leave</p>
+										</div>
+									</div>
+								</div>
+								<div id="video-holder">
+							
+								</div>
+								<div class="reactions">
+									<div>
+										<button data-item="shock">In this economy?</button>
+										<button data-item="laugh">Love that, sir!</button>
+										<button data-item="anger">*Berate unionisers*</button>
+									</div>
+								</div>
+								<div class="video-buttons">
+									<div class="icon-button">
+										<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+										<p>Mute</p>
+									</div>
+									<div class="icon-button">
+										<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video-off" viewBox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+										<p>Stop Video</p>
+									</div>
+									<div class="icon-button">
+										<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+										<p>React</p>
+									</div>
+								</div>
+							</div>			</div>
+				</div>
+			</div>
+		</section>		<section>
+			<div class="single-col">
+					<h2>Ready to deepwork?</h2>
+					<p>deepwork is trusted by hundreds of thousands of underemployed, underpaid and underappreciated individuals to solve at least that first problem. Who knows? You might have a deepworker in your LinkedIn network already.</p>
+					<p>Don’t believe our technology can disrupt your flaccid career trajectory? Listen to what our customers have to say about deepwork.</p>
+			</div>
+		</section>		<div class="single-col">
+			<h2>Customer Testimonials</h2>
+		</div>
+		<div id="reviews">
+				<div class="review">
+					<div class="stars">
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					</div>
+					<h3>An absolute breeze to onboard!</h3>
+					<p>I was initially a bit morally conflicted about deepwork, but their onboarding was so seamless, I barely had time to think about it!</p>
+					<p class="author">Fatima</p>
+					<p class="location">London, UK</p>
+				</div>		<div class="review">
+					<div class="stars">
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					</div>
+					<h3>deepwork gets it</h3>
+					<p>FINALLY! A company that acknowledges that getting hired in the 2020s is a dog-eat-dog world. deepwork is like giving a mecha suit to a chihuahua.</p>
+					<p class="author">Brenda</p>
+					<p class="location">Toronto, Canada</p>
+				</div>		<div class="review">
+					<div class="stars">
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					</div>
+					<h3>Doubled my earnings</h3>
+					<p>Being a man in the e-romance business has always put me at a bit of a disadvantage. But with deepwork, I’ll have enough money for my “passport and plane ticket over” very soon.</p>
+					<p class="author">“BrianAlyssa”</p>
+					<p class="location">Michigan, USA</p>
+				</div>		<div class="review">
+					<div class="stars">
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+						<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					</div>
+					<h3>A breath of fresh air</h3>
+					<p>If your parents won’t get off your back about how your history of slacking and “problematic” social media posts are getting in the way of your success, tell them to stop nagging and get you a deepwork package instead.</p>
+					<p class="author">Aaron</p>
+					<p class="location">Chicago, USA</p>
+				</div></div>
+	</main>
+
+	<footer class='pudding-footer'>
+	
+		<div class='footer-recirc'>
+			<div class='footer-recirc__articles'></div>
+		</div>
+	
+		<div class='footer-company'>
+			<div class='footer-company__cta'>
+				<ul class='footer-company__cta-list'>
+					<li>
+						<a href='https://facebook.com/pudding.viz/'>
+							<svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+							<p>FACEBOOK</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://twitter.com/puddingviz/'>
+							<svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+							<p>TWITTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.instagram.com/the.pudding'>
+							<svg width="24" height="24" id="Layer_1" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<path d="M17,23H7c-3.3,0-6-2.7-6-6V7c0-3.3,2.7-6,6-6h10c3.3,0,6,2.7,6,6v10C23,20.3,20.3,23,17,23z M7,3C4.8,3,3,4.8,3,7v10
+	c0,2.2,1.8,4,4,4h10c2.2,0,4-1.8,4-4V7c0-2.2-1.8-4-4-4H7z"/>
+<path d="M12,17c-1.1,0-2.1-0.3-3-1c-1.1-0.8-1.8-2-2-3.3C6.7,10,8.6,7.4,11.3,7c0.5-0.1,1-0.1,1.5,0c2.2,0.3,3.9,2,4.2,4.2l0,0
+	c0.2,1.3-0.1,2.6-0.9,3.7c-0.8,1.1-2,1.8-3.3,2C12.5,16.9,12.3,17,12,17z M12,9c-0.1,0-0.3,0-0.4,0c-1.6,0.2-2.8,1.8-2.5,3.4
+	c0.2,1.6,1.8,2.8,3.4,2.5c0.8-0.1,1.5-0.5,2-1.2s0.7-1.4,0.6-2.2l0,0c-0.2-1.3-1.2-2.3-2.5-2.5C12.3,9,12.2,9,12,9z"/>
+<path d="M17.5,7.5c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.1-0.1-0.2-0.1-0.4c0-0.3,0.1-0.5,0.3-0.7
+	c0.4-0.4,1-0.4,1.4,0c0.2,0.2,0.3,0.4,0.3,0.7c0,0.1,0,0.3-0.1,0.4s-0.1,0.2-0.2,0.3C18,7.4,17.8,7.5,17.5,7.5z"/>
+</svg>
+							<p>INSTAGRAM</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://patreon.com/thepudding/'>
+							<svg id="Layer_1" width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<g>
+
+		<path fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="
+		M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
+
+		<rect x="3.7" y="3.3" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+</g>
+</svg>
+							<p>PATREON</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/about'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+							<p>ABOUT</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/privacy/'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+							<p>PRIVACY</p>
+						</a>
+					</li>
+					<li>
+						<a href='http://eepurl.com/czym6f'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+							<p>NEWSLETTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/feed/index.xml'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+							<p>RSS</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class='footer-company__about'>
+				<svg id="wordmark" x="0px" y="0px" style="enable-background:new 0 0 192.6 50;" xml:space="preserve" viewBox="0 0 192.6 50">
+<g>
+	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
+	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
+	<path class="st0" d="M77.1,9.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S82.1,9.5,77.1,9.5z M77.1,21.8h-1.9
+		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S79,21.8,77.1,21.8z"/>
+	<path class="st0" d="M105.7,17.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0,4.9,4,8.9,8.9,8.9
+		s8.9-4,8.9-8.9V17.6z"/>
+	<path class="st0" d="M164.1,17.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
+		C173,21.6,169,17.6,164.1,17.6z"/>
+	<path class="st0" d="M119.7,16.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3
+		C119.7,12.8,119.7,16.2,119.7,16.2z M119.8,24.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V24.6z"/>
+	<path class="st0" d="M139.3,16.2v1.4h-1.4H136c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3V16.2z M139.4,24.6v3.8
+		v1.4h-1.5H136c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H139.4z"/>
+	<path class="st0" d="M183.7,17.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
+		s-3.3-1.5-3.3-3.3V38l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V17.6h-7H183.7z M187,23.4v1.4v3.8V30h-1.4
+		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C185.6,23.4,187,23.4,187,23.4z"/>
+	<path class="st0" d="M28.6,17.6c-1.2,0-2.3,0.2-3.3,0.6V9.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
+		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C37.5,21.6,33.5,17.6,28.6,17.6z"/>
+	<path class="st0" d="M17.8,9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5z"/>
+	<path class="st0" d="M48.3,30.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
+		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0h-0.6c-4.9,0-8.9,4-8.9,8.9
+		c0,0.4,0,0.9,0.1,1.4l0,0V28c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
+		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
+		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C54.5,30.2,50.6,30.2,48.3,30.2L48.3,30.2z M56.2,22.9L56.2,22.9L56.2,22.9z M44.6,25.7
+		L44.6,25.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L46.2,25L44.6,25.7L44.6,25.7z"/>
+</g>
+</svg>
+				<p class='footer-company__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication
+					that
+					explains ideas debated in culture with visual essays.</p>
+			</div>
+	
+		</div>
+	</footer>
+
+
+	<script src='https://pudding.cool/assets/scripts/d3.v6.0.0.min.js'></script>
+	<script src='bundle.js?version=1639078303009' async></script>
+</body>
+
+</html>

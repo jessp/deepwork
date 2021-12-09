@@ -1,0 +1,37 @@
+{
+    "basics": {
+        "label": "Tech Stack Developer",
+        "summary": "I am a software engineer with a deep passion for free software and free culture. I experience organizing events of varying scale on foss technology and. I have helped develop dozens of local groups, particularly in engineering colleges in Hyderabad and Bangalore around free software and love the catalyzing effect it has on the foss community in general."
+    },
+    "work": [
+        {
+            "company": "Rapidcloud Singapore Pte Ltd",
+            "summary": "Provided technical support for students \u2013 software and network troubleshooting, malware removal, etc. also wrote documentation and assisted with various projects.",
+            "website": "http://rapidcloud-singapore-pte-ltd.com",
+            "position": "Software Developer, Development Lead, Devops Consultant, Sales Engineer",
+            "highlights": [
+                "major contributor architecture for new training, new features and"
+            ]
+        },
+        {
+            "company": "Pushers Collective\u2122",
+            "summary": "I worked on a like set top box project for this company. I've build a portal of. Net and windows mobile development.",
+            "website": "http://pushers-collectivetm.com",
+            "position": "Junior Software Test Engineer"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Fencing"
+        },
+        {
+            "name": "Figure Skating"
+        },
+        {
+            "name": "Folk Music"
+        },
+        {
+            "name": "House Remodeling"
+        }
+    ]
+}

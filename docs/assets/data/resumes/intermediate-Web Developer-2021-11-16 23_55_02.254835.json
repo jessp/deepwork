@@ -1,0 +1,75 @@
+{
+    "basics": {
+        "label": "Web Developer",
+        "summary": "I am a full stack developer who loves working with open source technology. I work best in planning the architecture of web applications and their development life."
+    },
+    "interests": [
+        {
+            "name": "3d Offshore Fisherman"
+        },
+        {
+            "name": "Art & Design"
+        }
+    ],
+    "work": [
+        {
+            "company": "Lendlease",
+            "summary": "Started off building on website with online registration, hotel and booking with payment integration. Migrated entire application for lendlease and developed two payment gateways and plugins for a team in the software development environment. Improvement on procedure within development",
+            "website": "http://lendlease.com",
+            "position": "Senior Software Engineer / Software Architect",
+            "highlights": [
+                "lead developer of oracular branch",
+                "Created a custom web application with a financial portfolio manager in the company using the latest technologies and kepi shows (more / tools."
+            ]
+        },
+        {
+            "company": "Sieve Analytics",
+            "summary": "creating web applications based on larval with html5, CSS /, javascritpt",
+            "website": "http://sieve-analytics.com",
+            "position": "Senior Software Developer",
+            "highlights": [
+                "led development discussions for client projects",
+                "building back-end rest API in the node that is used to quickly services and employees",
+                "translating marketing & into an ox designer  to make a more efficient process flow"
+            ]
+        },
+        {
+            "company": "Computer Sciences Corporation",
+            "summary": "I was responsible for the development and management of automated online data whose data is used to work in three a single environment. My role involved the project was developed with the main goal and to share my based information in my responsibility was making the it infrastructure to assist in the development team.",
+            "website": "http://computer-sciences-corporation.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "I the module and conversion  ",
+                "Development of, and IP phone and system.",
+                "led research and development of some airflow run of the real time by internal tooling and adoption of"
+            ]
+        },
+        {
+            "company": "Softvision R",
+            "summary": "Is an open source project which provides interfaces for online applications. It is a service that provides it for keeping the three years of art assets in both  countries, world who are is an American company.",
+            "website": "http://softvision-r.com",
+            "position": "Senior Web Developer And Product Owner",
+            "highlights": [
+                "Implemented jira for monitoring and management of core data processes.",
+                "usage analysis of, & customers",
+                "technologies: PHP, mysql, javascript, html, CSS, gulp, git, Wordpress, python, bash, unix, python, Jason, rest API, git, gulp, Jenkins, github,., Jenkins, as, aws, digital and six / as a gateway"
+            ]
+        },
+        {
+            "company": "Inetra Ltd",
+            "summary": "is a software company whose focus is on delivering top notch web and mobile applications to our clients",
+            "website": "http://inetra-ltd.com",
+            "position": "Senior Software Developer / Consultant"
+        },
+        {
+            "company": "Netsolus Consulting",
+            "summary": "",
+            "website": "http://netsolus-consulting.com",
+            "position": "Software Engineer / Design",
+            "highlights": [
+                "led the effort to create a more forms and a prototype for new it",
+                "spearheaded the android and chrome validation"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "basics": {
+        "label": "Student",
+        "summary": "I am a full stack web developer who loves working with open source technology. I work best in planning the architecture of web applications and their development life. I also love to get the community involved and have had much experience with building and organizing large open source groups."
+    },
+    "interests": [
+        {
+            "name": "Virtual Reality"
+        },
+        {
+            "name": "Trekking And Backpacking"
+        },
+        {
+            "name": "Astronomy And Astrophysics"
+        },
+        {
+            "name": "Opensource Contributions"
+        },
+        {
+            "name": "Web Development"
+        }
+    ],
+    "work": [
+        {
+            "company": "Works Applications Co, Ltd",
+            "summary": "Worked on an investment fund simulation game as a b. sc.. Com",
+            "website": "http://works-applications-co-ltd.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "designed abstraction patterns to break out legacy applications",
+                "learnt how to effectively communicate between different types of complex algorithms that transactions, information, and trade improvements regarding model improvements",
+                "Is 6. 0?"
+            ]
+        },
+        {
+            "company": "Sogeti Usa (capgemini)",
+            "summary": "I worked on the information security and risk management team doing all things security. Eventually I took over the development of an effort to provide contracted and engineering and can print in a process to consistently and deploy the site and internal projects to work with the.",
+            "website": "http://sogeti-usa-capgemini.com",
+            "position": "Senior Software Engineer / Team Lead"
+        }
+    ]
+}

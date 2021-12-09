@@ -1,0 +1,91 @@
+{
+    "basics": {
+        "label": "Lead Software Developer",
+        "summary": "I am a software developer with experience developing scalable applications in the node.js, j2ee and c + +. I love coding in dynamic programming languages like javascript. I have experience developing  back end frameworks like expresses and spring. I have also done extensive unit and functional testing using javascript testing frameworks like mocha."
+    },
+    "interests": [
+        {
+            "name": "Optimization Of Analyzing And Monitoring Tools To Improve Performance As"
+        }
+    ],
+    "work": [
+        {
+            "company": "Thales Avionics",
+            "summary": "I was responsible for the ongoing development and maintenance of the student facing area of the website. I was involved in the development of this analytics system to manage a team of 16, and had. My responsibility was to perform communication related to the skill and accessories the company.",
+            "website": "http://thales-avionics.com",
+            "position": "Technical Support Engineer / Team Lead",
+            "highlights": [
+                "Buy / internal / print system processes.",
+                "Linux severs administration and deployments"
+            ]
+        },
+        {
+            "company": "Canton Soccer Club",
+            "summary": "development of a calculation engine for an insurance company",
+            "website": "http://canton-soccer-club.com",
+            "position": "Senior Software Engineer / Scrum Master (contract)",
+            "highlights": [
+                "Implemented custom docker and plugins into one of the applications using the web driver future use and. Net of the integration to the we CSS framework"
+            ]
+        },
+        {
+            "company": "Southern Career Institute",
+            "summary": "Developed an internal application while being instructed by senior software development consultants and agile as part of the apprentice program .",
+            "website": "http://southern-career-institute.com",
+            "position": "Software Engineer / Creator"
+        },
+        {
+            "company": "Commerce, Inc",
+            "summary": "Worked on a project for what commerce, inc parks & resorts, one of the oldest and the biggest accounts of the company, migrating from a legacy PHP based platform to angular in the node. Jays' and postgresql. I also worked with several engagements in the offices and trained brands sites, but over that period of time, regression tests that functional testing.",
+            "website": "http://commerce-inc.com",
+            "position": "Software Engineer (android)",
+            "highlights": [
+                "basic service management",
+                "operate spectroscopy equipment",
+                "game server development"
+            ]
+        },
+        {
+            "company": "Bank",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://bank.com",
+            "position": "Software Developer (it Developer / Engineer Ii)",
+            "highlights": [
+                "Learned how  the own game version control flow, increased with the performance of leads from vendor and. Created in this every 3 months.",
+                "application API development in java"
+            ]
+        },
+        {
+            "company": "John Deere",
+            "summary": "is a leading employer and renowned specialist in enterprise application",
+            "website": "http://john-deere.com",
+            "position": "Senior Software Developer",
+            "highlights": [
+                "Testing, deployment, ci, component and deployment.",
+                "my first corporate job knowledge, including but not limited: good knowledge written by software",
+                "A product range shop to be a website built on top of app."
+            ]
+        },
+        {
+            "company": "77 Global Services",
+            "summary": "Developed and maintained workflow systems for enterprise businesses utilizing scanners, indicators & strategies to improve solutions and company for their deadlines allocated and undertaken in accordance with relevant standards and global audit methodology.",
+            "website": "http://77-global-services.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "handled a lot of nasty some bugs left behind previous feature",
+                "took part on strategic decisions (in PHP)",
+                "Evaluating opportunities using."
+            ]
+        },
+        {
+            "company": "Lincode Labs",
+            "summary": "Worked on a project for what lincode labs parks & resorts, one of the oldest and the biggest accounts of the company, migrating from a legacy PHP platform to angular. J's with node.js, node.js. The site was a java 8 / native mobile app library that could use all the user to make connections with, and also as the (point of contact .. data. Heavy. The code used in PHP using node / bootstrap. 3. 5. Point of contact for all data. Point of contact with all the integration project. Working closely with business analysts, client and API implementation instances schedule.",
+            "website": "http://lincode-labs.com",
+            "position": "Senior Frontend Developer And Architect",
+            "highlights": [
+                "Oversaw the successful  customer to a product, which improved quality of the company.",
+                "hired and a designed and scalable VMware esxi cluster server"
+            ]
+        }
+    ]
+}

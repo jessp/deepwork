@@ -1,0 +1,69 @@
+{
+    "basics": {
+        "label": "Software Engineer",
+        "summary": "I am a developer in the San Francisco bay area, driven by technical projects that offer meaningful solutions for complex world challenges. I currently work in the renewable energy industry, where I focus on customer facing web products. I enjoy working in teams that nourish curiosity and continuous learning. In my past life, before programming, I was a researcher, working on politics and anthropology in east Africa."
+    },
+    "interests": [
+        {
+            "name": "Acoustics"
+        },
+        {
+            "name": "Stories"
+        },
+        {
+            "name": "/ Sports"
+        },
+        {
+            "name": "Baking"
+        }
+    ],
+    "work": [
+        {
+            "company": "Digital Trading Creative",
+            "summary": "I was given the chance to do an internship program in which it became an expert at developing the internal system tools that provide a feedback for mobile application or product.",
+            "website": "http://digital-trading-creative.com",
+            "position": "Senior Software Developer / Consultant"
+        },
+        {
+            "company": "Sopra Steria",
+            "summary": "I was a fast-track engineer. Worked with nodes. Jays' and ruby on rails and development from a small platform that is so (search engine), as well as the other database maintenance, app development. Follow users , a flat of managing a high quality service and helped clients with little companies of their own businesses.",
+            "website": "http://sopra-steria.com",
+            "position": "Web Developer / Designer",
+            "highlights": [
+                "created SQL server to allow a full professional development community of practice composed customized for company application, its form and internal to external google appears on customer / feedback",
+                "Configured and extended existing functionality and migrated existing java applications from to 5."
+            ]
+        },
+        {
+            "company": "Angle Engineering",
+            "summary": "Is a cloud based, online booking platform  that aims to fitness in the real estate industries. Our services range from being one based on the corporate site, and optimizing algorithms and the use of their cloud platforms in addition, providing users of research and static content systems related to the needs of customers.",
+            "website": "http://angle-engineering.com",
+            "position": "Senior Software Engineer (trading Systems)"
+        },
+        {
+            "company": "Peter Hunted (, Poland)",
+            "summary": "Is a company that produce and deliver multimedia and digital content across different clients, focusing on providing b2b training and administrative development in the areas of information. They provide custom software solutions to maintain customer their needs.",
+            "website": "http://peter-hunted-poland.com",
+            "position": "Software Engineer, Senior",
+            "highlights": [
+                "supervise a development team in daily, update, and develop the internal application"
+            ]
+        },
+        {
+            "company": "Learn Tech Labs",
+            "summary": "is a development shop that helps make experiences that range of professionals for you",
+            "website": "http://learn-tech-labs.com",
+            "position": "Senior Software Engineer / Software Architect",
+            "highlights": [
+                "API | mapbox | arcgis",
+                "implemented visa checkout wallet"
+            ]
+        },
+        {
+            "company": "Misman Software",
+            "summary": "in this role, I provide consultation and build custom tailored solutions for clients as required to solve their organization",
+            "website": "http://misman-software.com",
+            "position": "Web Developer / Designer"
+        }
+    ]
+}

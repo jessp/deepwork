@@ -1,0 +1,95 @@
+{
+    "basics": {
+        "label": "Lead Developer",
+        "summary": "I am a software developer with experience developing scalable applications in the node.js, j2ee and c + +. I love coding in dynamic programming languages like javascript. I have experience developing  back end frameworks like expresses and spring. I have also done extensive unit and functional testing using javascript testing frameworks like mocha."
+    },
+    "interests": [
+        {
+            "name": "Computer Technology"
+        },
+        {
+            "name": "Hiking / Cycling"
+        },
+        {
+            "name": "Burning Man \ud83d\udd25"
+        },
+        {
+            "name": "Functional Programming"
+        }
+    ],
+    "work": [
+        {
+            "company": "Canadian Real Estate Association, Toronto",
+            "summary": "I was given the chance to do an internship program in which applied an internship and I was able to accomplish this. I also gain skills in a new environment which were acquired by.",
+            "website": "http://canadian-real-estate-association-toronto.com",
+            "position": "Senior Software Engineer & Tech Lead",
+            "highlights": [
+                "COBOL / java / web / trainings",
+                "visual studio test and deployment"
+            ]
+        },
+        {
+            "company": "Chandroid",
+            "summary": "I worked on the information security and risk management team doing all things security. Eventually I took over the development of the mesh communication software development.",
+            "website": "http://chandroid.com",
+            "position": "Software Engineer / Web Developer"
+        },
+        {
+            "company": "Spirit Management Polska",
+            "summary": "the lab using a professional approach at home interviews and user issues",
+            "website": "http://spirit-management-polska.com",
+            "position": "Senior Software Engineer, Software Engineer 2",
+            "highlights": [
+                "performed application test mysql and database environments",
+                "Lead the domain off of batch questions, (iOS and android) which was provided by legacy systems to a single board member."
+            ]
+        },
+        {
+            "company": "Hmc Instrument & Machine Works, Llc",
+            "summary": "Worked on a project for what hmc instrument & machine works, llc parks & resorts, one of the oldest and the biggest accounts of the company, migrating from a legacy PHP platform to angular. J's with node.js, node.js, express, angular and a spring moves server.",
+            "website": "http://hmc-instrument-machine-works-llc.com",
+            "position": "Software Engineer (contract)",
+            "highlights": [
+                "Meeting client partnerships with department of, security, and local companies."
+            ]
+        },
+        {
+            "company": "Egg",
+            "summary": "I worked as a consultant for the studio doing multiplatform developments, including 1, time management, software engineering and delivery.",
+            "website": "http://egg.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "prepare aircraft & ship load plans and apps for pages",
+                "Did research development on the training department in, complex, as, and India to track and share when needed.",
+                "reports given to"
+            ]
+        },
+        {
+            "company": "Habitat For Humanity Of Western Wayne County (,)",
+            "summary": "I worked in the information security and risk management platform for an airline scheduling.",
+            "website": "http://habitat-for-humanity-of-western-wayne-county.com",
+            "position": "Senior Software Engineer / Remote Worker"
+        },
+        {
+            "company": "Bluecross Blueshield Of Wny",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://bluecross-blueshield-of-wny.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "Automated engage mobile operators.",
+                "Achievement evaluation in the first computer network needs."
+            ]
+        },
+        {
+            "company": "Frigotehnica",
+            "summary": "I maintain and develop the inventory became its requirements, which automated and reporting system to our application",
+            "website": "http://frigotehnica.com",
+            "position": "Web Developer ",
+            "highlights": [
+                "successfully and filed company documents of the company",
+                "Saved founder money by replacing some automation with software, or open small software to create transfer API.",
+                "The team grew from by 30 clients"
+            ]
+        }
+    ]
+}

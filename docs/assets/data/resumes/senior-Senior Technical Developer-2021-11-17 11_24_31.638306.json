@@ -1,0 +1,85 @@
+{
+    "basics": {
+        "label": "Senior Technical Developer",
+        "summary": "I am a full stack developer who loves working with open source technology. I work best in planning the architecture of web applications and their development life."
+    },
+    "interests": [
+        {
+            "name": "Scouting"
+        }
+    ],
+    "work": [
+        {
+            "company": "My Work Australia",
+            "summary": "Is a startup that company provides online resources such as web, audio, video, real time and passion and.",
+            "website": "http://my-work-australia.com",
+            "position": "Technical Specialist / Info Architect",
+            "highlights": [
+                "preparing test cases, reports from legacy systems",
+                "configuration of data pipeline",
+                "Introduced a mathematical framework to run the twitter tables and pdf, booking students."
+            ]
+        },
+        {
+            "company": "United Inc Graphic News Ltd ",
+            "summary": "is a technology company that builds innovative tech for advertising",
+            "website": "http://united-inc-graphic-news-ltd.com",
+            "position": "Senior Software Engineer, Corporate Applications",
+            "highlights": [
+                "lead developer of virtual Singapore project",
+                "Lead development of the web front-end code with angularjs and javascript.",
+                "Load the security configuration of software installation and operation guidelines and."
+            ]
+        },
+        {
+            "company": "Sv Etoile",
+            "summary": "I was given the chance to do an internship program in which applied an internship and I was able to accomplish this. I also gain skills in a new environment which were acquired by.",
+            "website": "http://sv-etoile.com",
+            "position": "Senior Software Engineer / Team Lead"
+        },
+        {
+            "company": "Brainbox Production",
+            "summary": "Is a blockchain based startup that involved with technology and stacks, java, and many other brands.",
+            "website": "http://brainbox-production.com",
+            "position": "Senior Software Engineer, Technical Project Lead & Onsite Coordinator",
+            "highlights": [
+                "Regularly performed sales pitches and development.",
+                "Audit, improvement and design of an application, making that enable the company  manage and allowing staff move from to internet... end."
+            ]
+        },
+        {
+            "company": "Memorial Sloan Kettering Cancer Center",
+            "summary": "Is a software development workshop with a focus on RFID and product tracking.",
+            "website": "http://memorial-sloan-kettering-cancer-center.com",
+            "position": "Senior Software Engineer / Team Lead",
+            "highlights": [
+                "implemented mockups and of user authentication",
+                "Amazon web services including orchestration, resilience or legal."
+            ]
+        },
+        {
+            "company": "Web Soft Sp Z",
+            "summary": "Developed software in python and c. duties included media conversion, farm management, creative design and documentation, and implementation support.",
+            "website": "http://web-soft-sp-z.com",
+            "position": "Senior Software Engineer, Corporate Applications"
+        },
+        {
+            "company": ", Usa",
+            "summary": "Is a technology platform for online sports information. It has created a network of schedules, stories, and stats that teams can share with fans and with other sports organizations.",
+            "website": "http://usa.com",
+            "position": "Senior Software Engineer / Rails Architect",
+            "highlights": [
+                "Ensured that software supported all the hundreds of ethernet connections and sources from an average of% per year."
+            ]
+        },
+        {
+            "company": "Aboutweb",
+            "summary": "Is a software company providing tools for multidisciplinary design optimization and predictive maintenance.",
+            "website": "http://aboutweb.com",
+            "position": "Technical Lead (remote)",
+            "highlights": [
+                "documented pci compliance with certification"
+            ]
+        }
+    ]
+}
