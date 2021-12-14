@@ -11,6 +11,7 @@ import {StudioB} from './studio-b';
 import {StudioA} from './studio-a';
 import {Resume} from './resume';
 import {VideoPlayer} from './video';
+import {MenuLinker} from './menu';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -59,6 +60,8 @@ function init() {
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 
   new Resume("#resume", "intermediate");
+
+  new MenuLinker(".menu-item-wrapper", ".main-link");
 
 
 }
