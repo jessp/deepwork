@@ -17,10 +17,14 @@ export class StudioA {
 			.domain([0, 6])
 			.range([18, -18]);
 
+		const scaleBeaut = d3.scaleLinear()
+			.domain([0, 6])
+			.range([0, -24]);
+
 		const f = e => Math.round(e) + ".0";
 
 		this.pic
-			.style("background-image", `url(assets/images/attributes/expressions_0${(this.slider.position + 1)}__age,${f(scaleLin(this.pos_age))}_beauty,${f(scaleLin(this.pos_beauty))}_gender,${f(scaleLin(this.pos_gender))}.jpg`);
+			.style("background-image", `url(assets/images/attributes/expressions_0${(this.slider.position + 1)}__age,${f(scaleLin(this.pos_age))}_beauty,${f(scaleBeaut(this.pos_beauty))}_gender,${f(scaleLin(this.pos_gender))}.jpg`);
 
 	}
 
