@@ -8,6 +8,10 @@
 	</div>
 	<h3>{{this.title}}</h3>
 	<p>{{this.content}}</p>
-	<p class="author">{{this.author}}</p>
+	{{#ifEquals this.author "“BrianAlyssa”"}}
+		<p class="author">“<span style="text-decoration: line-through">Brian</span>Alyssa”</p>
+	{{else}}
+		<p class="author">{{this.author}}</p>
+	{{/ifEquals}}
 	<p class="location">{{this.location}}</p>
 </div>
