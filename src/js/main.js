@@ -51,6 +51,17 @@ function init() {
   // load footer stories
   footer.init();
 
+  d3.select(".nav-button").on("click", () => {
+    let mainInfo = d3.select(".main");
+    let aboutInfo = d3.select(".about");
+    let isMainClosed = mainInfo.classed("closed");
+
+    mainInfo.classed("closed", !isMainClosed);
+    aboutInfo.classed("closed", isMainClosed);
+    d3.select(".nav-button p").html(`${isMainClosed ? "about us" : "our offerings"}`)
+
+  });
+
   
 
   const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");

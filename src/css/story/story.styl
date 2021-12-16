@@ -14,6 +14,7 @@ h1
 	set-type-size(xxxx-large, true)
 
 h2
+	font-family: $lyon
 	set-type-size(xx-large, true)
 
 h3
@@ -32,6 +33,7 @@ p, li
 	text-transform: uppercase
 
 .single-col
+	margin: 0 auto
 	max-width: $single-col
 	h3
 		text-transform:uppercase
@@ -138,6 +140,23 @@ section
 	svg
 		width: 20px
 		height: 100%
+
+.nav-button
+	text-align: right
+	margin-top: 2rem
+	p
+		font-family: $lyon
+		border-bottom: 1px solid $gray-dark
+		color: $gray-dark
+		set-type-size(small, false)
+		line-height: 1.25
+		display: inline-block
+		cursor: pointer
+		&:hover
+			color $fg
+
+.closed:not(.toggler)
+	display: none
 
 .fade-in {
 	animation: fadeIn linear 1.5s

@@ -1,19 +1,21 @@
-<div class="wide-block">
-	<h1>{{content.title}}</h1>
-	<img src="assets/images/illustrations/Cover.svg"/>
-</div>
-<div class="single-col">
-	<p>{{content.intro.content.0.text}}</p>
-</div>
-<div class="single-col">
-	<h2>Our Products</h2>
-</div>
-{{> story/menu-holder }}
-<div class="single-col">
-	{{#each content.intro.content}}
-		{{#if @first}}
-		{{else}}
-			{{> story/escape-link this }}
-		{{/if}}
-	{{/each}}
-</div>
+<section>
+	<div class="wide-block">
+		<h1>{{content.title}}</h1>
+		<img src="assets/images/illustrations/Cover.svg"/>
+	</div>
+	<div class="single-col">
+		<p>{{content.intro.content.0.text}}</p>
+	</div>
+	<div class="single-col">
+		<h2>Our Products</h2>
+	</div>
+	{{> story/menu-holder }}
+	<div class="single-col">
+		{{#each content.intro.content}}
+			{{#if @first}}
+			{{else}}
+				{{> story/escape-link this }}
+			{{/if}}
+		{{/each}}
+	</div>
+</section>
