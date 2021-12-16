@@ -1,0 +1,33 @@
+<section>
+	<div class="single-col">
+		{{#if content.title}}
+			<h3>{{content.title}}</h3>
+		{{/if}}
+		{{#each content.content}}
+			{{> story/escape-link this }}
+		{{/each}}
+		<div class="toggler single-col closed pic-info">
+			<img src="assets/images/svgs/chevron-right.svg"/>
+			<p>
+				<span class="phrase">Show</span>
+				<span> stock photo credits</span>
+			</p>
+		</div>
+		<div class="toggled single-col closed pic-info">
+			<ul class="bulleted">
+				{{#each content.list}}
+					<li>
+						<span class="heavier">
+						{{#if this.link}}
+							<a href={{this.link}} target="_blank">{{this.name}}</a>
+						{{else}}
+							{{this.name}}
+						{{/if}}
+						</span>
+						by {{this.credit}}
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</section>

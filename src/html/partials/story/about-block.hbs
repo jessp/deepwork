@@ -1,0 +1,10 @@
+<section>
+	<div class="single-col">
+		{{#if content.title}}
+			<h3>{{content.title}}</h3>
+		{{/if}}
+		{{#each content.content}}
+			{{> story/escape-link this }}
+		{{/each}}
+	</div>
+</section>

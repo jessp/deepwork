@@ -12,6 +12,7 @@ import {StudioA} from './studio-a';
 import {Resume} from './resume';
 import {VideoPlayer} from './video';
 import {MenuLinker} from './menu';
+import {Toggler} from './toggler';
 
 const $body = d3.select('body');
 let previousWidth = 0;
@@ -50,6 +51,8 @@ function init() {
   // load footer stories
   footer.init();
 
+  
+
   const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
   const photoA = new PhotoSlider("#studioA", 6, 9, null);
   const studA = new StudioA("#studio-a-container", photoA);
@@ -62,6 +65,9 @@ function init() {
   new Resume("#resume", "intermediate");
 
   new MenuLinker(".menu-item-wrapper", ".main-link");
+
+  new Toggler("beauty-ai", "more", "less");
+  new Toggler("pic-info", "Show", "Hide");
 
 
 }

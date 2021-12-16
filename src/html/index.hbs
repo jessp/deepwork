@@ -19,6 +19,9 @@
 
 
 	<main id='content'>
+		{{> story/banner }}
+		{{> story/about }}
+		<div style="display: none;">
 		{{> story/intro }}
 		{{> story/feature-block which='resume' content=content.resume illustration="illustrations/Illustration-1.svg"}}
 		{{> story/feature-block which='photo-studio' content=content.photo illustration="illustrations/Illustration-2.svg"}}
@@ -27,6 +30,7 @@
 		{{> story/feature-block which='video-call' content=content.video-call illustration="illustrations/Illustration-4.svg"}}
 		{{> story/outro content=content.outro}}
 		{{> story/reviews reviews=content.reviews}}
+		</div>
 	</main>
 
 	{{> base/footer }}

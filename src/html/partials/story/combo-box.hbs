@@ -3,10 +3,9 @@
     {{#each opts}}
       {{#if ../accessor}}
         <option value={{this.id}}>{{this.accessor}}</option>
-      {{/if}}
-      {{#unless ../accessor}}
+      {{else}}
         <option value={{this}}>{{this}}</option>
-      {{/unless}}
+      {{/if}}
     {{/each}}
   </select>
 </div>

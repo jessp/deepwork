@@ -1,0 +1,37 @@
+.about
+	h1, h2
+		text-align: center
+	h2
+		margin-top: 5rem
+
+.toggler
+	cursor: pointer
+	background: rgba(255, 255, 255, 0.25)
+	border: 1px solid $gray
+	box-shadow: 3px 3px 5px $gray
+	padding: 0.5em
+	border-radius: $border-rad
+	&.single-col
+		margin: 0 auto
+	p
+		margin: 0px
+	*
+		vertical-align: middle
+		display: inline-block
+	img
+		width: 24px
+		height: 24px
+
+.toggled
+	&.closed
+		display: none
+	.single-col
+		margin: 0 auto
+		padding-left: 2rem
+		border-left: 2px solid $gray-light
+
+.bulleted
+	margin-top: 2rem
+	li
+		list-style-type: disc
+		margin: 0 0 1rem 1rem
