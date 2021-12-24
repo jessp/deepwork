@@ -21,11 +21,6 @@
 				"filepath": "src/assets/data/tweets/15828408_20423403_tweets.csv"
 			},
 			{
-				"id": "1g5V1pol2QugbRMu4LJh-UBkLPYcyq27K_GE_NtjsBdI",
-				"gid": "670142161",
-				"filepath": "src/assets/data/tweets/15828408_20961901_tweets.csv"
-			},
-			{
 				"id": "1DWPHlj3OWYlTZtbStxBcuHFs7uEctvPXuq_QQj7Tozs",
 				"gid": "406768107",
 				"filepath": "src/assets/data/tweets/15828408_159315527_tweets.csv"
@@ -49,36 +44,6 @@
 				"id": "1kWBwO50hG1IXmzp-JQwuuXiJYd_GAz8Dq1vymULEAtg",
 				"gid": "794037750",
 				"filepath": "src/assets/data/tweets/15828408_1596639318_tweets.csv"
-			},
-			{
-				"id": "1p7nspDY1KMgRzu63_aWNUaEW6lJl3Zcmo-oWbiLxuo8",
-				"gid": "606227403",
-				"filepath": "src/assets/data/tweets/20961901_20423403_tweets.csv"
-			},
-			{
-				"id": "150SafB9FykG0zFEDfHrLHGlK3LuXJp0EAsKZ5DoCM2w",
-				"gid": "1376781622",
-				"filepath": "src/assets/data/tweets/20961901_159315527_tweets.csv"
-			},
-			{
-				"id": "1IrXoftHX8pgc0t7cZ1easebgVaOClfZVBDq9JFNsJ_0",
-				"gid": "1856567599",
-				"filepath": "src/assets/data/tweets/20961901_284278132_tweets.csv"
-			},
-			{
-				"id": "1c-c3wli5_2EiL2zPX64kB2JXY9ojo9NOQTci0RsUWTc",
-				"gid": "902017033",
-				"filepath": "src/assets/data/tweets/20961901_625733783_tweets.csv"
-			},
-			{
-				"id": "1K2YDF5b8c9utq4vsDeMyi7UBExgFhfkqTDhKrDyKN-c",
-				"gid": "1785054452",
-				"filepath": "src/assets/data/tweets/20961901_871547965_tweets.csv"
-			},
-			{
-				"id": "1Ry555S1vIuudWRdcMEXMw-Exz3j9u7U93dpFflCf4bo",
-				"gid": "1631012447",
-				"filepath": "src/assets/data/tweets/20961901_1596639318_tweets.csv"
 			},
 			{
 				"id": "1Dpb6DPiMqe2sSFiI4bB_j1zCj2C6Tc2e4fEAJvJzqxA",
@@ -124,11 +89,6 @@
 				"id": "1QVgU3o59JLTPFuOpu0f2aK1VGZBcNwg9PlVD_GB-kUI",
 				"gid": "234641172",
 				"filepath": "src/assets/data/tweets/446719282_20423403_tweets.csv"
-			},
-			{
-				"id": "1828tDYQZ8C75JS-f97WqV2Cddz-uAwB7-3Fb9_dJy8Q",
-				"gid": "135689028",
-				"filepath": "src/assets/data/tweets/446719282_20961901_tweets.csv"
 			},
 			{
 				"id": "1Ej0OlEeWNjwYOXQA857VMh-_HaYWY3fzjNDT7IZRkSQ",
@@ -209,11 +169,6 @@
 				"id": "1UslWku1kMian48OL0LSWB8gdgNypVapcWIfExSFl3ks",
 				"gid": "1536402392",
 				"filepath": "src/assets/data/tweets/1636590253_159315527_tweets.csv"
-			},
-			{
-				"id": "1M4P0x3I3JgJvMbYVhxlWtrAsbUOwdj0LuUdQ7gbUED0",
-				"gid": "932041378",
-				"filepath": "src/assets/data/tweets/1636590253_20961901_tweets.csv"
 			},
 			{
 				"id": "10HSAF5CsssJWb94_b4xXTOLfiFQKK8N--LPqJ3Ap41o",

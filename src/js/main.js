@@ -62,6 +62,15 @@ function init() {
 
   });
 
+  d3.selectAll(".banner-click").on("click", () => {
+    let mainInfo = d3.select(".main");
+    let aboutInfo = d3.select(".about");
+
+    mainInfo.classed("closed", false);
+    aboutInfo.classed("closed", true);
+    d3.select(".nav-button p").html("about us");
+  })
+
   
 
   const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
