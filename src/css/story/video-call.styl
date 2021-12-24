@@ -30,6 +30,7 @@
 	flex-direction: column
 
 .video-header
+	cursor: default
 	height: 45px
 	background-color: $bg-video
 	color: $gray-light
@@ -72,9 +73,18 @@
 		border-radius: 10px
 		padding: 0.5rem 1rem
 		background-color: $gray-dark
+		transition: background-color 0.25s
 		margin: 0.25rem
 		color: $white
 		set-type-size(small, false)
+		&.btn-clicked
+			transition: background-color 0.25s
+			&:nth-of-type(1)
+				background-color: #c87006
+			&:nth-of-type(2)
+				background-color: #2a5eba
+			&:nth-of-type(3)
+				background-color: #942d2d
 
 .video-buttons
 	height: 55px
@@ -84,3 +94,4 @@
 	justify-content: space-evenly
 	padding: 0.5em
 	border-radius: 0 0 $border-rad $border-rad
+	cursor: default

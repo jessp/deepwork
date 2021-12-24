@@ -2,7 +2,6 @@ export class VideoPlayer {
   	constructor(_id) {
     	this.id = d3.select(_id);
     	this.picIndex = [5, 9, 1];
-    	this.changeUpcoming = false;
     	this.upcoming = null;
 
 
@@ -73,8 +72,8 @@ export class VideoPlayer {
 
 		this.buttons.on("click", (e) => {
 			this.upcoming = e.target.dataset["item"];
-			this.changeUpcoming = true;
-
+			this.buttons.classed("btn-clicked", false);
+			d3.select(e.target).classed("btn-clicked", true);
 			this.showReaction();
 
 		})
@@ -84,6 +83,7 @@ export class VideoPlayer {
 
 		this.reactionVidHolder.node()
 			.addEventListener('ended', () => {
+				this.buttons.classed("btn-clicked", false);
 				this.staticVidHolder.style("opacity", 100);
 				this.reactionVidSrc.attr("src", "");
 			}, false);
