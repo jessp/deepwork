@@ -38,9 +38,13 @@ export class StudioB {
 			this.vidCallback(this.picA + 1, this.picB + 1, this.position);
 			this.picCallback(this.picA + 1, this.picB + 1, this.position * -100);
 		} else if (this.picB === this.picA) {
-			const otherVid = this.picA === 0 ? 2 : 1;
-			this.vidCallback(this.picA + 1, otherVid, 0);
-			this.picCallback(this.picA + 1, otherVid, 0);
+			if (this.picA < 8){
+				this.vidCallback(this.picA + 1, 9, 0);
+				this.picCallback(this.picA + 1, 9, 0);
+			} else {
+				this.vidCallback(1, this.picB + 1, this.max);
+				this.picCallback(1, this.picB + 1, this.max * -100);
+			}
 		} else {
 			this.vidCallback(this.picB + 1, this.picA + 1, (this.max + 1 - this.position));
 			this.picCallback(this.picB + 1, this.picA + 1, (this.max + 1 - this.position) * -100);
