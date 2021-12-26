@@ -94,7 +94,8 @@ export class VideoPlayer {
 				this.reactionVidSrc.attr("src", "");
 			}, false);
 
-			var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+			const lazyVideo = d3.select("video.lazy").node();
+
 			if ("IntersectionObserver" in window) {
 			    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
 			      entries.forEach(function(video) {
@@ -114,9 +115,7 @@ export class VideoPlayer {
 			      });
 			    });
 
-			    lazyVideos.forEach(function(lazyVideo) {
-			      lazyVideoObserver.observe(lazyVideo);
-			    });
+			    lazyVideoObserver.observe(lazyVideo);
 			} 
 
 	}
