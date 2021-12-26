@@ -38,6 +38,7 @@ function setupStickyHeader() {
 }
 
 function init() {
+
   // adds rel="noopener" to all target="_blank" links
   linkFix();
   // add mobile class to body tag
@@ -74,8 +75,17 @@ function init() {
   
 
   const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
+
+
   const photoA = new PhotoSlider("#studioA", 6, 9, null);
-  const studA = new StudioA("#studio-a-container", photoA);
+
+  const studASliders = [
+    {att: "gender", min: 0, max: 6, start: 3, minLabel: "More Masculine", maxLabel: "More Feminine"},
+    {att: "age", min: 0, max: 6, start: 3, minLabel: "Younger", maxLabel: "Older"},
+    {att: "beauty", min: 0, max: 6, start: 3, minLabel: "Drab", maxLabel: "Fab"}
+  ];
+
+  const studA = new StudioA("#studio-a-container", photoA, studASliders);
 
   const vid = new VideoPlayer("#video-call");
   const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8, (a, b, c) => vid.changeVid(a, b, c), (a, b, c) => thoughtLeader.changePic(a, b, c));

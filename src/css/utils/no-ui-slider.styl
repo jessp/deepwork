@@ -90,13 +90,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-  height: 18px;
+  height: 14px;
 }
 .noUi-horizontal .noUi-handle {
-  width: 34px;
-  height: 28px;
-  left: -17px;
-  top: -6px;
+  width: 28px;
+  height: 20px;
+  left: -14px;
+  top: -4px;
 }
 .noUi-vertical {
   width: 18px;
@@ -117,14 +117,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-target {
   background: #FAFAFA;
   border-radius: 4px;
-  border: 1px solid #D3D3D3;
-  box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+  border: 1px solid #282828;
+  margin-bottom: 40px;
 }
 .noUi-connects {
   border-radius: 3px;
 }
 .noUi-connect {
-  background: #3FB8AF;
+  background: #5291ee;
 }
 /* Handles and cursors;
  */
@@ -135,41 +135,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   cursor: ns-resize;
 }
 .noUi-handle {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #282828;
   border-radius: 3px;
   background: #FFF;
   cursor: default;
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
 }
+
 .noUi-active {
   box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
 }
-/* Handle stripes;
- */
-.noUi-handle:before,
-.noUi-handle:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 14px;
-  width: 1px;
-  background: #E8E7E6;
-  left: 14px;
-  top: 6px;
-}
-.noUi-handle:after {
-  left: 17px;
-}
-.noUi-vertical .noUi-handle:before,
-.noUi-vertical .noUi-handle:after {
-  width: 14px;
-  height: 1px;
-  left: 6px;
-  top: 14px;
-}
-.noUi-vertical .noUi-handle:after {
-  top: 17px;
-}
+
 /* Disabled state;
  */
 [disabled] .noUi-connect {
@@ -190,7 +165,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .noUi-pips {
   position: absolute;
-  color: #999;
+  color: #282828;
 }
 /* Values;
  *
@@ -199,9 +174,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: absolute;
   white-space: nowrap;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
 }
 .noUi-value-sub {
-  color: #ccc;
+  color: #444;
   font-size: 10px;
 }
 /* Markings;
@@ -221,30 +198,36 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  *
  */
 .noUi-pips-horizontal {
-  padding: 10px 0;
-  height: 80px;
+  padding: 3px 0;
+  height: 40px;
   top: 100%;
   left: 0;
   width: 100%;
 }
 .noUi-value-horizontal {
-  -webkit-transform: translate(-50%, 50%);
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
 }
+
+.noUi-value-horizontal[data-value="6"] {
+	-webkit-transform: translate(-100%, 50%);
+  transform: translate(-100%, 50%);
+}
+
 .noUi-rtl .noUi-value-horizontal {
   -webkit-transform: translate(50%, 50%);
   transform: translate(50%, 50%);
 }
 .noUi-marker-horizontal.noUi-marker {
   margin-left: -1px;
-  width: 2px;
+  width: 1px;
   height: 5px;
 }
 .noUi-marker-horizontal.noUi-marker-sub {
   height: 10px;
 }
 .noUi-marker-horizontal.noUi-marker-large {
-  height: 15px;
+  height: 8px;
 }
 /* Vertical layout;
  *

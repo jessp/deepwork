@@ -1,7 +1,11 @@
+import noUiSlider from 'nouislider';
+
+
 export class StudioA {
-  	constructor(_id, _slider) {
+  	constructor(_id, _slider, _sliders) {
     	this.id = d3.select(_id);
     	this.slider = _slider;
+    	this.sliders = _sliders;
     	this.pos_beauty = 0;
     	this.pos_age = 0;
     	this.pos_gender = 0;
@@ -28,23 +32,40 @@ export class StudioA {
 
 	}
 
+	setupSlider(slide){
+		noUiSlider.create(this.id.select(`#pos_${slide.att}`).node(), {
+		    start: [slide.start],
+		    range: {
+		        'min': slide.min,
+		        'max': slide.max
+		    },
+		    connect: 'lower',
+		    pips: {
+		        mode: 'count',
+    		    values: 2,
+    		    density: 1000,
+    		    format: {
+    		    	to: function (value) {
+			            return value === 0 ? slide.minLabel : slide.maxLabel
+			        }
+    		    }
+		    },
+		    step: 1
+		}).on("change", e => {
+			this[("pos_"+slide.att)] = parseInt(e);
+			this.updatePic();
+		});
+
+	}
+
+
 	init(){
+		for (var i = 0; i < this.sliders.length; i++){
+			this.setupSlider(this.sliders[i]);
+		}
+		
 
 		this.slider.setCallback(e => this.updatePic());
-
-		this.id.selectAll("input:not(.photo-select)")
-			.each((e, i, v) => {
-				if (v[i].id){
-					this[("pos_"+v[i].id)] = parseInt(v[i].value);
-				}
-			})
-			.on("change", e => {
-				const att = e.target.id;
-				if (this[("pos_"+att)] !== undefined){
-					this[("pos_"+att)] = parseInt(e.target.value);
-					this.updatePic();
-				}
-			});
 
 		this.updatePic();
 
