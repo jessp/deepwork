@@ -6,9 +6,9 @@ export class StudioA {
     	this.id = d3.select(_id);
     	this.slider = _slider;
     	this.sliders = _sliders;
-    	this.pos_beauty = 0;
-    	this.pos_age = 0;
-    	this.pos_gender = 0;
+    	this.pos_beauty = this.sliders.find(e => e.att === "beauty").start;
+    	this.pos_age = this.sliders.find(e => e.att === "age").start;
+    	this.pos_gender = this.sliders.find(e => e.att === "gender").start;
 
     	
     	this.pic = this.id.select(".photo-studio-main");

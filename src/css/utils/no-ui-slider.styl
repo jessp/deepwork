@@ -95,7 +95,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
 .noUi-horizontal .noUi-handle {
   width: 28px;
   height: 20px;
-  left: -14px;
+  left: -15px;
   top: -4px;
 }
 .noUi-vertical {
@@ -108,7 +108,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
   top: -17px;
 }
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-  right: -17px;
+  right: -14px;
   left: auto;
 }
 /* Styling;
@@ -118,8 +118,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background: #FAFAFA;
   border-radius: 4px;
   border: 1px solid #282828;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
+
+.noUi-target.photo-select {
+	margin-bottom: 13px;
+}
+
+
 .noUi-connects {
   border-radius: 3px;
 }
@@ -199,19 +205,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  */
 .noUi-pips-horizontal {
   padding: 3px 0;
-  height: 40px;
+  height: 20px;
   top: 100%;
   left: 0;
   width: 100%;
 }
 .noUi-value-horizontal {
-  -webkit-transform: translate(0, 50%);
-  transform: translate(0, 50%);
+  -webkit-transform: translate(-100%, 25%);
+  transform: translate(-100%, 25%);
 }
 
-.noUi-value-horizontal[data-value="6"] {
-	-webkit-transform: translate(-100%, 50%);
-  transform: translate(-100%, 50%);
+.noUi-value-horizontal[data-value="0"] {
+	-webkit-transform: translate(0, 25%);
+  transform: translate(0, 25%);
 }
 
 .noUi-rtl .noUi-value-horizontal {
@@ -227,7 +233,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 10px;
 }
 .noUi-marker-horizontal.noUi-marker-large {
-  height: 8px;
+  height: 5px;
 }
 /* Vertical layout;
  *

@@ -82,13 +82,15 @@ function init() {
   const studASliders = [
     {att: "gender", min: 0, max: 6, start: 3, minLabel: "More Masculine", maxLabel: "More Feminine"},
     {att: "age", min: 0, max: 6, start: 3, minLabel: "Younger", maxLabel: "Older"},
-    {att: "beauty", min: 0, max: 6, start: 3, minLabel: "Drab", maxLabel: "Fab"}
+    {att: "beauty", min: 0, max: 6, start: 0, minLabel: "Drab", maxLabel: "Fab"}
   ];
 
   const studA = new StudioA("#studio-a-container", photoA, studASliders);
 
   const vid = new VideoPlayer("#video-call");
-  const studB = new StudioB("#studio-b-container", "#pic-mix", 5, 9, 2, 8, (a, b, c) => vid.changeVid(a, b, c), (a, b, c) => thoughtLeader.changePic(a, b, c));
+
+  const studBSlider = {id: "pic-mix", min: 0, max: 9, start: 5, minLabel: "Photo A", maxLabel: "Photo B"}
+  const studB = new StudioB("#studio-b-container", studBSlider, 2, 8, (a, b, c) => vid.changeVid(a, b, c), (a, b, c) => thoughtLeader.changePic(a, b, c));
   new PhotoSlider("#studioB1", 2, 9, (e) => studB.updateVar(true, e));
   new PhotoSlider("#studioB2", 8, 9, (e) => studB.updateVar(false, e));
 

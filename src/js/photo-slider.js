@@ -1,10 +1,11 @@
+import noUiSlider from 'nouislider';
+
 export class PhotoSlider {
   	constructor(_id, _position, _steps, _effect) {
     	this.id = d3.select(_id);
     	this.position = _position;
     	this.effect = _effect;
     	this.steps = _steps;
-    	this.input = this.id.select("input");
     	this.grid = this.id.select(".photo-grid");
     	this.init();
 	}
@@ -13,10 +14,10 @@ export class PhotoSlider {
 		this.effect = _effect;
 	}
 
+
+
 	init(){
-		this.input.attr("min", 0);
-		this.input.attr("max", this.steps-1);
-		this.input.attr("value", this.position);
+
 
 		this.grid.selectAll("div")
 			.data(Array.apply(null, Array(this.steps)))
@@ -27,15 +28,23 @@ export class PhotoSlider {
 					.attr("class", (d, i) => i === this.position ? "selected-pic" : null)
 			)
 
-		this.input.on("change", d => {
-			this.position = parseInt(d.target.value);
+		noUiSlider.create(this.id.select(".photo-select").node(), {
+		    start: [this.position],
+		    range: {
+		        'min': 0,
+		        'max': this.steps - 1
+		    },
+		    connect: 'lower',
+		    step: 1
+		}).on("change", e => {
+			this.position = parseInt(e);
 			this.grid.selectAll("div").classed("selected-pic", false);
 			this.grid.select(`div:nth-of-type(${(this.position + 1)})`)
 				.classed("selected-pic", true);
 			if (this.effect !== null){
 				this.effect(this.position);
 			}
-		})
+		});
 
 
 	}

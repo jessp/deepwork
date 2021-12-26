@@ -1,9 +1,11 @@
+import noUiSlider from 'nouislider';
+
 export class StudioB {
-  	constructor(_id, _slider, _position, _max, _picA, _picB, _vidCallback, _picCallback) {
+  	constructor(_id, _slider, _picA, _picB, _vidCallback, _picCallback) {
     	this.id = d3.select(_id);
-    	this.slider = d3.select(_slider);
-    	this.position = _position;
-    	this.max = _max;
+    	this.slider = _slider;
+    	this.position = this.slider.start;
+    	this.max = this.slider.max;
     	this.picA = _picA;
     	this.picB = _picB;
     	this.vidCallback = _vidCallback;
@@ -53,16 +55,37 @@ export class StudioB {
 
 	}
 
+	setupSlider(slide){
+		noUiSlider.create(this.id.select(`#${slide.id}`).node(), {
+		    start: [slide.start],
+		    range: {
+		        'min': slide.min,
+		        'max': slide.max
+		    },
+		    connect: 'lower',
+		    pips: {
+		        mode: 'count',
+    		    values: 2,
+    		    density: 1000,
+    		    format: {
+    		    	to: function (value) {
+			            return value === 0 ? slide.minLabel : slide.maxLabel
+			        }
+    		    }
+		    },
+		    step: 1
+		}).on("change", e => {
+			this.position = parseInt(e);
+			this.updatePic();
+		});
+
+	}
+
 	init(){
-		this.slider.attr("value", this.position);
-		this.slider.attr("max", this.max);
+		this.setupSlider(this.slider);
 
 		this.updatePic();
 		
-		this.slider.on("change", d => {
-			this.position = parseInt(d.target.value);
-			this.updatePic();
-		})
 	}
 
 	updateVar(isA, newPos){
