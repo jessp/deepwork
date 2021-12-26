@@ -15,9 +15,11 @@ export class VideoPlayer {
     		.style("position", "absolute")
     		.style("left", 0)
     		.style("top", 0)
+    		.attr("class", "lazy needChange")
     		.property("autoplay", true)
     		.property("muted", true)
     		.property("loop", true)
+    		.property("playsinline", true)
     		.style("width", "100%")
     		.style("height", "100%")
     		.style("z-index", 1);
@@ -25,7 +27,7 @@ export class VideoPlayer {
     	this.staticVidSrc =
     		this.staticVidHolder
     		.append("source")
-    		.attr("src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
+    		.attr("data-src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`)
     		.attr("type", "video/mp4");
 
     	this.reactionVidHolder = 
@@ -35,6 +37,7 @@ export class VideoPlayer {
     		.style("top", 0)
     		.property("autoplay", true)
     		.property("muted", true)
+    		.property("playsinline", true)
     		.style("width", "100%")
     		.style("height", "100%");
     	
@@ -61,8 +64,11 @@ export class VideoPlayer {
 	changeVid(a, b, c){
 		this.picIndex = [a, b, c];
 
+		this.staticVidHolder
+			.attr("class", "lazy needChange");
+
 		this.staticVidSrc
-    		.attr("src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`);
+    		.attr("data-src", `assets/videos/static_morphing_0${this.picIndex[0]}_0${this.picIndex[1]}_${this.picIndex[2]}.mp4`);
 	
     	this.staticVidHolder.node().load();
 	}
@@ -87,6 +93,33 @@ export class VideoPlayer {
 				this.staticVidHolder.style("opacity", 100);
 				this.reactionVidSrc.attr("src", "");
 			}, false);
+
+			var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+			if ("IntersectionObserver" in window) {
+			    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+			      entries.forEach(function(video) {
+			        if (video.isIntersecting) {
+			          for (var source in video.target.children) {
+			            var videoSource = video.target.children[source];
+			            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+			              videoSource.src = videoSource.dataset.src;
+			            }
+			          }
+
+			          if (video.target.classList.contains("needChange")){
+			          	video.target.load();
+			          	video.target.classList.remove("needChange");
+			          }
+			        }
+			      });
+			    });
+
+			    lazyVideos.forEach(function(lazyVideo) {
+			      lazyVideoObserver.observe(lazyVideo);
+			    });
+			} 
+
 	}
+
 
 }
