@@ -60,8 +60,6 @@ p, li
 		background-color: #FFFFFF
 		border: #F9F9F9 5px solid
 		margin-top: 1.5rem
-		width: 350px
-		height: 700px
 		margin: 0 auto
 		border-radius: 30px
 		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3)
@@ -95,8 +93,12 @@ section
 			line-height: 1.4
 			margin: 0px
 	.feature-content
-		width: 350px
-		height: 700px
+		width: 325px
+		height: 670px
+	+mq('bp-3')
+		.feature-content
+			width: 350px
+			height: 700px
 	+mq('bp-4')
 		grid-template-columns: auto auto
 		grid-template-rows: min-content 100%
