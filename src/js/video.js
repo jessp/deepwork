@@ -19,7 +19,7 @@ export class VideoPlayer {
     		.property("autoplay", true)
     		.property("muted", true)
     		.property("loop", true)
-    		.property("playsinline", true)
+    		.attr("playsinline", '')
     		.style("width", "100%")
     		.style("height", "100%")
     		.style("z-index", 1);
@@ -37,7 +37,7 @@ export class VideoPlayer {
     		.style("top", 0)
     		.property("autoplay", true)
     		.property("muted", true)
-    		.property("playsinline", true)
+    		.attr("playsinline", '')
     		.style("width", "100%")
     		.style("height", "100%");
     	
@@ -110,6 +110,12 @@ export class VideoPlayer {
 			          if (video.target.classList.contains("needChange")){
 			          	video.target.load();
 			          	video.target.classList.remove("needChange");
+			          	//hack for safari
+			          	window.setTimeout(() => {
+			          		if (video.target.paused){
+			          			video.target.play();
+			          		}
+			          	}, 500);
 			          }
 			        }
 			      });
