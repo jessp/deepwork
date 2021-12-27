@@ -1,3 +1,5 @@
+import {tweetFiles} from "./tweet_files";
+
 export class ThoughtLeadership {
   	constructor(_id1, _id2, _inf1, _inf2, _content) {
     	this.id1 = d3.select(_id1);
@@ -26,18 +28,14 @@ export class ThoughtLeadership {
 
 	reqData(val1, val2, firstTry){
 
-		fetch(`assets/data/tweets/${val1}_${val2}_tweets.csv`).then(response => {
+		fetch(`assets/data/tweets/${tweetFiles[val1][val2]}`).then(response => {
 		  if (!response.ok) {
 		    return null;
 		  }
 		  return response.text();
 		}).then(d => {
 			if (d === null){
-				if (firstTry){
-					this.reqData(val2, val1, false);
-				} else {
-					console.log(`Data missing for ${val1} and ${val2}`);
-				}
+				console.log(`Data missing for ${val1} and ${val2}`);
 			} else {
 				const data = d3.csvParse(d);
 				this.content.selectAll("div.deepwork-social")
