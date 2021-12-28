@@ -16,6 +16,7 @@ export class VideoPlayer {
     		.style("left", 0)
     		.style("top", 0)
     		.attr("class", "lazy needChange")
+    		.attr("title", "Looping video of a person created using the demo above blinking and laughing.")
     		.property("autoplay", true)
     		.property("muted", true)
     		.property("loop", true)
@@ -32,6 +33,7 @@ export class VideoPlayer {
 
     	this.reactionVidHolder = 
     		this.vidHolder.append("video")
+    		.attr("title", "Looping video of a person created using the demo above reacting according to clicked button.")
     		.style("position", "absolute")
     		.style("left", 0)
     		.style("top", 0)

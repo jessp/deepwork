@@ -45,15 +45,15 @@ export class ThoughtLeadership {
 				            .attr("class", "deepwork-social fade-in")
 				            .html((d) => {
 				            	return `<div class="social-icon">
-									<img inline src='assets/images/morphs/morphing_0${this.picIndex[0]}_0${this.picIndex[1]}.jpg' style='margin-left: ${this.picIndex[2]}%'>
+									<img alt='avatar image' inline src='assets/images/morphs/morphing_0${this.picIndex[0]}_0${this.picIndex[1]}.jpg' style='margin-left: ${this.picIndex[2]}%'>
 							 	</div>
 							 	<div class="social-content">
 							 		<p>Your Hot Takes</p>
 									<p>${d.tweets}</p>
 									<div class="impact-icons">
-										<img inline src='assets/images/svgs/thumbs-up.svg'>
+										<img inline src='assets/images/svgs/thumbs-up.svg' alt='likes'>
 										<span>${parseInt(Math.random() * 100)}</span>
-										<img inline src='assets/images/svgs/repeat.svg'>
+										<img inline src='assets/images/svgs/repeat.svg' alt='shares'>
 										<span>${parseInt(Math.random() * 100)}</span>
 									</div>
 								</div>`

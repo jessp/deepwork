@@ -23,7 +23,7 @@ export class PhotoSlider {
 			.data(Array.apply(null, Array(this.steps)))
 			.join(
 				enter => enter.append("div")
-					.style("background-image", (d, i) => `url(assets/images/starting_photos/${(i+1)}.png)`)
+					.style("background-image", (d, i) => `url(assets/images/thumbnail_starting_photos/${(i+1)}.png)`)
 					.style("width", `calc(100%/${this.steps})`)
 					.attr("class", (d, i) => i === this.position ? "selected-pic" : null)
 			)
