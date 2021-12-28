@@ -58,6 +58,9 @@ export class StudioB {
 	setupSlider(slide){
 		noUiSlider.create(this.id.select(`#${slide.id}`).node(), {
 		    start: [slide.start],
+		    handleAttributes: [
+        		{ 'aria-label': 'adjust ratio of pic A features versus pic B features' }
+        	],
 		    range: {
 		        'min': slide.min,
 		        'max': slide.max

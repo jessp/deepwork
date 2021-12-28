@@ -30,6 +30,9 @@ export class PhotoSlider {
 
 		noUiSlider.create(this.id.select(".photo-select").node(), {
 		    start: [this.position],
+		    handleAttributes: [
+        		{ 'aria-label': 'selected photo index' }
+        	],
 		    range: {
 		        'min': 0,
 		        'max': this.steps - 1
