@@ -17,6 +17,7 @@ export class Toggler {
         let stateOfToggle = toggler.classed("closed");
 
         toggler.classed("closed", !stateOfToggle);
+        toggler.attr("aria-expanded", stateOfToggle === true ? "true" : "false")
         toggler.select(".phrase").html(stateOfToggle ? this.phraseB : this.phraseA);
         toggler.select("img").attr("src", `assets/images/svgs/chevron-${stateOfToggle ? "down" : "right"}.svg`);
 

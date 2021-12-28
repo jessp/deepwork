@@ -6,14 +6,14 @@
 		{{#each content.content}}
 			{{> story/escape-link this }}
 		{{/each}}
-		<div class="toggler single-col closed pic-info">
+		<button role="button" class="toggler closed pic-info" aria-expanded="false" aria-controls="photo-credits">
 			<img src="assets/images/svgs/chevron-right.svg" alt=""/>
 			<p>
 				<span class="phrase">Show</span>
 				<span> stock photo credits</span>
 			</p>
-		</div>
-		<div class="toggled single-col closed pic-info">
+		</button>
+		<div class="toggled single-col closed pic-info" id="photo-credits">
 			<ul class="bulleted">
 				{{#each content.list}}
 					<li>

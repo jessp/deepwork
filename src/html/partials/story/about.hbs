@@ -4,17 +4,19 @@
 {{> story/about-block content=about.resume}}
 {{> story/about-block content=about.photo}}
 
-<div class="toggler single-col closed beauty-ai">
-	<img src="assets/images/svgs/chevron-right.svg" alt=""/>
-	<p>
-		<span>Read </span>
-		<span class="phrase">more</span>
-		<span> about bias in beauty AI</span>
-	</p>
-</div>
+<div class="single-col">
+	<button role="button" class="toggler closed beauty-ai" aria-expanded="false" aria-controls="more-beauty">
+		<img src="assets/images/svgs/chevron-right.svg" alt=""/>
+		<p>
+			<span>Read </span>
+			<span class="phrase">more</span>
+			<span> about bias in beauty AI</span>
+		</p>
+	</button>
 
-<div class="toggled closed beauty-ai">
-	{{> story/about-block content=about.photo-more}}
+	<div class="toggled closed beauty-ai" id="more-beauty">
+		{{> story/about-block content=about.photo-more}}
+	</div>
 </div>
 
 {{> story/about-block content=about.thought-leadership}}
