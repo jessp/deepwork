@@ -22,6 +22,11 @@ module.exports = {
   },
 
   parseLink: function(text, del) {
+    /*
+    input = A statement like this with <del>text and a url<del>http://fake.com<del>
+    sandwiched between del characters.
+    output = The statement where text is hyperlinked according to the adjacent link.
+    */
     let splitText = text.split(del);
     if (splitText.length < 2){
       return text;
@@ -29,7 +34,7 @@ module.exports = {
     
     for (var i = 1; i < splitText.length; i++){
       if (splitText[i].substring(0,4) === "http"){
-        splitText[i-1] = `<a target="_blank" href="${splitText[i]}">${splitText[i-1]}</a>`;
+        splitText[i-1] = `<a href="${splitText[i]}">${splitText[i-1]}</a>`;
         splitText[i] = "";
       }
     }
@@ -37,6 +42,10 @@ module.exports = {
   },
 
   removeLink: function(text, del) {
+    /*
+    Similar to parseLink but the hyperlink is stripped out for text that
+    shouldn't contain links, e.g., such as quoted excerpts.
+    */
     let splitText = text.split(del);
     if (splitText.length < 2){
       return text;

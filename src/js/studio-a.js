@@ -1,6 +1,11 @@
 import noUiSlider from 'nouislider';
 
-
+/*
+confusingly, slider refers to the "photo-slider" element
+telling us which stock photo model is selected, and sliders 
+refers to an object with the necessary values to create
+sliders for the beauty, age, and gender attributes.
+*/
 export class StudioA {
   	constructor(_id, _slider, _sliders) {
     	this.id = d3.select(_id);
@@ -17,6 +22,11 @@ export class StudioA {
 
 	updatePic(){
 
+		/*
+		pos_age and pos_beauty are on a scale from -18 to 18
+		but pos_beauty is on a scale -24 to 0. We must map and format
+		the values to get the correct pictures.
+		*/
 		const scaleLin = d3.scaleLinear()
 			.domain([0, 6])
 			.range([18, -18]);

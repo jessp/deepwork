@@ -4,7 +4,12 @@ export class VideoPlayer {
     	this.picIndex = [5, 9, 1];
     	this.upcoming = null;
 
-
+    	/*
+    	our strategy consists of showing the reaction video below the 
+    	looping "static" video. This way we can show/hide the static 
+    	video without visible buffering from the reaction video 
+    	(though some browsers still show a bit)
+    	*/
     	this.vidHolder = 
     		this.id.select("#video-holder")
     		.style("position", "relative")
@@ -96,6 +101,7 @@ export class VideoPlayer {
 				this.reactionVidSrc.attr("src", "");
 			}, false);
 
+			//lazy load videos as per method 2 in https://web.dev/lazy-loading-video/
 			const lazyVideo = d3.select("video.lazy").node();
 
 			if ("IntersectionObserver" in window) {

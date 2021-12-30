@@ -1,3 +1,4 @@
+//show/hide content in the about section
 export class Toggler {
 
     constructor(_classId, _phraseA, _phraseB) {

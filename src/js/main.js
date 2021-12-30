@@ -3,7 +3,6 @@ import debounce from 'lodash.debounce';
 import isMobile from './utils/is-mobile';
 import linkFix from './utils/link-fix';
 import modalSetup from './utils/modal-a11y';
-import graphic from './graphic';
 import footer from './footer';
 import {ThoughtLeadership} from './thought-leadership-demo';
 import {PhotoSlider} from './photo-slider';
@@ -17,15 +16,6 @@ import {Toggler} from './toggler';
 const $body = d3.select('body');
 let previousWidth = 0;
 
-function resize() {
-  // only do resize on width changes, not height
-  // (remove the conditional if you want to trigger on height change)
-  const width = $body.node().offsetWidth;
-  if (previousWidth !== width) {
-    previousWidth = width;
-    graphic.resize();
-  }
-}
 
 function setupStickyHeader() {
   const $header = $body.select('header');
@@ -43,12 +33,10 @@ function init() {
   linkFix();
   // add mobile class to body tag
   $body.classed('is-mobile', isMobile.any());
-  // setup resize event
-  window.addEventListener('resize', debounce(resize, 150));
+  // setup resize event -- not used
+  // window.addEventListener('resize', debounce(resize, 150));
   // setup sticky header menu
   // setupStickyHeader();
-  // kick off graphic code
-  graphic.init();
   // load footer stories
   footer.init();
 

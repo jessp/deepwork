@@ -85,7 +85,7 @@ export class ThoughtLeadership {
 
 		this.reqData(this.inf1, this.inf2, true);
 
-
+		//change the options and text if either dropdown is changed.
 		this.id1.on("change", (e) => {
 			this.inf1 = e.target.value;
 

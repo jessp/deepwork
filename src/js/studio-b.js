@@ -1,5 +1,6 @@
 import noUiSlider from 'nouislider';
 
+//slider contains the attributes to set up a new noui slider element
 export class StudioB {
   	constructor(_id, _slider, _picA, _picB, _vidCallback, _picCallback) {
     	this.id = d3.select(_id);
