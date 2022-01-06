@@ -61,9 +61,9 @@ function init() {
   })
 
   
+  //note that order here is important due to the use of callbacks
 
   const thoughtLeader = new ThoughtLeadership("#influencerA", "#influencerB", "15828408", "1636590253", "#thought-leadership .demo-body");
-
 
   const photoA = new PhotoSlider("#studioA", 6, 9, null);
 

@@ -3,10 +3,10 @@
 	"description": "A satire about the future of job hunting.",
 	"site": "https://pudding.cool",
 	"siteName": "The Pudding",
-	"url": "https://pudding.cool/year/month/name/",
+	"url": "https://pudding.cool/2022/01/deepwork",
 	"keywords": "company culture, corporate culture, work, lookism, bias, ai, deep fake, data, satire, humor",
-	"imgFacebook": "https://pudding.cool/year/month/name/assets/social/social-facebook.jpg",
-	"imgTwitter": "https://pudding.cool/year/month/name/assets/social/social-twitter.jpg",
+	"imgFacebook": "https://pudding.cool/2022/01/deepwork/assets/social/facebook.png",
+	"imgTwitter": "https://pudding.cool/2022/01/deepwork/assets/social/twitter.png",
 	"author": {
 		"name": "Jess Peter",
 		"url": "https://pudding.cool/author/jess-peter/"

@@ -75,7 +75,6 @@ function recircHTML() {
 
 	const diff = others.filter((d) => d.topic !== topic);
 	const same = others.filter((d) => d.topic === topic);
-
 	const stories = [];
 	stories.push(...diff.slice(0, 2));
 	stories.push(same[0]);
