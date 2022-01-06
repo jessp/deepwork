@@ -70,15 +70,24 @@ function recircHTML() {
 	const localURL = window.location.href;
 
 	const story = storyData.find((d) => localURL.includes(d.url));
-	const topic = story ? story.topic : "culture";
 	const others = storyData.filter((d) => !localURL.includes(d.url));
+	
+	/*
+	lines below commented out because stories.json
+	no longer returns a topic attribute. code retained for vis reference
+	or if endpoint changed
 
+	const topic = story ? story.topic : "culture";
 	const diff = others.filter((d) => d.topic !== topic);
 	const same = others.filter((d) => d.topic === topic);
+	*/
 	const stories = [];
+	stories.push(...others.slice(0, 4));
+	/*
 	stories.push(...diff.slice(0, 2));
 	stories.push(same[0]);
 	stories.push(same[Math.ceil(Math.random() * (same.length - 1))]);
+	*/
 
 	const html = stories
 		.map(createLink)
