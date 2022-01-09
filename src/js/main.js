@@ -70,7 +70,7 @@ function init() {
   const studASliders = [
     {att: "gender", min: 0, max: 6, start: 3, minLabel: "More Masculine", maxLabel: "More Feminine"},
     {att: "age", min: 0, max: 6, start: 3, minLabel: "Younger", maxLabel: "Older"},
-    {att: "beauty", min: 0, max: 6, start: 0, minLabel: "Drab", maxLabel: "Fab"}
+    {att: "beauty", min: 0, max: 6, start: 0, minLabel: "Basic", maxLabel: "Doctored"}
   ];
 
   const studA = new StudioA("#studio-a-container", photoA, studASliders);
