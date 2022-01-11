@@ -39,23 +39,5 @@ module.exports = {
       }
     }
     return splitText.join("");
-  },
-
-  removeLink: function(text, del) {
-    /*
-    Similar to parseLink but the hyperlink is stripped out for text that
-    shouldn't contain links, e.g., such as quoted excerpts.
-    */
-    let splitText = text.split(del);
-    if (splitText.length < 2){
-      return text;
-    }
-    
-    for (var i = 1; i < splitText.length; i++){
-      if (splitText[i].substring(0,4) === "http"){
-        splitText[i] = "";
-      }
-    }
-    return splitText.join("");
   }
 };

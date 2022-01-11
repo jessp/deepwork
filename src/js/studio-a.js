@@ -46,7 +46,7 @@ export class StudioA {
 		noUiSlider.create(this.id.select(`#pos_${slide.att}`).node(), {
 		    start: [slide.start],
 		    handleAttributes: [
-        		{ 'aria-label': `adjust photo subject's ${slide.att === "beauty" ? "Insta glamness" : slide.att}` }
+        		{ 'aria-label': `adjust photo subject's ${slide.att === "beauty" ? "yassification level" : slide.att}` }
         	],
 		    range: {
 		        'min': slide.min,

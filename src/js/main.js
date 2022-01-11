@@ -40,26 +40,6 @@ function init() {
   // load footer stories
   footer.init();
 
-  d3.select(".nav-button button").on("click", () => {
-    let mainInfo = d3.select(".main");
-    let aboutInfo = d3.select(".about");
-    let isMainClosed = mainInfo.classed("closed");
-
-    mainInfo.classed("closed", !isMainClosed);
-    aboutInfo.classed("closed", isMainClosed);
-    d3.select(".nav-button button").html(`${isMainClosed ? "about us" : "our offerings"}`)
-
-  });
-
-  d3.selectAll(".banner-click").on("click", () => {
-    let mainInfo = d3.select(".main");
-    let aboutInfo = d3.select(".about");
-
-    mainInfo.classed("closed", false);
-    aboutInfo.classed("closed", true);
-    d3.select(".nav-button p").html("about us");
-  })
-
   
   //note that order here is important due to the use of callbacks
 
@@ -70,7 +50,7 @@ function init() {
   const studASliders = [
     {att: "gender", min: 0, max: 6, start: 3, minLabel: "More Masculine", maxLabel: "More Feminine"},
     {att: "age", min: 0, max: 6, start: 3, minLabel: "Younger", maxLabel: "Older"},
-    {att: "beauty", min: 0, max: 6, start: 0, minLabel: "Basic", maxLabel: "Doctored"}
+    {att: "beauty", min: 0, max: 6, start: 0, minLabel: "Basic", maxLabel: "Yassified"}
   ];
 
   const studA = new StudioA("#studio-a-container", photoA, studASliders);

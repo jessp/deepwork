@@ -1,7 +1,7 @@
 <div class="menu-item">
 	<div class="menu-item-wrapper">
 		<div class="price-holder">
-			<h3 class="package all-caps">{{content.title}}</h3>
+			<h3 class="package all-caps">{{title}}</h3>
 			<p class="duration drk-gray">from</p>
 			<p class="price">${{price}}</p>
 			<p class="duration">/{{duration}}</p>
@@ -10,17 +10,13 @@
 			<img src="assets/images/{{illustration}}" alt=""/>
 		</div>
 		<div class="menu-descrip">
-			{{#if content.lead.0.link}}
-				<p>{{{removeLink content.lead.0.text content.lead.0.link}}}</p>
-			{{else}}
-				<p>{{content.lead.0.text}}</p>
-			{{/if}}
+			<p>{{summary}}</p>
 		</div>
 		<div class="menu-button">
 			<div>
 				<a class="all-caps main-link" href="#{{which}}-package">
 				Read More
-				<span class="sr-only">about our {{content.title}} package</span>
+				<span class="sr-only">about our {{title}} package</span>
 				</a>
 			</div>
 		</div>

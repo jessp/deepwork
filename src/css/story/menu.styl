@@ -39,19 +39,21 @@
 	grid-template-rows: 200px min-content min-content
 	.menu-descrip
 		margin-bottom: 1rem
-		height: auto
-		max-height: 140px
-		overflow: hidden
-		-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
-		mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+		height: 100px
+		width: 80%
 		p
 			set-type-size(root, false)
 			line-height: 1.4
 	+mq('bp-5')
 		grid-template-rows: 200px 2fr min-content
+		.menu-descrip
+			height: 100px
 	+mq('bp-7')
 		grid-template-rows: 175px 2fr min-content
 		grid-template-areas: "price pic" "description description" "button button"
+		.menu-descrip
+			height: 120px
+			width: 100%
 	.price-holder
 		padding-right: 1rem
 		grid-area: price
