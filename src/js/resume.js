@@ -2,7 +2,7 @@ export class Resume {
 
   	constructor(_id, _selected) {
     	this.id = d3.select(_id);
-    	this.body = this.id.select(".demo-body");
+    	this.body = this.id.select(".demo-body .content");
     	this.dropdown = this.id.select("select");
     	this.refreshButton = this.id.select("button");
     	this.selectedItem = _selected;

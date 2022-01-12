@@ -1,12 +1,19 @@
-<div class="demo-header resume-controls">	
-	<div>
-		{{> story/combo-box id="jobSelection" opts=jobs }}
+<div class="demo-header">
+	<label class="label" for="jobSelection">Role Seniority</label>
+	<div class="resume-controls">
+		<div>
+			{{> story/combo-box id="jobSelection" opts=jobs }}
+		</div>
+		<button class="circle-icon-btn">
+			<img inline src='repeat.svg' alt="">
+			<span class="sr-only">Load other generated resume.</span>
+		</button>
 	</div>
-	<button class="circle-icon-btn">
-		<img inline src='repeat.svg' alt="">
-		<span class="sr-only">Load other generated resume.</span>
-	</button>
 </div>
 <div class="demo-body">
-
+	<p class="label">
+		Generated Resume
+	</p>
+	<div class="content">
+	</div>
 </div>

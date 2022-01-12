@@ -125,13 +125,20 @@ section
 		font-weight: 500
 
 .demo-body
-	background-color: $story-gray-light
-	border: 1px solid $story-gray-mid
-	border-radius: $border-rad
-	padding: 0.75rem 1rem 0.25rem 1rem
 	flex: 1 0
 	overflow-y: auto
 	height: 0px
+	display: flex
+	flex-flow: column
+	.content
+		border: 1px solid $story-gray-mid
+		border-radius: $border-rad
+		padding: 0.75rem 1rem 0.25rem 1rem
+		background-color: $story-gray-light
+		flex: 1 0
+		overflow-y: auto
+		height: 0px
+
 
 .circle-icon-btn
 	height: 50px
