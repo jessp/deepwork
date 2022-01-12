@@ -27,7 +27,7 @@ export class VideoPlayer {
     		.property("loop", true)
     		.attr("playsinline", '')
     		.style("width", "100%")
-    		.style("height", "100%")
+    		.style("height", "auto")
     		.style("z-index", 1);
     	
     	this.staticVidSrc =
@@ -46,7 +46,7 @@ export class VideoPlayer {
     		.property("muted", true)
     		.attr("playsinline", '')
     		.style("width", "100%")
-    		.style("height", "100%");
+    		.style("height", "auto");
     	
     	this.reactionVidSrc =
     		this.reactionVidHolder
