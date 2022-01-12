@@ -1,4 +1,6 @@
 /* CUSTOM STORY STYLE */
+html, body
+	width: 100%
 
 body
 	background: rgb(245,241,249)
@@ -11,7 +13,10 @@ body
 
 h1
 	font-family: $lyon
-	set-type-size(xxxx-large, true)
+	set-type-size(xx-large, true)
+	+mq('bp-4')
+		set-type-size(xxxx-large, true)
+
 
 h2
 	font-family: $lyon
@@ -40,6 +45,7 @@ p, li
 
 #content
 	max-width: $main-width
+	width: 100%
 	margin:0 auto
 	padding: 0 25px
 	> *:not(.menu-holder)
@@ -47,11 +53,12 @@ p, li
 		margin-right: auto
 
 .wide-block
-	max-width: $wide-width
+	max-width: $single-col
 	text-align: left
 	h1
 		margin: 3.125rem 0px 0px 0px
 	+mq('bp-4')
+		max-width: $wide-width
 		text-align: center
 
 .story-pic
@@ -63,7 +70,6 @@ p, li
 		margin: 0 auto
 		border-radius: 30px
 		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3)
-		padding: 2.85rem 1rem
 
 section
 	width: auto
@@ -93,12 +99,14 @@ section
 			line-height: 1.4
 			margin: 0px
 	.feature-content
-		width: 325px
-		height: 670px
+		width: 270px
+		height: 635px
+		padding: 2.35rem 0.25rem
 	+mq('bp-3')
 		.feature-content
-			width: 350px
-			height: 700px
+			width: 325px
+			height: 650px
+			padding: 2.35rem 1rem
 	+mq('bp-4')
 		grid-template-columns: auto auto
 		grid-template-rows: min-content 100%
@@ -106,14 +114,15 @@ section
 		grid-column-gap: 2 rem
 		.feature-content
 			width: 300px
-			height: 600px
+			height: 635px
 		.instructions
 			margin: 2rem 0px
 	+mq('bp-5')
 		grid-column-gap: 3 rem
 		.feature-content
-			width: 350px
-			height: 700px
+			width: 325px
+			height: 650px
+			padding: 2.85rem 1rem
 
 .drk-gray
 	color: $gray-dark
@@ -121,7 +130,7 @@ section
 .demo-header
 	p
 		text-align: center
-		margin: 1rem
+		margin: 0.75rem
 		font-weight: 500
 
 .demo-body

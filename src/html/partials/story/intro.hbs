@@ -1,10 +1,12 @@
 <section>
 	<div class="wide-block">
-		<h1>{{content.title}}</h1>
+		<h1>{{{content.title}}}</h1>
 		<img src="assets/images/illustrations/Cover-alt.svg" alt="Illustration of a woman surrounded by elements indicative of web interfaces and DNA strands. Semi-transparent hands reach towards the woman."/>
 	</div>
 	<div class="single-col">
-		<p>{{content.intro.content.0.text}}</p>
+		{{#each content.intro.lead}}
+			{{> story/escape-link this }}
+		{{/each}}
 	</div>
 	<div class="single-col">
 		<h2>Our Products</h2>
@@ -12,10 +14,7 @@
 	{{> story/menu-holder }}
 	<div class="single-col">
 		{{#each content.intro.content}}
-			{{#if @first}}
-			{{else}}
-				{{> story/escape-link this }}
-			{{/if}}
+			{{> story/escape-link this }}
 		{{/each}}
 	</div>
 </section>
